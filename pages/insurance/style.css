@@ -1,0 +1,1359 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #eaf2f4;
+}
+ul {
+    background-color: white;
+    text-decoration: none;
+}
+ul li{
+    text-decoration: none;
+}
+ul{
+    display: inline-block;
+}
+ul li{
+    text-decoration: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+::-webkit-scrollbar-button {
+    /*background-image:url('');*/
+    background-repeat:no-repeat;
+    width:6px;
+    height:0px
+}
+
+/*::-webkit-scrollbar-track {*/
+/*background-color:#c2c3c6;*/
+/*box-shadow:0px 0px 3px #c2c3c6 inset;*/
+/*}*/
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color:#3fcbff;
+    box-shadow:0px 1px 1px #fff inset;
+    /*background-image:url('https://yraaa.ru/_pu/24/59610063.png');*/
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+::-webkit-resizer{
+    /*background-image:url("");*/
+    background-repeat:no-repeat;
+    width:7px;
+    height:0px
+}
+
+::-webkit-scrollbar{
+    width: 11px;
+}
+#ppo{
+    padding-top: 28px;
+    font-size: 11px;
+    padding-left: 10px;
+    /*padding-bottom: 3px;*/
+    /*word-spacing: 1px;*/
+    color:#90908e;
+}
+.fa-edit{
+    padding-left: 7px;
+}
+.menu2 a{
+    text-decoration: none;
+    color:#b4b7bb;
+}
+.menu2 a:hover{
+    text-decoration: none;
+    color:white;
+    background-color: #495c6e;
+}
+#insurance{
+    overflow: scroll;
+    padding-left: 27px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #eaf2f4;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+.header{
+    background-color: #3fcbff;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    /*height: 30px;*/
+    padding-top: 5px;
+    height: 33px;
+    /*margin-left: -5px;*/
+    /*padding-top: -15px;*/
+    text-align: center;
+}
+
+.inactiveInsurances{
+    text-align: center;
+    /*border-bottom: 0.6px solid #3fcbff;*/
+    /*line-height: 16px;*/
+    text-decoration: underline;
+    color: #3fcbff;
+    font-size: 17px;
+    font-weight: 600;
+    padding-top: 8px;
+    /*padding-left: -11px;*/
+    /*padding-top: 7px;*/
+}
+#name1, #name2{
+    background-color: white;
+}
+.header1{
+    background-color: #3fcbff;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    /*height: 39px;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 18px;
+
+}
+
+.header2{
+    background-color: white;
+    color: #3fcbff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 39px;
+    padding-top: 0;
+    padding-left: 18px;
+    /*margin-top: -8px;*/
+
+}
+
+#panel{
+    width: 342px;
+    height: 300px;
+    min-width: 190px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    /*margin-top: 50px;*/
+    padding-top: 42px;
+    margin-left: 30px;
+}
+.body2{
+    background-color: white;
+    height: 370px;
+
+}
+#panel1{
+    position: relative;
+    width: 700px;
+    margin-top: 5px;
+    display: inline-block;
+}
+#blockPanel{
+    width: 95%;
+    /*min-width: 190px;*/
+    padding-left: 25px;
+    display: table-row;
+}
+ #panel{
+    margin-top: 5px;
+    display: inline-block;
+}
+#panel2{
+    /*margin-top: 7px;*/
+}
+.doc{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0px 7px 1px #dee6e8;
+    /*height: 520px;*/
+
+}
+.doc2{
+
+    box-shadow: 0px 7px 1px #dee6e8;
+    border-radius: 0;
+}
+.doc3{
+    background-color: white;
+    border-radius: 0;
+}
+.panel-doc{
+
+    /**/
+    /*border: 1px solid #3fcbff;*/
+    /**/
+    /*padding-bottom: 6px;*/
+    /*height: 30px;*/
+    /*margin-top: 0;*/
+    /*padding-left: 12px;*/
+    /*padding-top: 2px;*/
+}
+.body1{
+    background-color: white;
+    display: flex;
+}
+.blockLine{
+    background-color: white;
+    /*padding-bottom: 8px;*/
+    /*margin-right: 10px;*/
+}
+.userRow{
+    font-size: 11px;
+    padding-left: 12px;
+    padding-top: 5px;
+
+}
+#name2, #block1, .body1, .inline, .panel-body{
+    background-color: white;
+}
+.userP{
+
+    font-size: 11px;
+    padding-left: 12px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+
+}
+.userP1{
+    font-size: 11px;
+    padding-left: 12px;
+    padding-top: 5px;
+
+}
+.userName1{
+    background-color: white;
+    padding-left: 107px;
+}
+.userP:hover, .userP1:hover{
+    border: 2px solid #3fcbff;
+    margin-left: 0;
+    border-radius: 8px;
+    padding-right: 10px;
+
+}
+.userAdr1, .userAdr2{
+    background-color: white;
+    padding-left: 61px;
+}
+.userZip{
+    background-color: white;
+    padding-left: 30px;
+}
+.userCountry{
+    background-color: white;
+    padding-left: 97px;
+}
+.user2{
+    background-color: white;
+    padding-left: 40px;
+}
+#name3, #name4{
+    height: auto;
+    background-color: white;
+}
+
+#block1, #block2{
+    background-color: white;
+    padding-left: 1px;
+    font-weight: 500;
+    padding-top: 9px;
+    height: auto;
+}
+/*#block2{*/
+    /**/
+    /*padding-top: 0px;*/
+/*}*/
+.main-menu {
+    background-color: white;
+    margin: 0;
+    padding-left: 0;
+    padding-top: 15px;
+    list-style: none;
+
+    /*padding-left: 18px;*/
+}
+
+.main-menu .a {
+    display: block;
+    /*margin-bottom: -1px;*/
+
+    padding: 4px 15px 4px 35px;
+    margin-right: -5px;
+    /*margin-left: -21px;*/
+    text-decoration: none;
+    color: black;
+    border: none;
+}
+.main-menu a:hover{
+    text-decoration: none;
+}
+a:hover {
+    background: #d9f5ff;
+    text-decoration: none;
+}
+
+.main-menu > li {
+}
+
+/* Подменю */
+
+#car-right{
+    margin-left: 15px;
+}
+.main-menu .sub-menu {
+    margin: 0;
+    padding-left: 20px;
+    list-style: none;
+    background: white;
+}
+.fa-caret-right{
+    margin-bottom: 2px;
+}
+#block1{
+    margin-top: 3px;
+}
+.new{
+    padding-top: 8px;
+    margin-left: 5px;
+    /*padding-bottom: -3px;*/
+    margin-bottom: -4px;
+}
+.fa-padding{
+    padding-right: 10px;
+}
+.responsibleParty{
+    margin-left: 12px;
+    /*margin-bottom: 2px;*/
+}
+.inline{
+    display: flex;
+}
+.responsibleParty1{
+    margin-left: 13px;
+    color: #b7bdbd;
+    font-style: italic;
+
+}
+.fa-xs{
+    color: #b7bdbd;
+    margin-left: -5px;
+}
+#blueCross{
+    margin-top: 10px;
+}
+@font-face {
+
+    font-family: 'Roboto', sans-serif;
+
+    src: url("https://fonts.googleapis.com/css?family=Roboto");
+    font-style: oblique;
+    font-weight: normal;
+}
+::-webkit-resizer{
+    /*background-image:url("");*/
+    background-repeat:no-repeat;
+    width:7px;
+    height:0;
+}
+
+::-webkit-scrollbar{
+    width: 11px;
+}
+.img-circle{
+    background-color: inherit;
+    padding-left: 15px;
+}
+.circle{
+    background-color: inherit;
+    padding-right: 10px;
+}
+#insurance, #document{
+    width: 100%;
+    height: 100%;
+    background-color: #eaf2f4;
+    /*padding-top: 47px;*/
+    padding-left: 0;
+    margin-left: 0;
+}
+.userName{
+    font-size: 22px;
+    background-color: inherit;
+    /*display: block;*/
+}
+.img-circle{
+    height: 40px;
+
+}
+div,p,span, ul,li{
+    font-family: 'Roboto', sans-serif;
+}
+.logo{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+    background-color:#3fcbff;
+    color:white;
+    height: auto;
+    padding-bottom: 12px;
+
+}
+
+.head{
+    padding-top: -4px;
+    float: right;
+    background-color: inherit;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logotype{
+    background-color: inherit;
+    padding-left: 15px;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+.menu2{
+    display: inline-block;
+    padding-top: 12px;
+    background-color: #3d4a5d;
+    width: 210px;
+    color: #c2c3c6;
+    height: 1100px;
+    margin-bottom: 0;
+
+}
+.name{
+    padding-right: 8px;
+    font-size: 21px;
+    background-color: inherit;
+
+}
+ul li, .fa-angle-down, .fa-plus, .fa-caret-right, .responsibleParty,.responsibleParty1, .body1, .blockLine, .userP, .userRow,.user2{
+    background-color: white;
+}
+.campus{
+    padding-right: 12px;
+    font-size: 21px;
+    background-color: inherit;
+
+}
+.fa-lock{
+    background-color: inherit;
+    padding-right: 35px;
+}
+
+.lang{
+    float: right;
+    margin-top: 5px;
+    background-color: inherit;
+    padding-right: 15px;
+}
+#main{
+    display: flex;
+    height: auto;
+}
+.menu3{
+    height: auto;
+    margin-top: 30px;
+}
+.imgProfile{
+    background-color: inherit;
+}
+.profile{
+    display: flex;
+    background-color:#3fcbff;
+    color: white;
+    width: 210px;
+    text-align: left;
+    padding-top: 35px;
+    padding-bottom: 10px;
+
+}
+.userData{
+    background-color: inherit;
+    display: block;
+}
+ .setting{
+
+    position: fixed;
+    bottom: 5px;
+}
+.setting{
+    background-color: inherit;
+}
+#setting{
+    /*position: relative;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    margin-top: 600px;
+    bottom: 0;
+    background: inherit;
+
+    width: 190px;
+}
+#setting:hover{
+    width: 187px;
+}
+.fa-caret-down{
+    background-color: inherit;
+}
+.fa-bars{
+    background-color: inherit;
+}
+#user{
+    background-color: inherit;
+    padding-left: 181px;
+
+}
+.online{
+    padding-left: 127px;
+    font-size: 14px;
+    background-color: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu{
+    font-size: 20px;
+    padding-bottom: 6px;
+    padding-top: 8px;
+    height: auto;
+    background-color: #364050;
+    color: white;
+}
+.fa-bars{
+    padding-left: 15px;
+}
+ul li{
+    text-decoration: none;
+    padding-left: 17px;
+}
+li{
+    text-decoration: none;
+}
+.fa-home, .fa-th, .fa-user-alt, .fa-shield-alt, .fa-file-alt, .fa-comment-alt, .fa-cog{
+    color:#415b75;
+}
+.fas .fa-file-alt{
+
+}
+.user{
+    padding-right: 25px;
+    padding-left: 20px;
+    font-weight: 600;
+    background-color: inherit;
+}
+
+.user:hover{
+    box-shadow: 0px -7px 10px -11px #000000;
+    background-color:#3fcbff;
+    -webkit-transition: .2s ease-out;
+    -webkit-transition-delay: 0.3s;
+    -o-transition: .2s ease-out;
+    -o-transition-delay: 0.1s;
+    -moz-transition: .2s ease-out;
+    -moz-transition-delay: 0.5s;
+    transition: .2s ease-out;
+    transition-delay: 0.1s;
+    padding-top: 14px;
+    padding-bottom:     10px;
+    cursor: pointer;
+    animation-direction: alternate-reverse;
+    animation: shadow  2s infinite ease-in-out;
+}
+.fa-th, .fa-user-alt, .fa-shield-alt, .fa-file-alt, .fa-comment-alt, .fa-cog, .fa-home {
+    background-color: inherit;
+}
+.inactiveInsurances{
+    background-color: white;
+}
+.point{
+    padding-top: 5px;
+    background-color: inherit;
+    padding-bottom: 15px;
+}
+.point:hover {
+    color:#f5f5f7;
+    background-color:#495c6e ;
+    cursor: pointer;
+    border-left: 2px solid #3fcbff;
+    -webkit-transition: .2s ease-out;
+    -webkit-transition-delay: 0.3s;
+    -o-transition: .2s ease-out;
+    -o-transition-delay: 0.1s;
+    -moz-transition: .2s ease-out;
+    -moz-transition-delay: 0.5s;
+    transition: .3s ease-out;
+}
+
+@font-face {
+
+    font-family: 'Roboto', sans-serif;
+
+    src: url("https://fonts.googleapis.com/css?family=Roboto");
+    font-style: oblique;
+    font-weight: normal;
+}
+@font-face {
+
+    font-family: 'Open Sans', sans-serif;
+
+    src: url("https://fonts.googleapis.com/css?family=Open+Sans");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1312px){
+    .body2{
+        background-color: white;
+        height: 390px;
+
+    }
+    #new{
+        padding-bottom: 15px;
+    }
+}
+@media screen and (max-width: 1251px){
+    .body2{
+        background-color: white;
+        height: 370px;
+
+    }
+    #new{
+        padding-bottom: 15px;
+    }
+    .main-menu a {
+        display: block;
+        /*margin-bottom: -1px;*/
+
+        padding: 4px 10px 4px 35px;
+        margin-right: -5px;
+        margin-left: -21px;
+        text-decoration: none;
+        color: black;
+        border: none;
+    }
+    .userName1{
+        background-color: white;
+        padding-left: 95px;
+    }
+    .userAdr1, .userAdr2{
+        padding-left: 49px;
+    }
+    .userZip{
+        padding-left: 18px;
+    }
+    .userCountry{
+        background-color: white;
+        padding-left: 85px;
+    }
+}
+@media screen and (max-width: 1212px){
+    #panel1{
+        position: relative;
+        width: 650px;
+        height: auto;
+    }
+    .main-menu a {
+        /*display: block;*/
+        /*margin-bottom: -1px;*/
+
+        padding: 4px 10px 4px 15px;
+        /*margin-right: -5px;*/
+        /*margin-left: -21px;*/
+        /*text-decoration: none;*/
+        /*color: black;*/
+        /*border: none;*/
+    }
+    .inactiveInsurances{
+        font-size: 16px;
+    }
+    #block1, #block2{
+        height: 170px;
+    }
+    .header{
+        font-size: 18px;
+    }
+    /*#panel1, #panel2{*/
+        /*position: relative;*/
+        /*width: 650px;*/
+    /*}*/
+
+}
+@media screen and (max-width: 1177px){
+    .inactiveInsurances{
+        font-size: 14px;
+    }
+    .header{
+        font-size: 16px;
+    }
+    #block1, #block2{
+        height: 160px;
+    }
+    #blockPanel{
+        padding-left: 10px;
+    }
+    #insurance{
+        padding-left: 0;
+    }
+    #panel{
+        margin-left: 20px;
+    }
+    .user2{
+        margin-left: 0;
+        padding-left: 0px;
+    }
+    .responsibleParty, .main-menu{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .inactiveInsurances{
+        font-size: 14px;
+    }
+    .header, .header1, .header2{
+        font-size: 16px;
+    }
+    .logotype, .campus, .name, .userName{
+        font-size: 20px;
+    }
+    .online{
+        font-size: 12px;
+    }
+    .user, .lang{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1155px){
+    .userName1{
+        background-color: white;
+        padding-left: 92px;
+    }
+     .userAdr2{
+        padding-left: 46px;
+    }
+    .userZip{
+        padding-left: 18px;
+    }
+    .userCountry{
+        background-color: white;
+        padding-left: 83px;
+    }
+}
+@media screen and (max-width: 1095px){
+    .userName1{
+        background-color: white;
+        padding-left: 89px;
+    }
+    .userAdr2{
+        padding-left: 43px;
+    }
+    .userZip{
+        padding-left: 15px;
+    }
+    .userCountry{
+        background-color: white;
+        padding-left: 80px;
+    }
+}
+@media screen and (max-width: 1085px){
+    #user{
+        padding-left: 173px;
+    }
+    .online{
+        padding-left: 114px;
+    }
+    .blockLine{
+        font-size: 13px;
+    }
+    /*#block1, #block2{*/
+        /*height: 140px;*/
+    /*}*/
+    .userP{
+        padding-bottom: 10px;
+    }
+    .user2{
+        padding-left: 0px;
+    }
+    .body1, #block2{
+        height: 170px;
+    }
+    #panel1{
+
+        width: 610px;
+    }
+    #new{
+        padding-bottom: 5px;
+    }
+
+}
+@media screen and (max-width: 1066px){
+    .userName1{
+        background-color: white;
+        padding-left: 87px;
+    }
+    .userAdr2{
+        padding-left: 42px;
+    }
+    .userZip{
+        padding-left: 12px;
+    }
+    .userCountry{
+        background-color: white;
+        padding-left: 77px;
+    }
+}
+@media screen and (max-width: 949px){
+    /*#insurance{*/
+        /*width: 100%;*/
+        /*padding-left: 0;*/
+    /*}*/
+    .logotype, .campus, .name, .userName{
+        font-size: 18px;
+    }
+    .online{
+        font-size: 12px;
+    }
+    .user, .lang{
+        font-size: 16px;
+    }
+    /*#blockPanel{*/
+        /*!*width: 100%;*!*/
+        /*!*padding-left: 10px;*!*/
+        /*display: block;*/
+        /*margin-right: 0;*/
+    /*}*/
+    /*#panel1, #panel2{*/
+        /*margin-right: 0;*/
+        /*padding-right: 0;*/
+    /*}*/
+    .user:hover{
+        padding-top: 20px;
+    }
+    /*#block1{*/
+        /*width: 400px;*/
+       /*display: block;*/
+        /*height: 280px;*/
+        /*margin-bottom: 20px;*/
+    /*}*/
+    /*#block2 {*/
+        /*width: 400px;*/
+        /*height: 280px;*/
+        /*display: block;*/
+    /*}*/
+    /*#name4{*/
+        /*width: 400px;*/
+    /*}*/
+    /*.body1{*/
+        /*height: 550px;*/
+    /*}*/
+    /*.doc2, .doc3{*/
+        /*width: 400px;*/
+        /*margin-right: 0;*/
+        /*padding-right: 0;*/
+    /*}*/
+
+
+}
+@media screen and (max-width: 945px){
+    #panel{
+        margin-left: 5px;
+    }
+    /*#insurance{*/
+        /*width: 100%;*/
+        /*display: inline-block;*/
+        /*text-align: center;*/
+    /*}*/
+    /*.doc2, .doc3{*/
+        /*width: 1000px;*/
+        /*margin-right: 0;*/
+        /*padding-right: 0;*/
+    /*}*/
+
+    /*#panel1, #panel2{*/
+        /*!*width: 50%;*!*/
+        /*margin-right: 0;*/
+
+        /*padding-right: 0;*/
+    /*}*/
+    /*.user:hover{*/
+        /*padding-top: 20px;*/
+    /*}*/
+
+    /*#name4{*/
+        /*width: 400px;*/
+    /*}*/
+
+
+}
+@media screen and (max-width: 930px){
+    /*.body1 {*/
+        /*height: 650px;*/
+    /*}*/
+    #panel1{
+
+        width: 310px;
+    }
+
+    #panel{
+        width: 230px;
+    }
+    .doc2{
+
+        width: 310px;
+
+    }
+    #panel2{
+        margin-top: 150px;
+    }
+    .doc3{
+        /*margin-top: 60px;*/
+        width: 310px;
+
+    }
+    #name4{
+        width: 306px;
+        padding-top: 0;
+    }
+    #name3{
+        width: 305px;
+        padding-top: 0;
+    }
+    #blockPanel{
+        height: 1000px;
+        /*margin-top: 50px;*/
+        width: auto;
+        /*margin-top: 50px;*/
+        /*padding-left: 10px;*/
+        display: block;
+        margin-right: 0;
+        padding-right: 0;
+        /*padding-left: 0;*/
+        /*margin-left: 0;*/
+    }
+    #block1, #block2{
+        display: block;
+
+    }
+
+}
+@media screen and (max-width: 744px){
+    .user{
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+    .logotype, .campus, .name, .userName{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1111px){
+    .point{
+        font-size: 14px;
+    }
+    .menu2{
+        width: 180px;
+    }
+    #setting{
+        width: 160px;
+    }
+    #setting:hover{
+        width: 157px;
+    }
+    .profile{
+        width: 180px;
+    }
+    #user{
+        padding-left: 135px;
+    }
+    .online{
+        padding-left: 95px;
+    }
+}
+@media screen and (max-width: 1055px){
+    #user{
+        padding-left: 90px;
+    }
+    .userData{
+        margin-left: 15px;
+    }
+    .online{
+        padding-left: 50px;
+    }
+    .profile{
+        display: block;
+        width: 140px;
+    }
+    .menu2{
+        width: 140px;
+    }
+    #setting{
+        width: 120px;
+    }
+    #setting:hover{
+        width: 117px;
+    }
+
+
+}
+@media screen and (max-width: 1005px){
+    .main-menu a{
+        font-size: 12px;
+    }
+    .main-menu .sub-menu{
+        font-size: 12px;
+    }
+    #panel1{
+
+        width: 550px;
+    }
+    .userName1{
+        background-color: white;
+        padding-left: 82px;
+    }
+     .userAdr2, .userAdr1{
+        padding-left: 40px;
+    }
+    .userZip{
+        padding-left: 14px;
+    }
+    .userCountry{
+        padding-left: 77px;
+    }
+
+}
+@media screen and (max-width: 690px){
+    /*#panel1{*/
+        /*text-align: center;*/
+        /*width: 510px;*/
+    /*}*/
+
+    #panel{
+        width: 85%;
+        text-align: left;
+    }
+    .main-menu{
+        padding-left: 30px;
+    }
+    #blockPanel{
+        margin-top: 50px;
+    }
+    #ppo{
+        text-align: left;
+    }
+    .doc2{
+
+        width: 98%;
+
+    }
+    #panel2{
+        margin-top: 150px;
+    }
+    .doc3{
+        /*margin-top: 60px;*/
+        width: 98%;
+
+    }
+    #setting{
+        margin-top: 1200px;
+    }
+    #name2, #name1{
+        padding-left: 15px;
+        text-align: left;
+    }
+    #name4{
+        width: 100%;
+        text-align: left;
+        padding-left: 15px;
+        padding-top: 0;
+    }
+    #name3{
+        text-align: left;
+        width: 100%;
+        padding-top: 0;
+    }
+    #insurance{
+        text-align: center;
+        display: block;
+    }
+
+    .userName1{
+        background-color: white;
+        padding-left: 82px;
+    }
+    .userAdr2, .userAdr1{
+        padding-left: 40px;
+    }
+    .userZip{
+        padding-left: 14px;
+    }
+    .userCountry{
+        padding-left: 77px;
+    }
+
+}
+@media screen and (max-width: 488px){
+    #panel2{
+        margin-top: 190px;
+    }
+    .main-menu a {
+        display: block;
+        /*margin-bottom: -1px;*/
+
+        padding: 4px 10px 4px 5px;
+        margin-right: -5px;
+        margin-left: -35px;
+
+    }
+    .main-menu .sub-menu {
+
+        padding-left: 5px;
+
+    }
+    #name4,#name3, #name1, #name2{
+
+        padding-left: 5px;
+
+    }
+}
+@media screen and (max-width: 493px){
+    /*#user{*/
+        /*padding-left: 90px;*/
+    /*}*/
+    /*.online{*/
+        /*padding-left: 45px;*/
+        /*font-size: 10px;*/
+    /*}*/
+    /*.logotype, .campus, .name, .userName, .fa-bars{*/
+        /*font-size: 16px;*/
+    /*}*/
+    .user, .lang{
+        font-size: 14px;
+    }
+     .lang{
+        padding-right: 5px;
+    }
+
+}
+@media screen and (max-width: 679px){
+    .logo{
+        /*padding-bottom: 50px;*/
+        height: 80px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 469px){
+    #user{
+        padding-left: 65px;
+    }
+    .online{
+        padding-left: 30px;
+
+    }
+
+
+}
+@media screen and (max-width: 438px){
+    .userName1{
+        background-color: white;
+        padding-left: 79px;
+    }
+    .userAdr2, .userAdr1{
+        padding-left: 40px;
+    }
+    .userZip{
+        padding-left: 9px;
+    }
+    .userCountry{
+        padding-left: 72px;
+    }
+    .header1, .header2{
+        font-size: 14px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+@media screen and (max-width: 416px){
+    .userName1{
+        background-color: white;
+        padding-left: 75px;
+    }
+    .userAdr2, .userAdr1{
+        padding-left: 40px;
+    }
+    .userZip{
+        padding-left: 5px;
+    }
+    .userCountry{
+        padding-left: 70px;
+    }
+}
+@media screen and (max-width: 429px){
+    #user{
+        padding-left: 35px;
+    }
+    .online{
+        padding-left: 10px;
+
+    }
+    .logotype, .campus, .name, .userName, .fa-bars{
+        font-size: 15px;
+    }
+    .user {
+        padding-right: 8px;
+        padding-left: 8px;
+
+    }
+    #name4,#name3, #name1, #name2{
+
+        padding-left: 0;
+
+    }
+}
+@media screen and (max-width: 407px){
+    .userName1{
+        background-color: white;
+        padding-left: 70px;
+        float: right;
+    }
+    .userAdr2, .userAdr1{
+        padding-left: 40px;
+        float: right;
+    }
+    .userZip{
+        padding-left: 2px;
+        float: right;
+
+    }
+    .userCountry{
+        float: right;
+        padding-left: 62px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .logo{
+
+
+    }
+
+    .head{
+        float: bottom;
+
+    }
+    .logotype, .fa-bars{
+
+        padding-left: 5px;
+    }
+    ul li{
+
+        padding-left: 10px;
+    }
+    .profile{
+        display: block;
+        width: 125px;
+    }
+    .menu2{
+        width: 125px;
+    }
+    #setting{
+        width: 105px;
+    }
+    #setting:hover{
+        width: 102px;
+    }
+    .point{
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width: 358px) {
+    #panel2{
+        margin-top: 220px;
+    }
+    #blockPanel{
+        height: 1100px;
+        /*margin-top: 50px;*/
+        width: 90%;
+        /*margin-top: 50px;*/
+        /*padding-left: 10px;*/
+        display: block;
+        margin-right: 0;
+        padding-right: 0;
+        /*padding-left: 0;*/
+        /*margin-left: 0;*/
+    }
+    .main-menu a {
+        display: block;
+        /*margin-bottom: -1px;*/
+
+        padding: 4px 0;
+        margin-right:0;
+        margin-left: -25px;
+
+    }
+    .main-menu .sub-menu {
+
+        padding-left: 0;
+
+    }
+    .profile{
+        display: block;
+        width: 110px;
+    }
+    .menu2{
+        width: 110px;
+    }
+    #setting{
+        width: 90px;
+    }
+    #setting:hover{
+        width: 87px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .logo{
+        padding-bottom: 30px;
+    }
+    .head{
+
+        float: right;
+        padding-left: 5px;
+        margin-top: 5px;
+
+    }
+    .user{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    #user{
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .userName1{
+        background-color: white;
+        padding-left: 15px;
+        float: right;
+    }
+    .userAdr2, .userAdr1{
+        padding-left: 0;
+        float: right;
+    }
+    .userZip{
+        padding-left: 5px;
+        float: right;
+
+    }
+    .userCountry{
+        float: right;
+        padding-left: 0;
+    }
+}
