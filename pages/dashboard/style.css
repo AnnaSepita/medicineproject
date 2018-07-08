@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     background-color: #eaf2f4;
+    /*-webkit-appearance: none;*/
+    /*-moz-appearance: none;*/
     /*background: #eaf2f4;*/
 }
 ul {
@@ -45,17 +47,17 @@ ul li{
 ::-webkit-scrollbar{
     width: 11px;
 }
-.panel-body{
-    background-color: white;
-}
+
 .logotype, .online, .campus, .circle, .name, .lock, .head, .fa-lock, .img-circle, .fa-bars, .menu, #user, .user, .lang, .fa-caret-down, .profile, .imgProfile, .userData, .userName, .menu2,.point, .fa-home, .fa-cog, .fa-th,.fa-user-alt, .fa-comment-alt, .fa-file-alt, .fa-shield-alt{
     background-color: inherit;
 }
 #dashboard{
+
+    margin-left: 210px;
     padding-left: 51px;
     font-family: 'Roboto', sans-serif;
     background-color: #eaf2f4;
-    padding-bottom: 50px;
+    /*padding-bottom: 50px;*/
     padding-top: 17px;
     width: 100%;
     height: 100%;
@@ -63,23 +65,37 @@ ul li{
 option{
     height: 50px;
 }
+#eng{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background-color: inherit;
+}
+#eng:hover{
+    cursor: pointer;
+}
 #form-control{
     color: white;
     border-radius: 0;
     border: 1px solid #3fcbff;
     background-color: #3fcbff;
     width: 700px;
-    height: auto;
+    height: 28px;
     padding-top: 8px;
     font-size: 11px;
     padding-left: 11px;
     padding-bottom: 6px;
 }
-#blockMiddle, #blockTop, #blockBottom{
+#blockMiddle, #blockBottom{
     display: block;
 }
 #blockTop{
-    margin-top: -4px;
+    margin-top: -2px;
+}
+
+#blockMiddle{
+    margin-top: 19px;
+
 }
 #card{
     position: relative;
@@ -94,71 +110,84 @@ option{
     padding-top: 20px;
 }
 .panel-middle{
+    box-shadow: 0px 3px 1px #dee6e8;
+    background-color: white;
     width: 700px;
-    height: 193px;
+    height: 190px;
 }
 #label, #label2{
     display: flex;
 }
 
 .panel-default{
-    width: 250px;
+
+    box-shadow: 0px 3px 1px #dee6e8;
+    width: 247px;
     /*display: table-cell;*/
     padding-top: 7px;
+    margin-top: 5px;
     padding-left: 15px;
     position: relative;
     margin-right: 20px;
-    height: 90px;
+    background-color: white;
+    height: 87px;
 }
-/*.panel + .panel-default{*/
-/*margin-right: 20px;*/
-/**/
-/*}*/
+
 .middle{
     background-color: inherit;
     height: 31px;
-    padding-top: -5px;
-    margin-left: 10px;
+    /*padding-top: 10px;*/
+    margin-left: 27px;
 }
 #ell{
+    /*margin-top: 3px;*/
     background-color: inherit;
 }
 .heading, .heading1{
-     /*position: relative;*/
-     color: white;
-     border-radius: 0;
-     border: 1px solid #3fcbff;
-     background-color: #3fcbff;
-     height: 32px;
-     padding-top: 3px;
-     padding-left: 16px;
-     margin-top: -2px;
-     /*padding-bottom: -15px;*/
-     /*padding-bottom: 5px;*/
-     /*padding-top: 2px;*/
-     font-size: 18px;
- }
-
-.heading2{
-    width: 338px;
     /*position: relative;*/
     color: white;
     border-radius: 0;
     border: 1px solid #3fcbff;
     background-color: #3fcbff;
-    height: 32px;
-    padding-top: 3px;
-    padding-left: 16px;
-    margin-top: -20px;
+    height: 30px;
+    font-size: 18px;
+    /*padding-top: 5px;*/
+    /*width: 338px;*/
+}
+tr, td {
+    background-color: inherit;
+}
+.heading2{
+    width: 340px;
+    /*position: relative;*/
+    color: white;
+    border-radius: 0;
+    border: 1px solid #3fcbff;
+    background-color: #3fcbff;
+    height: 30px;
+    /*padding-top: 3px;*/
+    padding-left: 19px;
+    /*padding-bottom: 5px;*/
+    /*margin-top: -18px;*/
     /*padding-bottom: -15px;*/
     /*padding-bottom: 5px;*/
     /*padding-top: 2px;*/
     font-size: 18px;
 }
 .panel-inline{
+    box-shadow: 0px 3px 1px #dee6e8;
+    background-color: white;
     width: 338px;
     height: 190px;
     margin-right: 25px;
+}
+table{
+    background-color: white;
+    width: 338px;
+    height: 190px;
+}
+tr, td{
+    background-color: white;
 }
 .img-rounded{
 
@@ -166,15 +195,26 @@ option{
 #ellips, #balance1{
     background-color: inherit;
 }
+#balance1{
+    padding-top: 2px;
+    padding-left: 18px;
+}
+#name{
+    padding-left: 17px;
+    padding-top: 5px;
+}
 #ellips{
-    padding-left: 10px;
+    padding-left: 17px;
+    padding-right: 5px;
+}
+.ellips{
+    padding-top: 5px;
 }
 .fa-ellipsis-v{
     background-color: inherit;
     float: right;
-    margin-top: 4px;
+    /*padding-top: 5px;*/
     padding-right: 5px;
-
 }
 #balance{
     background-color: inherit;
@@ -183,7 +223,10 @@ option{
 .fa-ellipsis-v{
     background-color: inherit;
 }
-  #total2{
+#balance, #total, #total1, #total2{
+    padding-top: 3px;
+}
+#total2{
     background-color: inherit;
     text-align:center ;
     font-size: 14px;
@@ -192,22 +235,41 @@ option{
 }
 #total1{
     background-color: inherit;
-    text-align:center ;
+    text-align:center;
     font-size: 14px;
-    padding-left: 35px;
+    padding-left: 20px;
+
 
 }
+
 #total{
     background-color: inherit;
     text-align:center ;
     font-size: 14px;
     padding-left: 40px;
+    padding-right: 6px;
 }
-#total4,#total3{
+#total4{
     background-color: inherit;
     text-align:center ;
     font-size: 14px;
-    margin-left: 50px;
+    padding-left: 53px;
+    padding-top: 2px;
+    /*margin-left: 50px;*/
+}
+#el{
+    background-color: inherit;
+    padding-left: 25px;
+    padding-right: 2px;
+    margin-top: -3px;
+}
+#total3{
+    padding-top: 2px;
+    background-color: inherit;
+    text-align:center ;
+    font-size: 14px;
+    padding-left: 60px;
+    /*margin-left: 50px;*/
 }
 .panel21{
     font-size: 18px;
@@ -217,21 +279,43 @@ option{
 }
 .account5{
     background-color: inherit;
-    text-align:center ;
+    text-align:right ;
     font-size: 18px;
-    margin-left: 78px;
+    padding-top: 8px;
+    /*padding-left: 20px;*/
 }
 .account6{
     background-color: inherit;
-    text-align:center ;
+    text-align:right;
     font-size: 18px;
-    margin-left: 50px;
+    padding-top: 8px;
+    /*margin-left: 50px;*/
 }
 .account7{
     background-color: inherit;
-    text-align:center ;
+    text-align:right ;
     font-size: 18px;
-    margin-left: 92px;
+    /*padding-top: 8px;*/
+    /*margin-left: 92px;*/
+}
+.circle1{
+
+    background-color: #00ff00;
+    border-radius: 8px;
+    font-size: 7px;
+    color: white;
+
+    /*text-align: center;*/
+}
+.circle2{
+
+    background-color: #00ff00;
+    border-radius: 8px;
+    font-size: 7px;
+    color:  #00ff00;
+    margin-left: 3px;
+
+    /*text-align: center;*/
 }
 #line6{
     background-color: white;
@@ -240,38 +324,56 @@ option{
     text-decoration: none;
     color:#b4b7bb;
 }
-.menu2 a:hover{
+.menu2 a:hover, .menu2 a:focus{
     text-decoration: none;
     color:white;
     background-color: #495c6e;
 }
 .account8{
     background-color: inherit;
-    text-align:center ;
+    text-align:right ;
     font-size: 18px;
-    margin-left: 60px;
+    /*padding-top: 8px;*/
+    /*margin-left: 60px;*/
+}
+select{
+    border: none;
+    height: 20px;
+    background-color: inherit;
+}
+select:hover, select:focus{
+    border: 1px solid inherit;
+    cursor: pointer;
 }
 .account9{
     background-color: inherit;
-    text-align:center ;
+    text-align:right ;
     font-size: 18px;
-    margin-left: 67px;
+    padding-top: 8px;
+    /*margin-left: 67px;*/
+}
+#leftMenu{
+    position: absolute;
+    display: block;
+
 }
 #blockReferredBy, #blockDiagnoses{
-    display: flex;
+    display: inline-flex;
+    display: -webkit-inline-flex;
 }
 .account10{
     background-color: inherit;
-    text-align:center ;
+    text-align:right ;
     font-size: 18px;
-    margin-left: 47px;
+    padding-top: 8px;
+    /*margin-left: 47px;*/
 }
 td{
     padding-right: 37px;
     text-align: center;
 }
 /*tr{*/
-    /*margin-top: 50px;*/
+/*margin-top: 50px;*/
 /*}*/
 #line{
     /*padding-top: 50px;*/
@@ -282,37 +384,57 @@ td{
 
 
 #line3{
-    background-color: inherit;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    background-color: white;
+    /*margin-top: 15px;*/
+    /*margin-top: 5px;*/
+    /*margin-bottom: 20px;*/
 }
 #line5, #account5, #account6, #account7{
     background-color: inherit;
 }
+
+#account5{
+    text-align: left;
+    padding-left: 20px;
+    /*padding-left: -5px;*/
+    padding-top: 5px;
+}
+#account6{
+    padding-left: 20px;
+    text-align: left;
+    padding-top: 0px;
+}
+#account7{
+    padding-left: 20px;
+    text-align: left;
+    padding-top: 0px;
+}
 #line2, #line4{
     background-color: white;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
 }
 .panel-body{
+    height: 200px;
+    /*margin-bottom: 50px;*/
     background-color: white;
 }
 #account{
     background-color: white;
     font-size: 14px;
 
-    padding-left: 5px;
-    padding-top: 20px;
+    padding-left: 8px;
+    padding-top: 5px;
 }
 #account2{
     background-color: white;
     font-size: 14px;
 
     padding-left: 15px;
-    padding-top: 28px;
+    padding-top: 0;
 }
 #account1{
 
-    padding-top: 28px;
+    padding-top: 0px;
     background-color: white;
     font-size: 14px;
 }
@@ -322,43 +444,45 @@ td{
     text-align:right ;
     font-size: 18px;
     /*margin-left: 25px;*/
-    padding-top: 17px;
+    /*padding-top: 0;*/
     /*margin-left: 26px;*/
 }
 .account1{
     background-color: white;
     text-align:right ;
     font-size: 18px;
-    padding-top: 17px;
+    padding-top: 0;
     /*margin-left: 35px;*/
 }
 .account4{
     background-color: white;
-    padding-top: 17px;
+    padding-top: 0;
     /*margin-left: 15px;*/
     text-align:right ;
     font-size: 18px;
 }
 #blockBalance{
     display: flex;
+    display: -webkit-flex;
 }
 .account3{
     background-color: white;
     text-align:right ;
     font-size: 18px;
-    padding-top: 17px;
+    padding-top: 0;
     /*margin-left: 29px;*/
 }
 .account2{
     background-color: inherit;
     text-align:right ;
     font-size: 18px;
-    padding-top: 21px;
+    padding-top: 0;
     /*margin-left: 35px;*/
 
 
 }
 .img{
+
     background-color: white;
     background-image: url(../../img/avatar.jpg) ;
 
@@ -368,12 +492,14 @@ td{
 }
 .fa-edit{
     float: right;
-    background-color: inherit;
-    padding-top: 5px;
+    color:#d0d0d0;
+    background-color: white;
+    /*padding-top: 5px;*/
     margin-left: 34px;
     font-size: 10px;
 }
 .fa-size{
+    background-color: white;
     /*margin-top: 0px;*/
     /*margin-top: 0;*/
     /*padding-right: 8px;*/
@@ -393,16 +519,18 @@ td{
     color:#868686;
 }
 .summ{
+    /*display: inline-block;*/
     font-size: 11px;
+    padding-top: 19px;
     padding-left: 10px;
-    padding-top: -5px;
+
 }
 .btn-group{
     display: inline-block;
 }
 #block{
     background-color: #eaf2f4;
-    margin-top: 30px;
+    margin-top: 29px;
     display: flex;
 }
 .panel1{
@@ -411,29 +539,27 @@ td{
     padding-left: 30px;
     display: flex;
 }
+.infoData{
+
+    font-size: 18px;
+}
 /*.panel2{*/
 /*margin-top: 2px;*/
 /*margin-left: 13px;*/
 /*display: block;*/
 /*}*/
-.panel11{
-    background-color: white;
-    /*margin-bottom: 20px;*/
-    /*padding-top: 13px;*/
 
-    /*margin-left: 60px;*/
-}
 
 li{
     color: #3fcbff;
-    font-size: 18px;
+    /*font-size: 18px;*/
     -moz-text-decoration-color: #3fcbff;
     text-decoration-color:#3fcbff ;
     -webkit-text-decoration-color:#3fcbff ;
 }
 .refered{
     background-color: inherit;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
 }
 @font-face {
@@ -447,9 +573,14 @@ li{
 
 .img-circle{
     padding-left: 15px;
+    padding-right: 8px;
 }
 .circle{
-    padding-right: 10px;
+    padding-right: 5px;
+    height: 25px;
+}
+.imgProfile{
+    height: 50px;
 }
 #insurance, #document{
     width: 100%;
@@ -461,12 +592,10 @@ li{
 }
 .userName{
     font-size: 22px;
+    margin: 0;
     /*display: block;*/
 }
-.img-circle{
-    height: 40px;
 
-}
 div,p,span, ul,li{
     font-family: 'Roboto', sans-serif;
 }
@@ -498,12 +627,16 @@ div,p,span, ul,li{
     display: flex;
 }
 .menu2{
+    /*font-size: 14px;*/
+
     display: inline-block;
     padding-top: 12px;
     background-color: #3d4a5d;
     width: 210px;
     color: #c2c3c6;
-    height: 1000px;
+    height: 100%;
+    min-height: 1240px;
+    bottom: 0;
     padding-bottom: 0;
 }
 .name{
@@ -517,7 +650,7 @@ div,p,span, ul,li{
     padding-left: 40px;
 }
 .campus{
-    padding-right: 12px;
+    padding-right: 0;
     font-size: 21px;
 
 }
@@ -527,12 +660,16 @@ div,p,span, ul,li{
 
 .lang{
     float: right;
-    padding-right: 15px;
+    height: inherit;
+    padding-right: 20px;
 }
 #main{
+    position: absolute;
+    /*position: fixed;*/
     display: flex;
     height: auto;
 }
+
 .menu3{
     height: auto;
     margin-top: 30px;
@@ -542,13 +679,14 @@ div,p,span, ul,li{
     background-color:#3fcbff;
     color: white;
     width: 210px;
+    height: auto;
     text-align: left;
-    padding-top: 35px;
-    padding-bottom: 10px;
+    padding-top: 33px;
+    padding-bottom: 20px;
 
 }
 .userData{
-    display: block;
+    /*display: block;*/
 }
 .setting{
 
@@ -568,7 +706,7 @@ div,p,span, ul,li{
 
     width: 190px;
 }
-#setting:hover{
+#setting:hover, #setting:focus{
     width: 187px;
 }
 #user{
@@ -577,7 +715,7 @@ div,p,span, ul,li{
 
 }
 .online{
-    padding-left: 127px;
+    padding-left: 105px;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
@@ -603,9 +741,10 @@ li{
 
     list-style-type: disc;
     font-size: 30px;
+    padding-top: 2px;
     text-decoration: none;
 }
-.fa-home, .fa-th, .fa-user-alt, .fa-shield-alt, .fa-file-alt, .fa-comment-alt, .fa-cog{
+.fa-home, .fa-user-alt, .fa-shield-alt, .fa-file-alt, .fa-comment-alt, .fa-cog{
     color:#415b75;
 }
 .fas .fa-file-alt{
@@ -618,7 +757,8 @@ li{
 }
 
 .user:hover{
-    box-shadow: 0px -7px 10px -11px #000000;
+    box-shadow: inset 0px 5px 10px -7px #000000;
+    filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=10);
     background-color:#3fcbff;
     -webkit-transition: .2s ease-out;
     -webkit-transition-delay: 0.3s;
@@ -628,7 +768,7 @@ li{
     -moz-transition-delay: 0.5s;
     transition: .2s ease-out;
     transition-delay: 0.1s;
-    padding-top: 14px;
+    padding-top: 11px;
     padding-bottom:     10px;
     cursor: pointer;
     animation-direction: alternate-reverse;
@@ -636,12 +776,23 @@ li{
 }
 
 .point{
-    padding-top: 5px;
-    padding-bottom: 15px;
+    padding-top: 6px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 6px;
     color: #b4b7bb;
     font-size: 16px;
 }
-.point:hover {
+.fa-th{
+    color:#a4aeb7;
+}
+#dashboardMenu{
+    color:#f5f5f7;
+    background-color:#495c6e ;
+    cursor: pointer;
+    border-left: 2px solid #3fcbff;
+}
+.point:hover{
     color:#f5f5f7;
     background-color:#495c6e ;
     cursor: pointer;
@@ -724,15 +875,15 @@ li{
         margin-right: 5px;
     }
     /*#block, .panel-inline{*/
-        /*display: block;*/
+    /*display: block;*/
     /*}*/
     /*#blockBalance{*/
-        /*display: flex;*/
+    /*display: flex;*/
     /*}*/
 }
 @media screen and (max-width: 1247px){
     #blockInfo{
-        width: 700px;
+        width: 338px;
         background-color: white;
 
     }
@@ -751,23 +902,25 @@ li{
         /*display: flex;*/
     }
     .heading{
-        width: 700px;
+        width: 338px;
         background-color: #3fcbff;
     }
     #form-control,.panel-middle{
         width: 700px;
     }
     .panel-default{
+        width: 240px;
         margin-right: 40px;
     }
     #dashboard {
         padding-left: 51px;
     }
     #block, .panel-inline{
-    display: block;
+        display: block;
     }
     #blockBalance{
-    display: flex;
+        display: flex;
+        margin-top: 25px;
     }
     .panel-inline{
 
@@ -778,6 +931,7 @@ li{
     }
     #blockReferredBy, #blockDiagnoses{
         display: block;
+        width: 540px;
     }
 }
 @media screen and (max-width: 1150px){
@@ -791,7 +945,29 @@ li{
         font-size: 18px;
     }
 }
-
+@media screen and (max-width: 1111px){
+    .point{
+        font-size: 14px;
+    }
+    .menu2{
+        width: 180px;
+    }
+    #setting{
+        width: 160px;
+    }
+    #setting:hover{
+        width: 157px;
+    }
+    .profile{
+        width: 180px;
+    }
+    #user{
+        padding-left: 135px;
+    }
+    .online{
+        padding-left: 95px;
+    }
+}
 @media screen and (max-width: 1083px){
     #user{
         padding-left: 173px;
@@ -800,14 +976,44 @@ li{
         padding-left: 114px;
     }
 }
+@media screen and (max-width: 1055px){
+    #user{
+        padding-left: 90px;
+    }
+    .userData{
+        margin-left: 15px;
+    }
+    .online{
+        padding-left: 50px;
+    }
+    .profile{
+        display: block;
+        width: 140px;
+        height: 135px;
+    }
+    .menu2{
+        width: 140px;
+    }
+    #setting{
+        width: 120px;
+    }
+    #setting:hover{
+        width: 117px;
+    }
+    #dashboard{
+        margin-left: 140px;
+    }
+
+
+}
 @media screen and (max-width: 986px){
     #blockInfo{
-        width: 680px;
+        width: 338px;
         background-color: white;
 
     }
     .heading{
-        width: 680px;
+        width: 338px;
         background-color: #3fcbff;
     }
     #form-control,.panel-middle{
@@ -834,6 +1040,7 @@ li{
     }
     #blockReferredBy, #blockDiagnoses{
         display: block;
+        width: 500px;
     }
 }
 @media screen and (max-width: 949px){
@@ -855,6 +1062,9 @@ li{
     #dashboard {
         padding-left: 10px;
     }
+    .lang{
+        padding-top: 5px;
+    }
 }
 
 @media screen and (max-width: 744px){
@@ -867,33 +1077,62 @@ li{
     }
 }
 @media screen and (max-width: 905px){
-    .point{
-        font-size: 14px;
+    #dashboard {
+
+        margin-left: 150px;
     }
-    .menu2{
-        width: 180px;
-    }
-    #setting{
-        width: 160px;
-    }
-    #setting:hover{
-        width: 157px;
-    }
-    .profile{
-        width: 180px;
-    }
-    #user{
-        padding-left: 135px;
-    }
-    .online{
-        padding-left: 95px;
-    }
+    /*.point{*/
+        /*font-size: 14px;*/
+    /*}*/
+    /*.menu2{*/
+        /*width: 180px;*/
+    /*}*/
+    /*#setting{*/
+        /*width: 160px;*/
+    /*}*/
+    /*#setting:hover{*/
+        /*width: 157px;*/
+    /*}*/
+    /*.profile{*/
+        /*width: 180px;*/
+    /*}*/
+    /*#user{*/
+        /*padding-left: 135px;*/
+    /*}*/
+    /*.online{*/
+        /*padding-left: 95px;*/
+    /*}*/
 }
 @media screen and (max-width: 875px){
-    #blockInfo, .heading{
-        width: 338px;
+    .refered{
+        background-color: inherit;
+        font-size: 14px;
+    }
+    .title{
+        font-size: 12px;
+    }
+    #blockInfo{
+        width: 450px;
         background-color: white;
 
+    }
+
+    .heading, #name{
+        width: 450px;
+    }
+    #dashboard{
+        padding-top: 10px;
+    }
+    .menu2{
+        height: 100%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        bottom: 0;
+
+    }
+    .fa-edit{
+
+        margin-left: 164px;
     }
     #setting {
         /*position: relative;*/
@@ -902,17 +1141,32 @@ li{
         margin-top: 900px;
     }
     #blockBalance{
+        width: 450px;
+
         display: block;
+        margin-top: 0;
     }
-    .heading{
-        width: 338px;
+    #total, #total1, #total2{
+        padding-left: 73px;
+        /*padding-right: 15%;*/
+    }
+    #total3, #total4{
+        padding-left: 138px;
+    }
+    .heading, .heading2{
+        width: 470px;
         background-color: #3fcbff;
     }
     #form-control,.panel-middle{
-        width: 85%;
+        width: 450px;
     }
     #dashboard {
-        padding-left: 30px;
+        padding-left: 25px;
+    }
+    .panel-inline{
+        width: 100%;
+
+        margin-top: 25px;
     }
 }
 @media screen and (max-width: 789px){
@@ -923,25 +1177,121 @@ li{
 @media screen and (max-width: 729px){
     #dashboard {
         padding-left: 10px;
-    }
-}
-@media screen and (max-width: 709px){
-    .panel-default {
-        width: 220px;
-    }
-    #form-control,.panel-middle{
-          width: 90%;
-      }
-}
-@media screen and (max-width: 679px){
-    .logo{
-        /*padding-bottom: 50px;*/
-        height: 80px;
-        text-align: center;
+        /*margin-left: 170px;*/
     }
 
 }
-@media screen and (max-width: 649px){
+@media screen and (max-width: 679px) {
+    /*.logo {*/
+        /*!*padding-bottom: 50px;*!*/
+        /*height: 80px;*/
+        /*text-align: center;*/
+    /*}*/
+
+    .point {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 669px){
+    #dashboard {
+        padding-left: 10px;
+        margin-left: 140px;
+    }
+
+}
+@media screen and (max-width: 655px){
+    #blockReferredBy, #blockDiagnoses{
+        display: block;
+        width: 450px;
+    }
+}
+@media screen and (max-width: 610px){
+    .refered{
+
+        font-size: 14px;
+    }
+    .title{
+        font-size: 12px;
+    }
+    /*.panel-default {*/
+        /*width: 220px;*/
+    /*}*/
+    #blockInfo, .heading, #name{
+        width: 410px;
+    }
+    #dashboard{
+        padding-top: 10px;
+    }
+    .fa-edit{
+
+        margin-left: 104px;
+    }
+    #setting {
+        /*position: relative;*/
+        /*left: 0;*/
+        /*bottom: 0;*/
+        margin-top: 900px;
+    }
+    #blockBalance{
+        width: 410px;
+        display: block;
+        margin-top: 0;
+    }
+    #total, #total1, #total2{
+        padding-left: 60px;
+        /*padding-right: 15%;*/
+    }
+    #total3, #total4{
+        padding-left: 118px;
+    }
+    .heading, .heading2{
+        width: 410px;
+        background-color: #3fcbff;
+    }
+    #form-control,.panel-middle{
+        width: 410px;
+    }
+    #dashboard {
+        padding-left: 30px;
+    }
+    .panel-inline{
+        width: 410px;
+
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width: 605px){
+    #blockReferredBy, #blockDiagnoses{
+        display: block;
+        width: 430px;
+    }
+}
+@media screen and (max-width: 584px){
+    #blockReferredBy, #blockDiagnoses{
+        display: block;
+        width: 400px;
+    }
+}
+@media screen and (max-width: 569px){
+    #blockReferredBy, #blockDiagnoses{
+        display: block;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 679px){
+    .logo{
+        /*padding-bottom: 50px;*/
+        /*height: 80px;*/
+        text-align: center;
+    }
+    #dashboard {
+        padding-left: 15px;
+    }
+
+}
+
+@media screen and (max-width: 669px){
     #user{
         padding-left: 90px;
     }
@@ -951,6 +1301,7 @@ li{
     .profile{
         display: block;
         width: 140px;
+        height: 135px;
     }
     .userData{
         margin-left: 15px;
@@ -968,16 +1319,59 @@ li{
 
 }
 @media screen and (max-width: 609px){
-    .panel-default {
-        width: 200px;
+
+    .refered{
+        background-color: inherit;
+        font-size: 14px;
+    }
+    .title{
+        font-size: 12px;
     }
 }
-@media screen and (max-width: 569px){
+@media screen and (max-width: 579px){
+    #dashboard{
+        padding-left: 5px;
+        /*margin-left: 130px;*/
+    }
+
+    .account{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    .account3{
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    #account1{
+        margin-right: 14px;
+    }
+    .account1{
+
+        font-size: 16px;
+        margin-left: 21px;
+    }
+    .account2{
+
+        font-size: 16px;
+        margin-left: 19px;
+        margin-right: 5px;
+    }
+    .account4{
+        margin-left: 0;
+
+        font-size: 16px;
+    }
+    .account5, .account6, .account7, .account8, .account9, .account10{
+        font-size: 14px;
+    }
+    .infoData{
+        font-size: 16px;
+    }
     #label, #label2{
         display: block;
     }
     .panel-default {
-        width: 250px;
+        width: 230px;
     }
     #setting {
         /*position: relative;*/
@@ -985,8 +1379,58 @@ li{
         /*bottom: 0;*/
         margin-top: 1000px;
     }
+
+
+    #blockInfo, .heading, #name{
+        width: 338px;
+    }
+    #dashboard{
+        padding-top: 10px;
+    }
+    .fa-edit{
+
+        margin-left: 45px;
+    }
+    #setting {
+        /*position: relative;*/
+        /*left: 0;*/
+        /*bottom: 0;*/
+        margin-top: 900px;
+    }
+    #blockBalance{
+        width: 338px;
+        display: block;
+        margin-top: 0;
+    }
+    #total, #total1, #total2{
+        padding-left: 26.7px;
+        /*padding-right: 15%;*/
+    }
+    #total3, #total4{
+        padding-left: 57.3px;
+    }
+    .heading, .heading2{
+        width: 338px;
+        background-color: #3fcbff;
+    }
+    #form-control,.panel-middle{
+        width: 350px;
+    }
+    #dashboard {
+        padding-left: 30px;
+    }
+    .panel-inline{
+        width: 338px;
+        margin-top: 25px;
+    }
+
 }
-@media screen and (max-width: 493px){
+@media screen and (max-width: 522px){
+    #dashboard{
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 522px){
     #user{
         padding-left: 90px;
     }
@@ -1003,19 +1447,94 @@ li{
     .fa-lock, .lang{
         padding-right: 5px;
     }
-    .refered{
-        background-color: inherit;
-        font-size: 15px;
+
+}
+@media screen and (max-width: 503px){
+    #dashboard{
+        padding-left: 5px;
     }
-    .title{
-        font-size: 13px;
+}
+@media screen and (max-width: 497px){
+    #dashboard{
+        padding-left: 10px;
     }
+    #blockInfo, .heading, #name{
+        width: 270px;
+    }
+    .panel1 {
+
+        padding-left: 10px;
+    }
+    .fa-edit{
+
+        margin-left: 0;
+        padding-right: 5px;
+    }
+    #setting {
+        /*position: relative;*/
+        /*left: 0;*/
+        /*bottom: 0;*/
+        margin-top: 900px;
+    }
+    #blockBalance{
+        width: 270px;
+        display: block;
+        margin-top: 0;
+    }
+    table{
+        width: 270px;
+    }
+    #total, #total1, #total2{
+        padding-left: 2px;
+        /*padding-right: 15%;*/
+    }
+    #total3, #total4{
+        padding-left: 23.4px;
+    }
+    .heading, .heading2{
+        width: 270px;
+        background-color: #3fcbff;
+    }
+    #form-control,.panel-middle{
+        width: 270px;
+    }
+    .panel-inline{
+        width: 270px;
+
+        margin-top: 25px;
+    }
+    #user{
+        padding-left: 70px;
+    }
+    /*.lang{*/
+    /*float: none;*/
+    /*}*/
+}
+@media screen and (max-width: 493px){
+
+    .online{
+        padding-left: 45px;
+        font-size: 10px;
+    }
+    .logotype, .campus, .name, .userName, .fa-bars{
+        font-size: 16px;
+    }
+    .user, .lang{
+        font-size: 14px;
+    }
+    .fa-lock, .lang{
+        padding-right: 5px;
+    }
+
 
     .panel-default{
         height: 85px;
     }
     #form-control,.panel-middle{
-        width: 99%;
+        width: 270px;
+    }
+    #dashboard{
+        margin-left: 120px;
     }
 
 }
@@ -1027,19 +1546,161 @@ li{
         padding-left: 30px;
 
     }
+    /*.panel11{*/
+    /*font-size: 14px;*/
+    /*}*/
 
 
 }
+
 @media screen and (max-width: 462px){
-    .panel-inline, #blockInfo, .heading{
-        width: 310px;
+    #dashboard{
+        margin-left: 110px;
     }
+    /*.panel-inline, #blockInfo, .heading{*/
+    /*width: 310px;*/
+    /*}*/
     #balance, #balance1{
         background-color: inherit;
         margin-left: 0;
     }
-    #total, #total1, #total2{
-        margin-left: 12px;
+
+    .panel1{
+        padding-left: 10px;
+    }
+
+    #total1{
+        padding-left: 6.6px;
+    }
+    #total{
+        padding-left: 6.6px;
+    }
+    #total2{
+
+        padding-left: 6.6px;
+
+    }
+    #total4, #total3 {
+        padding-left: 25.2px;
+    }
+    #ellips{
+        padding-left: 8px;
+    }
+    #el{
+        padding-left: 22px;
+    }
+
+}
+@media screen and (max-width: 457px){
+    #user{
+        padding-left: 35px;
+    }
+    .online{
+        padding-left: 10px;
+
+    }
+    .logotype, .campus, .name, .userName, .fa-bars{
+        font-size: 15px;
+    }
+
+    .user {
+        padding-right: 8px;
+        padding-left: 8px;
+
+    }
+}
+@media screen and (max-width: 448px){
+    .fa-lock{
+        background-color: inherit;
+        padding-right: 35px;
+    }
+    #user{
+        padding-left: 35px;
+    }
+    .online{
+        padding-left: 10px;
+
+    }
+    .logotype, .campus, .name, .userName, .fa-bars{
+        font-size: 15px;
+    }
+    .user {
+        padding-right: 8px;
+        padding-left: 8px;
+
+    }
+
+}
+@media screen and (max-width: 435px) {
+    .panel-inline, #blockInfo, .heading {
+        width: 270px;
+    }
+    #dashboard{
+        left: 50px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .panel1{
+        padding-left: 5px;
+
+    }
+    #info{
+        padding-left: 20px;
+        margin-left: 10px;
+    }
+    #balance, #balance1, .middle, .heading{
+        font-size: 16px;
+        padding-left: 5px;
+    }
+
+
+    #total1{
+        padding-left: 10px;
+    }
+    #total{
+        padding-left: 15px;
+    }
+    #total2{
+
+        padding-left: 5px;
+
+    }
+    #total4, #total3 {
+        padding-left: 30px;
+    }
+    #ellips{
+        padding-left: 18.5px;
+    }
+    #el{
+        padding-left: 35px;
+    }
+
+}
+@media screen and (max-width: 427px) {
+    .logo{
+        text-align: center;
+        padding-bottom: 38px;
+    }
+    /*#head{*/
+    /*text-align: center;*/
+    /*}*/
+    .head{
+        float: right;
+        padding-right: 5px;
+        margin-top: 5px;
+    }
+    .fa-lock{
+        padding-right: 35px;
+    }
+    .campus{
+        padding-left: 10px;
+    }
+    .user{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    #user{
+        padding-left: 10px;
     }
 }
 @media screen and (max-width: 429px){
@@ -1062,10 +1723,13 @@ li{
 /*@media screen and (max-width: 492px) {*/
 
 /*}*/
-@media screen and (max-width: 492px) {
+@media screen and (max-width: 494px) {
     .logo{
 
 
+    }
+    #dashboard{
+        margin-left: 130px;
     }
     #total4,#total3{
 
@@ -1099,36 +1763,7 @@ li{
     .point{
         font-size: 12px;
     }
-    .account{
-        font-size: 16px;
-        margin-left: 10px;
-    }
-    .account3{
-        font-size: 16px;
-        margin-left: 15px;
-    }
-    #account1{
-        margin-right: 14px;
-    }
-    .account1{
 
-        font-size: 16px;
-        margin-left: 21px;
-    }
-    .account2{
-
-        font-size: 16px;
-        margin-left: 19px;
-        margin-right: 5px;
-    }
-    .account4{
-        margin-left: 0;
-        text-align:center ;
-        font-size: 16px;
-    }
-    .account5, .account6, .account7, .account8, .account9, .account10{
-        font-size: 14px;
-    }
 }
 @media screen and (max-width: 477px) {
     .profile{
@@ -1145,13 +1780,17 @@ li{
         width: 87px;
     }
 }
-@media screen and (max-width: 390px) {
-    .logo{
-        padding-bottom: 30px;
+@media screen and (max-width: 410px) {
+    li{
+        margin-left: 0;
+    }
+
+    .fa-lock{
+        padding-right: 35px;
     }
     .head{
 
-        float: left;
+        float: right;
         padding-left: 5px;
         margin-top: 5px;
 
@@ -1160,7 +1799,255 @@ li{
         padding-right: 5px;
         padding-left: 5px;
     }
+
+    .refered{
+        background-color: inherit;
+        font-size: 13px;
+    }
+    .title{
+        font-size: 11px;
+    }
+
+    .panel-inline, #blockInfo, .heading, table, #name {
+        width: 250px;
+    }
+    .panel1{
+        padding-left: 5px;
+
+    }
+    #info{
+        padding-left: 10px;
+        margin-left: 20px;
+    }
+    #balance, #balance1, .middle,   .heading{
+        font-size: 15px;
+        padding-left: 5px;
+    }
     #user{
         padding-left: 10px;
+    }
+
+    #dashboard {
+        padding-left: 5px;
+    }
+    #total1{
+        font-size: 12px;
+        padding-left: 12px;
+    }
+    #total{
+        font-size: 12px;
+        padding-left: 12px;
+
+    }
+    #total2{
+        font-size: 12px;
+        padding-left: 12px;
+
+    }
+    .account, .account1, .account2, .account3, .account4, .account5, .account6, .account7, .account8, .account9, .account10{
+        font-size: 14px;
+    }
+    #account, #account1, #account2{
+        font-size: 13px;
+    }
+    #total4, #total3 {
+        font-size: 12px;
+        padding-left: 27.5px;
+    }
+    #ellips{
+        padding-left: 14px;
+    }
+    #el{
+        padding-left: 35px;
+    }
+    #form-control,.panel-middle{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 394px){
+    .profile{
+
+        width: 100px;
+    }
+    .menu2{
+        width: 100px;
+    }
+    #setting{
+        width: 80px;
+    }
+    #setting:hover{
+        width: 77px;
+    }
+    #dashboard{
+        margin-left: 110px;
+    }
+}
+@media screen and (max-width: 404px) {
+    #blockBalance{
+        width: 230px;
+    }
+    .panel-inline{
+
+        margin-right: 0;
+    }
+
+    .infoData{
+        font-size: 12px;
+    }
+    #el{
+        padding-left: 15px;
+    }
+    #total4, #total3 {
+        font-size: 10px;
+        padding-left: 27px;
+    }
+    #ellips{
+        padding-left: 0px;
+    }
+    #total1{
+        font-size: 10px;
+        padding-left: 5px;
+    }
+    #total{
+        font-size: 10px;
+        padding-left: 5px;
+
+    }
+    #balance, #balance1{
+        font-size: 13px;
+    }
+    #total2{
+        font-size: 10px;
+        padding-left: 5px;
+
+    }
+    .panel-inline, #blockInfo, .heading, #name {
+        width: 240px;
+    }
+    #form-control,.panel-middle, table{
+        width: 240px;
+    }
+    .infoData{
+        font-size: 12px;
+    }
+    #el{
+        padding-left: 15px;
+    }
+
+    #ellips{
+        padding-left: 6px;
+    }
+    .panel-default {
+        width: 200px;
+        margin-right: 0;
+    }
+    .account, .account1, .account2, .account3, .account4, .account5, .account6, .account7, .account8, .account9, .account10{
+        font-size: 12px;
+    }
+    #account, #account1, #account2, #account5, #account6, #account7{
+        font-size: 12px;
+        padding-top: 5px;
+    }
+    #dashboard{
+        margin-right: 0;
+    }
+    .account3, .account1{
+        padding-top: 0;
+    }
+}
+@media screen and (max-width: 347px) {
+    .logo{
+
+
+    }
+
+    .head{
+        float: bottom;
+
+    }
+    .logotype, .fa-bars{
+
+        padding-left: 5px;
+    }
+    ul li{
+
+        padding-left: 10px;
+    }
+    .profile{
+        /*font-size: 10px;*/
+        width: 97px;
+    }
+    .menu2{
+        /*font-size: 10px;*/
+        width: 97px;
+    }
+    .point{
+        font-size: 11px;
+    }
+    #setting{
+        font-size: 11px;
+        width: 77px;
+    }
+    #setting:hover{
+        width: 74px;
+    }
+
+}
+@media screen and (max-width: 359px) {
+    .panel-inline, #blockInfo, .heading, #name {
+        width: 220px;
+    }
+    #form-control,.panel-middle, table{
+        width: 220px;
+    }
+}
+@media screen and (max-width: 343px) {
+    #dashboard{
+        margin-left: 92px;
+    }
+    .logotype, .fa-bars, .point{
+
+        padding-left: 5px;
+    }
+    .profile{
+        /*font-size: 10px;*/
+        width: 91px;
+    }
+    .menu2{
+        /*font-size: 10px;*/
+        width: 91px;
+    }
+    .point{
+        font-size: 11px;
+    }
+    #setting{
+        font-size: 11px;
+        width: 71px;
+    }
+    #setting:hover{
+        width: 68px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    #blockBalance {
+        width: 50px;
+    }
+    .panel-inline, #blockInfo, .heading , #form-control,.panel-middle, table, #name{
+        width: 220px;
+    }
+    #form-control{
+        font-size: 7px;
+    }
+    .panel-default {
+        width: 200px;
+        margin-right: 0;
+    }
+    #el{
+        padding-left: 5px;
+    }
+
+    #ellips{
+        padding-left: 1px;
     }
 }

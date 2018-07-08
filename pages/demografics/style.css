@@ -1,6 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+
+    -webkit-animation: bugfix infinite 1s;
+    /*-webkit-appearance: none;*/
 }
 
 
@@ -44,7 +47,7 @@
     width: 11px;
 }
 body{
-    width: 100%;
+        width: 100%;
 }
 ul {
     text-decoration: none;
@@ -61,24 +64,56 @@ input{
     width: 115px;
     height: 19px;
 }
+.circle1{
+
+    background-color: #00ff00;
+    border-radius: 8px;
+    font-size: 7px;
+    color: white;
+
+    /*text-align: center;*/
+}
+.circle2{
+
+    background-color: #00ff00;
+    border-radius: 8px;
+    font-size: 7px;
+    color:  #00ff00;
+    margin-left: 3px;
+
+    /*text-align: center;*/
+}
+.imgProfile{
+    height: 40px;
+}
 .logo{
     width: 100%;
     font-family: 'Roboto', sans-serif;
     padding-top: 10px;
     background-color:#3fcbff;
     color:white;
-    height: auto;
-
+    height: auto !important;
     padding-bottom: 12px;
-
 }
 #head{
     width: 100%;
 }
 #main{
-    width: 100%;
     display: flex;
-    height: auto;
+
+    /*display: -webkit-flex;*/
+    /*-webkit-align-items: flex-start;*/
+    /*display: flex;*/
+    /*align-items: flex-start;*/
+    /*display: -webkit-flex;*/
+    /*width: 100%;*/
+    /*display: flex;*/
+    height: auto !important;
+}
+#leftMenu{
+    width: 180px;
+    display: block;
+
 }
 .text10{
     margin-right: 10px;
@@ -172,8 +207,8 @@ input, select,option{
     border: 1px solid #cacbcd;
 }
 .block{
-    margin-top: 3px;
-    margin-left: 76px;
+    margin-top: 2px;
+    margin-left: 78px;
 }
 img{
     margin-left: 10px;
@@ -204,7 +239,8 @@ img{
 }
 
 .checkAndRadio{
-    border-color: red;
+    border-radius: 0;
+    border-color: #cbccce;
     margin-left: 0;
     margin-right: 0;
     height: 15px;
@@ -215,12 +251,12 @@ input{
     width: 80px;
     margin-right: 20px;
 }
-input:hover{
+input:hover, .text3:hover, .text4:hover, .select:hover, .select2:hover{
     border-radius: 5px;
 
     border: 1px solid #7dcafe;
 }
-input:focus, select:hover{
+input:focus, .text3:focus, .text4:focus, .select:focus, .select2:focus{
     border-radius: 6px;
     border: 1px groove #7dcafe;
     box-shadow: 0 0 5px 3px #7dcafe;
@@ -238,55 +274,61 @@ ul li{
     cursor: pointer;
 }
 #demogr{
-    overflow: scroll;
-    padding-top: 10px;
-    padding-left: 53px;
+    position: absolute;
+    top: 137px;
+
+    /*overflow: scroll;*/
+   /* padding-top: 12px;
+    padding-left: 83px; */
+   /* padding-left: 83px; */
+    left: 263px;
     font-size: 14px;
     display: flex;
-    width: 100%;
+    display: -webkit-flex;
+   /* width: 100%; */
 }
 .margin{
     padding-left: 115px;
 }
 .margin2{
-    padding-left: 67px;
+    padding-left: 59px;
 }
 
 .margin3{
-    margin-left: 33px;
+    margin-left: 32px;
 }
 .margin4{
-    margin-left: 100px;
+    margin-left: 99px;
 }
 .margin5{
-    margin-left: 118px;
+    margin-left: 116px;
 }
 .margin6{
-    margin-left: 23px;
+    margin-left: 21px;
 }
 .margin7{
-    margin-left: 67px;
+    margin-left: 65px;
 }
 .margin8{
-    margin-left: 126px;
+    margin-left: 124px;
 }
 .margin9{
-    margin-left: 71px;
+    margin-left: 69px;
 }
 .margin10{
-    margin-left: 19px;
+    margin-left: 17px;
 }
 .margin11{
-    margin-left: 19px;
+    margin-left: 17px;
 }
 .margin12{
-    margin-left: 1px;
+    margin-left: -2px;
 }
 .margin13{
-    margin-left: 108px;
+    margin-left: 104px;
 }
 .margin14{
-    margin-left: 73px;
+    margin-left: 66px;
 }
 .margin15{
     margin-left: 69px;
@@ -295,7 +337,7 @@ ul li{
     margin-left: 131px;
 }
 .margin1{
-    margin-left: -2px;
+    margin-left: -10px;
 }
 .margin17{
     margin-left: 44px;
@@ -319,7 +361,7 @@ ul li{
     margin-left: 70px;
 }
 .margin24{
-    margin-left: 57px;
+    margin-left: 53px;
 }
 .margin25{
     margin-left: 93px;
@@ -334,10 +376,10 @@ ul li{
     margin-left: 41px;
 }
 .margin29{
-    margin-left: 78px;
+    margin-left: 77px;
 }
 .margin30{
-    margin-left: 71px;
+    margin-left: 63px;
 }
 .margin31{
     margin-left: 51px;
@@ -352,7 +394,7 @@ ul li{
     margin-left: 108px;
 }
 .margin35{
-    margin-left: 18px;
+    margin-left: 15px;
 }
 .margin36{
     margin-left: 157px;
@@ -364,7 +406,7 @@ ul li{
 .line3{
 
     /*margin-top: 1px;*/
-    /*padding-bottom: 3px;*/
+    padding-bottom: 0;
 
 }
 .line{
@@ -381,25 +423,30 @@ ul li{
     color:white;
     background-color: #495c6e;
 }
+
 .line2{
-    margin-top: 1px;
-    /*padding-bottom: 5px;*/
+
+    display: block;
+    /*margin-top: 1px;*/
+    padding-bottom: 9px;
 
 }
 
 .bottom{
     margin: auto;
     position: absolute;
-    top:820px;
+    top:742px;
 
-    left: 565px;
+    left: 309px;
 }
 .bottomCancel{
     background-color: inherit;
-    font-size: 18px;
-    padding-top: 11px;
-    margin-left: 37px;
+    font-size: 17px;
+    padding: 15px 33px;
+    /*padding-top: 15px;*/
+    /*padding-left: 33px;*/
     color:#ccccce;
+    border-radius: 4px;
     display: inline;
 }
 .bottomUpdate{
@@ -411,17 +458,22 @@ ul li{
     background-color:#3fcbff ;
 }
 .bottomUpdate:hover{
+    /*color:#3fcbff ;*/
+    /*background-color:white ;*/
     cursor: pointer;
 }
 .bottomCancel:hover{
+    /*background-color: black;*/
     cursor: pointer;
 }
 .line1{
-    margin-top: 1px;
-    /*padding-bottom: 8px;*/
+
+    display: block;
+
+    padding-bottom: 9.5px;
 
 }
-.line1:hover, .line2:hover{
+.line1:hover, .line2:hover, tr:hover{
     color: #3fcbff;
 }
 
@@ -436,10 +488,15 @@ ul li{
     width: 11px;
 }
 .img-circle{
+    padding-right: 8px;
     padding-left: 15px;
 }
+.imgProfile{
+    height: 50px;
+}
 .circle{
-    padding-right: 10px;
+    height: 25px;
+    padding-right: 5px;
 }
 #insurance, #document{
     width: 100%;
@@ -451,12 +508,10 @@ ul li{
 }
 .userName{
     font-size: 22px;
+    margin: 0;
     /*display: block;*/
 }
-.img-circle{
-    height: 40px;
 
-}
 div,p,span, ul,li{
     font-family: 'Roboto', sans-serif;
 }
@@ -482,17 +537,27 @@ div,p,span, ul,li{
     width: 210px;
     margin-bottom: 0;
     color: #c2c3c6;
-    height: 1100px;
+    height: 100%;
+    min-height: 2090px;
 
+}
+#eng{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background-color: inherit;
+}
+#eng:hover{
+    cursor: pointer;
 }
 .name{
     padding-right: 8px;
-    font-size: 21px;
+    font-size: 20px;
 
 }
 .campus{
-    padding-right: 12px;
-    font-size: 21px;
+    padding-right: 0;
+    font-size: 20px;
 
 }
 .fa-lock{
@@ -502,26 +567,30 @@ div,p,span, ul,li{
 .lang{
 
     float: right;
-    padding-right: 15px;
+    padding-right: 20px;
 }
 
 .menu3{
 
-    height: auto;
+    height: auto !important;
     margin-top: 30px;
+}
+#text{
+    display: flex;
 }
 .profile{
     display: flex;
     background-color:#3fcbff;
     color: white;
     width: 210px;
+    height: auto;
     text-align: left;
-    padding-top: 35px;
-    padding-bottom: 10px;
+    padding-top: 33px;
+    padding-bottom: 20px;
 
 }
 .userData{
-    display: block;
+    /*display: block;*/
 }
 .setting{
 
@@ -550,7 +619,7 @@ div,p,span, ul,li{
 
 }
 .online{
-    padding-left: 127px;
+    padding-left: 113px;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
@@ -560,7 +629,7 @@ div,p,span, ul,li{
     font-size: 20px;
     padding-bottom: 6px;
     padding-top: 8px;
-    height: auto;
+    height: auto !important;
     background-color: #364050;
     color: white;
 
@@ -575,7 +644,7 @@ ul li{
 li{
     text-decoration: none;
 }
-.fa-home, .fa-th, .fa-user-alt, .fa-shield-alt, .fa-file-alt, .fa-comment-alt, .fa-cog{
+.fa-home, .fa-th, .fa-shield-alt, .fa-file-alt, .fa-comment-alt, .fa-cog{
     color:#415b75;
 }
 .fas .fa-file-alt{
@@ -587,8 +656,9 @@ li{
     font-weight: 600;
 }
 
-.user:hover{
-    box-shadow: 0px -7px 10px -11px #000000;
+.user:hover, .user:focus{
+    box-shadow: inset 0px 5px 10px -7px #000000;
+    filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=10);
     background-color:#3fcbff;
     -webkit-transition: .2s ease-out;
     -webkit-transition-delay: 0.3s;
@@ -598,16 +668,30 @@ li{
     -moz-transition-delay: 0.5s;
     transition: .2s ease-out;
     transition-delay: 0.1s;
-    padding-top: 14px;
-    padding-bottom:     10px;
+    padding-top: 11px;
+    padding-bottom:     9px;
     cursor: pointer;
     animation-direction: alternate-reverse;
     animation: shadow  2s infinite ease-in-out;
 }
 
+
 .point{
-    padding-top: 5px;
-    padding-bottom: 15px;
+    padding-top: 6px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 6px;
+    color: #b4b7bb;
+    font-size: 16px;
+}
+.fa-user-alt{
+    color:#a4aeb7;
+}
+#demographicsMenu{
+    color:#f5f5f7;
+    background-color:#495c6e ;
+    cursor: pointer;
+    border-left: 2px solid #3fcbff;
 }
 .point:hover {
     color:#f5f5f7;
@@ -665,6 +749,30 @@ li{
         font-size: 18px;
     }
 }
+@media screen and (max-width: 1111px){
+
+    .point{
+        font-size: 14px;
+    }
+    .menu2, #leftMenu{
+        width: 180px;
+    }
+    #setting{
+        width: 160px;
+    }
+    #setting:hover{
+        width: 157px;
+    }
+    .profile{
+        width: 180px;
+    }
+    #user{
+        padding-left: 135px;
+    }
+    .online{
+        padding-left: 95px;
+    }
+}
 @media screen and (max-width: 1083px){
     #user{
         padding-left: 173px;
@@ -672,6 +780,41 @@ li{
     .online{
         padding-left: 114px;
     }
+}
+@media screen and (max-width: 1055px){
+    #user{
+        padding-left: 90px;
+    }
+    .userData{
+        margin-left: 15px;
+    }
+    .online{
+        padding-left: 50px;
+    }
+    .profile{
+        display: block;
+        width: 140px;
+        height: 135px;
+    }
+    .img-circle{
+
+        padding-left: 5px;
+    }
+    .menu2, #leftMenu{
+        width: 140px;
+    }
+    #setting{
+        width: 120px;
+    }
+    #setting:hover{
+        width: 117px;
+    }
+    #demogr{
+        left: 80px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
 }
 @media screen and (max-width: 949px){
     .logotype, .campus, .name, .userName{
@@ -705,19 +848,20 @@ li{
         padding-right: 14px;
         padding-left: 14px;
     }
-    .logotype, .campus, .name, .userName{
+    .logotype, .campus, .name{
         font-size: 16px;
     }
+
 }
 @media screen and (max-width: 1243px){
     #demogr{
-        padding-left: 30px;
+        left: 243px;
     }
 }
 
 @media screen and (max-width: 1225px){
     .bottom{
-        left: 557px;
+        left: 287px;
     }
 }
 @media screen and (max-width: 1220px){
@@ -725,13 +869,13 @@ li{
         margin-left: 5px;
     }
     .bottom{
-        left: 515px;
+        left: 237px;
     }
 }
 @media screen and (max-width: 1114px){
 
     .bottom{
-        left: 485px;
+        left: 207px;
     }
 }
 
@@ -797,13 +941,13 @@ li{
     }
     .bottom{
         /*top: ;*/
-        left: 430px;
+        left: 200px;
     }
 }
 @media screen and (max-width: 1083px){
     #demogr{
 
-        padding-left: 20px;
+        left: 233px;
 
     }
 }
@@ -868,7 +1012,7 @@ li{
         width: 150px;
     }
     .bottom{
-        left: 430px;
+        left: 230px;
     }
 }
 
@@ -938,16 +1082,25 @@ li{
         width: 140px;
     }
     .bottom{
-        left: 400px;
+        left: 150px;
     }
     .padding{
         margin-right: 7px;
     }
     #demogr{
+        left: 160px;
         margin-right: 5px;
 
     }
 }
+@media screen and (max-width: 535px){
+    #demogr{
+        left: 145px;
+        margin-right: 0;
+
+    }
+}
+
 @media screen and (max-width: 977px){
     .input{
         margin-right: 5px;
@@ -1009,7 +1162,7 @@ li{
         margin-right: 5px;
     }
     .bottom{
-        left: 380px;
+        left: 130px;
 
     }
     .bottomCancel{
@@ -1092,8 +1245,8 @@ li{
         margin-right: 10px;
     }
     .bottom{
-        top: 1370px;
-        left: 360px;
+        top: 1200px;
+        left: 160px;
 
     }
     .bottomCancel{
@@ -1166,7 +1319,7 @@ li{
         margin-left: 96px;
     }
     .margin35{
-        margin-left: 6px;
+        margin-left: 4px;
     }
     .margin36{
         margin-left: 145px;
@@ -1190,6 +1343,12 @@ li{
         /*width: 48%;*/
         /*margin-right: 10px;*/
     /*}*/
+}
+@media screen and (max-width: 926px){
+
+    .lang{
+        padding-top: 5px;
+    }
 }
 @media screen and (max-width: 795px){
     .input{
@@ -1379,7 +1538,7 @@ li{
 }
 
 @media screen and (max-width: 710px){
-    input, select, option{
+    input{
         display: inline-table;
         margin-top: 5px;
         padding-bottom: 10px;
@@ -1481,8 +1640,8 @@ li{
         padding-right: 0px;
     }
     .bottom{
-        left: 250px;
-        top: 2340px;
+        left: 100px;
+        top: 2200px;
 
     }
     #setting{
@@ -1565,8 +1724,8 @@ li{
         font-size: 14px;
     }
     .bottom{
-        left: 210px;
-        top: 2370px;
+        left: 20px;
+
 
     }
 
@@ -1593,8 +1752,8 @@ li{
     }
 
     .bottom{
-        left: 160px;
-        top: 2430px;
+        left: 10px;
+
 
     }
 }
@@ -1622,8 +1781,8 @@ li{
 
     }
     .bottom{
-        left: 180px;
-        top: 2540px;
+        left: 20px;
+        /*top: 2540px;*/
 
     }
     .checkAndRadio{
@@ -1639,7 +1798,9 @@ li{
     }
 }
 @media screen and (max-width: 419px){
-
+    /*.img-circle{*/
+        /*padding-left: 0;*/
+    /*}*/
     .checkAndRadio{
         /*display: inline-table;*/
     }
@@ -1710,14 +1871,14 @@ li{
     }
 
     .bottom{
-        left: 150px;
-        top: 2350px;
+        left: 15px;
+        /*top: 2350px;*/
 
     }
 }
 @media screen  and (max-width: 373px) {
     #demogr{
-        padding-left: 7px;
+        left: 50px;
     }
     .margin31{
         /*margin-left:5px;*/
@@ -1744,8 +1905,8 @@ li{
         /*margin-left: 5px;*/
     }
     .bottom{
-        left: 150px;
-        top: 2400px;
+        left: 0px;
+        /*top: 2400px;*/
 
     }
 }
@@ -1831,8 +1992,8 @@ li{
     }
 
     .bottom{
-        left: 150px;
-        top: 2500px;
+        left: 10px;
+        /*top: 2500px;*/
         margin: 0;
         text-align: center;
     }
@@ -1854,24 +2015,37 @@ li{
     .point{
         font-size: 14px;
     }
-    .menu2{
-        width: 180px;
+
+    /*.bottom{*/
+        /*!*left: 150px;*!*/
+        /*top: 2400px;*/
+        /*margin: 0;*/
+        /*text-align: center;*/
+    /*}*/
+    /*.menu2{*/
+        /*width: 180px;*/
+    /*}*/
+    /*#setting{*/
+        /*width: 160px;*/
+    /*}*/
+    /*#setting:hover{*/
+        /*width: 77px;*/
+    /*}*/
+    /*.profile{*/
+        /*width: 180px;*/
+    /*}*/
+    /*#user{*/
+        /*padding-left: 135px;*/
+    /*}*/
+    /*.online{*/
+        /*padding-left: 95px;*/
+    /*}*/
+    .logo{
+        /*padding-bottom: 50px;*/
+        /*height: 80px;*/
+        text-align: center;
     }
-    #setting{
-        width: 160px;
-    }
-    #setting:hover{
-        width: 77px;
-    }
-    .profile{
-        width: 180px;
-    }
-    #user{
-        padding-left: 135px;
-    }
-    .online{
-        padding-left: 95px;
-    }
+
 }
 @media screen and (max-width: 558px){
     #user{
@@ -1882,6 +2056,7 @@ li{
         margin-right: 15px;
     }
     .profile{
+        height: 135px;
         display: block;
         width: 140px;
     }
@@ -1894,9 +2069,15 @@ li{
     #setting:hover{
         width: 117px;
     }
-    .userData{
-        margin-left: 20px;
+    .bottom{
+        left: 50px;
+
+        margin: 0;
+        text-align: center;
     }
+    /*.userData{*/
+        /*margin-left: 20px;*/
+    /*}*/
 
 }
 @media screen and (max-width: 522px){
@@ -1907,7 +2088,7 @@ li{
         padding-left: 45px;
         font-size: 10px;
     }
-    .logotype, .campus, .name, .userName, .fa-bars{
+    .logotype, .campus, .name,  .fa-bars{
         font-size: 16px;
     }
     .user, .lang{
@@ -1918,7 +2099,58 @@ li{
     }
 
 }
-@media screen and (max-width: 472px){
+@media screen and (max-width: 494px) {
+    .logo{
+
+
+    }
+
+    .head{
+        float: bottom;
+
+    }
+    .logotype, .fa-bars{
+
+        padding-left: 5px;
+    }
+
+    .profile{
+        display: block;
+        width: 125px;
+    }
+    .menu2{
+        width: 125px;
+    }
+    #setting{
+        width: 105px;
+    }
+    #setting:hover{
+        width: 102px;
+    }
+    .point{
+        font-size: 12px;
+    }
+
+}
+@media screen and (max-width: 477px) {
+    #demogr{
+        left: 120px;
+    }
+    .profile{
+        display: block;
+        width: 110px;
+    }
+    .menu2{
+        width: 110px;
+    }
+    #setting{
+        width: 90px;
+    }
+    #setting:hover{
+        width: 87px;
+    }
+}
+@media screen and (max-width: 469px){
     #user{
         padding-left: 65px;
     }
@@ -1951,8 +2183,8 @@ li{
         font-size: 15px;
     }
     .bottom{
-        left: 150px;
-        top: 2400px;
+        left: 20px;
+        /*top: 2400px;*/
         margin: 0;
         text-align: center;
     }
@@ -1960,6 +2192,43 @@ li{
         padding-right: 8px;
         padding-left: 8px;
 
+    }
+}
+@media screen and (max-width: 448px){
+    .fa-lock{
+        background-color: inherit;
+        padding-right: 35px;
+    }
+    #user{
+        padding-left: 35px;
+    }
+    .online{
+        padding-left: 10px;
+
+    }
+    .logotype, .campus, .name, .userName, .fa-bars{
+        font-size: 15px;
+    }
+    .user {
+        padding-right: 8px;
+        padding-left: 8px;
+
+    }
+
+}
+@media screen and (max-width: 394px){
+    .profile{
+
+        width: 100px;
+    }
+    .menu2{
+        width: 100px;
+    }
+    #setting{
+        width: 80px;
+    }
+    #setting:hover{
+        width: 77px;
     }
 }
 @media screen and (max-width: 355px) {
@@ -1971,8 +2240,9 @@ li{
 
       }
     .bottom{
-        left: 150px;
-        top: 2290px;
+        top: 2050px;
+        left: 10px;
+
         margin: 0;
         text-align: center;
     }
@@ -1993,8 +2263,7 @@ li{
 
     }
     .bottom{
-        left: 150px;
-        top: 2270px;
+        left: 10px;
         margin: 0;
         /*text-align: center;*/
     }
@@ -2007,20 +2276,20 @@ li{
 
         padding-left: 10px;
     }
-    .profile{
-        display: block;
-        width: 125px;
-    }
-    .menu2{
-        width: 125px;
-    }
-    #setting{
-        width: 105px;
-        padding-bottom: 20px;
-    }
-    #setting:hover{
-        width: 102px;
-    }
+    /*.profile{*/
+        /*display: block;*/
+        /*width: 125px;*/
+    /*}*/
+    /*.menu2{*/
+        /*width: 125px;*/
+    /*}*/
+    /*#setting{*/
+        /*width: 105px;*/
+        /*padding-bottom: 20px;*/
+    /*}*/
+    /*#setting:hover{*/
+        /*width: 102px;*/
+    /*}*/
     .point{
         font-size: 12px;
     }
@@ -2032,11 +2301,14 @@ li{
         padding-bottom: 10px;
         /*margin-bottom: 20px;*/
     }
+    #demogr{
+        left: 100px;
+    }
 }
 @media screen and (max-width: 679px){
     .logo{
         /*padding-bottom: 50px;*/
-        height: 80px;
+        /*height: 80px;*/
         text-align: center;
     }
 }
@@ -2054,6 +2326,9 @@ li{
         margin-top: 5px;
 
     }
+    .fa-lock{
+        padding-right: 35px;
+    }
     .campus{
         padding-left: 10px;
     }
@@ -2063,6 +2338,71 @@ li{
     }
     #user{
         padding-left: 10px;
+    }
+}
+@media screen and (max-width: 347px) {
+    .logo{
+
+
+    }
+
+    .head{
+        float: bottom;
+
+    }
+    .logotype, .fa-bars{
+
+        padding-left: 5px;
+    }
+    ul li{
+
+        padding-left: 10px;
+    }
+    .profile{
+        /*font-size: 10px;*/
+        width: 97px;
+    }
+    .menu2{
+        /*font-size: 10px;*/
+        width: 97px;
+    }
+    .point{
+        font-size: 11px;
+    }
+    #setting{
+        font-size: 11px;
+        width: 77px;
+    }
+    #setting:hover{
+        width: 74px;
+    }
+
+}
+@media screen and (max-width: 343px) {
+    .logotype, .fa-bars, .point{
+
+        padding-left: 5px;
+    }
+    .point{
+        font-size: 11px;
+    }
+    .profile{
+        /*font-size: 10px;*/
+        width: 91px;
+    }
+    .menu2{
+        /*font-size: 10px;*/
+        width: 91px;
+    }
+    .point{
+        font-size: 11px;
+    }
+    #setting{
+        font-size: 11px;
+        width: 71px;
+    }
+    #setting:hover{
+        width: 68px;
     }
 }
 @media screen and (max-width: 330px) {
@@ -2077,5 +2417,33 @@ li{
     #demogr{
         font-size: 12.5px;
     }
+    .bottom{
+        left: 0px;
 
+        margin: 0;
+        /*text-align: center;*/
+    }
+
+}
+@media screen and (max-width: 316px) {
+    #demogr{
+        font-size: 11px;
+    }
+    .bottom{
+        left: 0px;
+        /*top: 2170px;*/
+        margin: 0;
+        /*text-align: center;*/
+    }
+}
+@media screen and (max-width: 297px) {
+    #demogr{
+        font-size: 9px;
+    }
+    .bottom{
+        left: 150px;
+        top: 2060px;
+        margin: 0;
+        /*text-align: center;*/
+    }
 }

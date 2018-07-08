@@ -1,7 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     background-color: #eaf2f4;
+
+    -webkit-animation: bugfix infinite 1s;
 }
 ul {
     text-decoration: none;
@@ -32,7 +36,7 @@ li{
     border-radius: 5px;
     background-color:#3fcbff;
     box-shadow:0px 1px 1px #fff inset;
-    background-image:url('https://yraaa.ru/_pu/24/59610063.png');
+    /*background-image:url('https://yraaa.ru/_pu/24/59610063.png');*/
     background-position:center;
     background-repeat:no-repeat;
 }
@@ -48,15 +52,19 @@ li{
     width: 11px;
 }
 #document{
-
-    padding-left: 30px;
-    padding-top: 55px;
+    position: absolute;
+    top: 96px;
+    left: 209px;
+    /*overflow: scroll;*/
+    /*padding-left: 40px;*/
+    padding-top: 46px;
     /*padding-bottom: 450px;*/
     /*padding-right: 10px;*/
     font-family: 'Roboto', sans-serif;
     background-color: #eaf2f4;
-    display: flex;
-    width: 100%;
+    /*display: flex;*/
+
+    /*width: 100%;*/
     height: 100%;
 
     /*padding-top: 47px;*/
@@ -64,52 +72,85 @@ li{
 
 }
 
+.circle1{
+
+    background-color: #00ff00;
+    border-radius: 8px;
+    font-size: 7px;
+    color: white;
+
+    /*text-align: center;*/
+}
+.circle2{
+
+    background-color: #00ff00;
+    border-radius: 8px;
+    font-size: 7px;
+    color:  #00ff00;
+    margin-left: 3px;
+
+    /*text-align: center;*/
+}
 .logotype, .online, .campus, .circle, .name, .lock, .head, .fa-lock, .img-circle, .fa-bars, .menu, #user, .user, .lang, .fa-caret-down, .profile, .imgProfile, .userData, .userName, .menu2,.point, .fa-home, .fa-cog, .fa-th,.fa-user-alt, .fa-comment-alt, .fa-file-alt, .fa-shield-alt{
     background-color: inherit;
 }
 .panel-color{
     color: white;
-
-    border: 1px solid #3fcbff;
+    /*border: 1px solid #3fcbff;*/
     background-color: #3fcbff;
     border-radius: 0;
-    padding-left: 12px;
-    padding-top: 6px;
-    padding-bottom: 5px;
     /*padding-bottom: 6px;*/
     /*margin-bottom: -4px;*/
     /*padding-top: -5px;*/
-    /*height: 35px;*/
+    height: 32px;
 
     /*margin-top: 0;*/
     /*padding-left: 12px;*/
     /*padding-top: 5px;*/
 }
 .panelHead{
-    width: 340px;
+    width: 338px;
     height: 672px;
+    margin-left: 20px;
+    /*border: 2px solid #3fcbff;*/
+    border-radius: 0;
+}
+.panel{
     border-radius: 0;
 }
 .fa-search{
     background-color: inherit;
 }
+input:focus, input:active{
+    border: none;
+}
 #block2{
     background-color: inherit;
-    margin-left: 18px;
-    /*width: 52%;*/
-    margin-top: -8px;
-    float: right;
+    /*margin-left: 25px;*/
+    padding-left: 0;
+    margin-left: 0;
+    /*width: 720px;*/
+
+    padding-top: 8px;
+
+}
+table{
+    width: 720px;
+    margin-left: 20px;
 }
 .nameTable{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 11px;
     font-weight: 600;
-    padding-left: 14px;
+    padding-right: 30px;
     background-color: inherit;
 }
 .nameTable1{
     font-weight: 600;
-    background-color: inherit;
-    padding-left: 15px;
     text-align: right;
+    background-color: inherit;
+    padding-left: 220px;
 }
 .nameTable2{
     font-weight: 600;
@@ -125,10 +166,11 @@ li{
     background-color: inherit;
     font-weight: 600;
     padding-left: 45px;
-    padding-right: 20px;
+
 }
 .panel-shadow{
-    width: 345px;
+    width: 340px;
+    background-color: white;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     box-shadow: 0px 7px 1px #dee6e8;
@@ -153,36 +195,23 @@ li{
     color:white;
     background-color: #495c6e;
 }
-table{
-    width: 100%;
-}
-.data{
-    background-color: white;
-}
-#name{
-
-    height: 30px;
-}
 .panelHead1{
     margin-top: 0;
     padding-top: 0;
-    width: 700px;
+    /*width: 790px;*/
     height: 752px;
 
     border-radius: 0;
 }
-table{
-    width: 100%;
-    background-color: inherit;
-}
+
 .table1{
     background-color: inherit;
-    text-align: center;
+    text-align: left;
 }
 .nameRow, .typeRow, .folderRow, .modifiedByRow, .modifiedRow{
     background-color: inherit;
     display: table-cell;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
 }
 .modifiedRow{
     background-color: inherit;
@@ -203,44 +232,55 @@ table{
 .category{
     background-color: white;
     color: #3fcbff;
+    margin-left: 25px;
     font-size: 18px;
-    margin-left: 10px;
+    /*padding-top: -10px;*/
+
     font-weight: 600;
 }
 .buttonScan{
-    margin-left: 98px;
-    position: relative;
-    top:472px;
-    bottom: 0;
+    margin-left: 115px;
+    /*top:472px;*/
+
     color: white;
     font-weight: 600;
     border-radius: 4px;
+    margin-top: 475px;
+
     padding: 2px 18px;
     font-size: 14px;
+
+
     background-color:#3fcbff ;
     border:1px solid #3fcbff;
 }
 .panel-body{
     background-color: white;
-    height: 700px;
+
+}
+select{
+    border: none;
+
+    background-color: inherit;
+}
+select:hover{
+    cursor: pointer;
 }
 .body{
+    padding-top: 10px;
+    padding-left: 2px;
+
     background-color: white;
     /*padding-top: -10px;*/
-    margin-top: 0;
-    height: 642px;
-    padding-top: 10px;
-    padding-left: 16px;
-    box-shadow: 0px 7px 1px #dee6e8;
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius: 12px;
+    /*padding-top: -7px;*/
     /*margin-left: 10px;*/
 }
 .tag{
     background-color: white;
     float: right;
+    padding-top: 1px;
+    padding-right: 12px;
     color: #3fcbff;
-    padding-right: 13px;
     /*padding-right: 15px;*/
 }
 .folders{
@@ -250,26 +290,30 @@ table{
 .folder{
     background-color: inherit;
     padding-top: 5px;
+    padding-left: 15px;
     padding-bottom: 0;
-    margin-bottom: 0;
-    margin-left: 0;
+    margin: 0;
+
     display: block;
 }
 .fold{
+    font-size: 13.7px;
     background-color: inherit;
 }
-.folder:hover{
+.folder:hover, .folder:focus{
     color:#859caa;
     width: 100%;
+    /*margin-left: 20px;*/
     /*margin-left: 15px;*/
     background-color: #d9f5ff;
     cursor: pointer;
+    padding-left: -15px;
 }
 .fa-folder{
     background-color: inherit;
     padding-bottom: 3px;
-    padding-left: 15px;
-    padding-right: 7px;
+    margin-left: 15px;
+    margin-right:7px;
 }
 .search{
     width: 290px;
@@ -279,13 +323,27 @@ table{
     /*padding-top: -5px;*/
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    padding-left: 7px;
+    padding-left: 8px;
+}
+.search:focus, input:focus{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #9fe5ff;
+    background-color: #9fe5ff;
+    color: black;
+}
+#name{
+    /*width: 720px;*/
+    background-color: #3fcbff;
+    margin-top: 10px;
+    height: 32px;
 }
 #search{
-    background-color: #3fcbff;
     /*height: 32px;*/
-    margin-top: -8px;
-    padding-top: -5px;
+    /*margin-top: -8px;*/
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 15px;
 }
 .fa-search{
     /*color: black;*/
@@ -300,7 +358,7 @@ table{
 }
 .iconSearch{
     font-size: 10px;
-    padding-right: 2px;
+
     /*padding-top: 2px;*/
     /*margin-top: 2px;*/
     margin-left: -5px;
@@ -311,6 +369,9 @@ table{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+.iconSearch:focus{
+    color: white;
+}
 @font-face {
 
     font-family: 'Roboto', sans-serif;
@@ -319,11 +380,11 @@ table{
     font-style: oblique;
     font-weight: normal;
 }
-@media screen and (min-width: 1476px){
-    #block2{
-        margin-left: 50px;
-    }
-}
+/*@media screen and (min-width: 1476px){*/
+    /*#block2{*/
+        /*margin-left: 50px;*/
+    /*}*/
+/*}*/
 ::-webkit-resizer{
     /*background-image:url("");*/
     background-repeat:no-repeat;
@@ -335,20 +396,24 @@ table{
     width: 11px;
 }
 .img-circle{
+    padding-right: 8px;
     padding-left: 15px;
 }
+.imgProfile{
+
+    height: 50px;
+}
 .circle{
-    padding-right: 10px;
+    height: 25px;
+    padding-right: 5px;
 }
 
 .userName{
     font-size: 22px;
+    margin: 0;
     /*display: block;*/
 }
-.img-circle{
-    height: 40px;
 
-}
 div,p,span, ul,li{
     font-family: 'Roboto', sans-serif;
 }
@@ -357,13 +422,14 @@ div,p,span, ul,li{
     padding-top: 10px;
     background-color:#3fcbff;
     color:white;
-    height: auto;
+    height: auto !important;
+    width: 100%;
     padding-bottom: 12px;
 
 }
 
 .head{
-    padding-top: -4px;
+
     float: right;
     position: relative;
     font-family: 'Roboto', sans-serif;
@@ -381,18 +447,19 @@ div,p,span, ul,li{
     background-color: #3d4a5d;
     width: 210px;
     color: #c2c3c6;
-    height: 1000px;
+    height: 100%;
+    min-height: 1500px;
     margin-bottom: 0;
 
 }
 .name{
     padding-right: 8px;
-    font-size: 21px;
+    font-size: 20px;
 
 }
 .campus{
-    padding-right: 12px;
-    font-size: 21px;
+    padding-right: 0;
+    font-size: 20px;
 
 }
 .fa-lock{
@@ -402,14 +469,29 @@ div,p,span, ul,li{
 .lang{
     /*margin-top: 5px;*/
     float: right;
-    padding-right: 15px;
+    padding-right: 20px;
 }
 #main{
+    /*display: -webkit-flex;*/
+    /*-webkit-align-items: flex-start;*/
     display: flex;
-    height: auto;
+    /*align-items: flex-start;*/
+    height: auto !important;
 }
+
+/*#leftMenu, #dashboadPosition{*/
+    /*!*display: block;*!*/
+    /*float: left;*/
+/*}*/
+/*#dashboadPosition{*/
+    /*display: flex;*/
+    /*display: -webkit-inline-flex;*/
+/*}*/
+/*#name{*/
+/*padding-left: 10px;*/
+/*}*/
 .menu3{
-    height: auto;
+    height: auto !important;
     margin-top: 30px;
 }
 .profile{
@@ -417,13 +499,15 @@ div,p,span, ul,li{
     background-color:#3fcbff;
     color: white;
     width: 210px;
+    height: auto;
+    /*height: 105px;*/
     text-align: left;
-    padding-top: 35px;
-    padding-bottom: 10px;
+    padding-top: 33px;
+    padding-bottom: 20px;
 
 }
 .userData{
-    display: block;
+    /*display: block;*/
 }
 #setting{
     /*position: relative;*/
@@ -438,17 +522,20 @@ div,p,span, ul,li{
     width: 187px;
 }
 #doc{
-    margin-bottom: 1000px;
+
 }
 #user{
 
     padding-left: 181px;
 
 }
+
 .online{
-    padding-left: 127px;
+    background-color: #3fcbff;
+    padding-left: 113px;
     font-size: 14px;
-    padding-right: 15px;
+    /*padding-top: 5px;*/
+    /*padding-right: 15px;*/
     font-family: 'Roboto', sans-serif;
 }
 
@@ -456,7 +543,7 @@ div,p,span, ul,li{
     font-size: 20px;
     padding-bottom: 6px;
     padding-top: 8px;
-    height: auto;
+    height: auto !important;
     background-color: #364050;
     color: white;
 }
@@ -470,12 +557,10 @@ ul li{
 li{
     text-decoration: none;
 }
-.fa-home, .fa-th, .fa-user-alt, .fa-shield-alt, .fa-file-alt, .fa-comment-alt, .fa-cog{
+.fa-home, .fa-th, .fa-user-alt, .fa-shield-alt,  .fa-comment-alt, .fa-cog{
     color:#415b75;
 }
-.fas .fa-file-alt{
 
-}
 .user{
     padding-right: 25px;
     padding-left: 20px;
@@ -483,7 +568,8 @@ li{
 }
 
 .user:hover{
-    box-shadow: 0px -7px 10px -11px #000000;
+    box-shadow: inset 0px 5px 10px -7px #000000;
+    filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=10);
     background-color:#3fcbff;
     -webkit-transition: .2s ease-out;
     -webkit-transition-delay: 0.3s;
@@ -493,7 +579,7 @@ li{
     -moz-transition-delay: 0.5s;
     transition: .2s ease-out;
     transition-delay: 0.1s;
-    padding-top: 14px;
+    padding-top: 11px;
     padding-bottom:     10px;
     cursor: pointer;
     animation-direction: alternate-reverse;
@@ -501,8 +587,21 @@ li{
 }
 
 .point{
-    padding-top: 5px;
-    padding-bottom: 15px;
+    padding-top: 6px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 6px;
+    color: #b4b7bb;
+    font-size: 16px;
+}
+.fa-file-alt{
+    color:#a4aeb7;
+}
+#documentMenu{
+    color:#f5f5f7;
+    background-color:#495c6e ;
+    cursor: pointer;
+    border-left: 2px solid #3fcbff;
 }
 .point:hover {
     color:#f5f5f7;
@@ -534,28 +633,199 @@ li{
     font-style: normal;
     font-weight: normal;
 }
-@media screen and (max-width: 1366px){
-    .nameTable1{
-        padding-left: 140px;
+@media screen and (max-width: 1920px){
+
+    /*.panelHead1{*/
+    /*width: 740px;*/
+
+    /*}*/
+    #document {
+        padding-left: 10px;
     }
-    .panelHead1{
-        width: 680px;
+    #block2{
+        background-color: inherit;
+        /*margin-left: 18px;*/
+        width: 710px;
+        margin-top: -8px;
+        float: right;
+    }
+    table{
+        width: 720px;
+    }
+    .nameTable{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        font-weight: 600;
+        padding-right: 0;
+        background-color: inherit;
+    }
+    .nameTable1{
+        font-weight: 600;
+        text-align: right;
+        font-size: 14px;
+        background-color: inherit;
+        padding-left: 72px;
+    }
+    .nameTable2{
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 89px;
+    }
+    .nameTable3{
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 10px;
+    }
+    .nameTable4{
+        background-color: inherit;
+        font-weight: 600;
+        padding-left: 25px;
 
     }
 }
+@media screen and (max-width: 1340px){
+
+    /*.panelHead1{*/
+    /*width: 680px;*/
+
+    /*}*/
+    #document {
+        padding-left: 10px;
+    }
+    #block2{
+        background-color: inherit;
+        margin-left: 10px;
+        width: 680px;
+        margin-top: -8px;
+        float: right;
+    }
+    table{
+        width: 680px;
+    }
+    .nameTable{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 11px;
+        font-weight: 600;
+        padding-right: 10px;
+        background-color: inherit;
+    }
+    .nameTable1{
+        font-weight: 600;
+        text-align: right;
+        background-color: inherit;
+        padding-left: 130px;
+    }
+    .nameTable2{
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 82px;
+    }
+    .nameTable3{
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 49px;
+    }
+    .nameTable4{
+        background-color: inherit;
+        font-weight: 600;
+        padding-left: 45px;
+
+    }
+}
+@media screen and (max-width: 1294px){
+    #block2{
+        background-color: inherit;
+        margin-left: 10px;
+        width: 640px;
+        margin-top: -8px;
+        float: right;
+    }
+    table{
+        width: 640px;
+    }
+}
+@media screen and (max-width: 1270px){
+
+    /*.panelHead1{*/
+    /*width: 680px;*/
+
+    /*}*/
+    #document {
+        padding-left: 10px;
+    }
+
+    #block2{
+        background-color: inherit;
+        margin-left: 10px;
+        width: 640px;
+        margin-top: -8px;
+        float: right;
+    }
+    table{
+        width: 640px;
+    }
+    .nameTable{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 11px;
+        font-weight: 600;
+        padding-right: 10px;
+        background-color: inherit;
+    }
+    .nameTable1{
+        font-weight: 600;
+        text-align: right;
+        background-color: inherit;
+        padding-left: 100px;
+    }
+    .nameTable2{
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 76px;
+    }
+    .nameTable3{
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 45px;
+    }
+    .nameTable4{
+        background-color: inherit;
+        font-weight: 600;
+        padding-left: 40px;
+
+    }
+}
+
 @media screen and (max-width: 1291px){
     #document{
         padding-left: 15px;
 
     }
 }
+@media screen and (max-width: 1264px){
+    #block2{
+        background-color: inherit;
+        margin-left: 10px;
+        width: 600px;
+        margin-top: -8px;
+        float: right;
+    }
+    table{
+        width: 600px;
+    }
+}
 @media screen and (max-width: 1276px){
     .panelHead1{
-        width: 650px;
+        width: 630px;
 
     }
     .nameTable1{
         padding-left: 120px;
+    }
+    .buttonScan {
+        margin-left: 33%;
     }
 }
 @media screen and (max-width: 1246px){
@@ -565,6 +835,118 @@ li{
     }
     .nameTable1{
         padding-left: 110px;
+    }
+}
+@media screen and (max-width: 1240px) {
+
+    /*.panelHead1{*/
+    /*width: 680px;*/
+    /*}*/
+    #document {
+        padding-left: 5px;
+    }
+
+    #block2 {
+        background-color: inherit;
+        margin-left: 10px;
+        width: 620px;
+        margin-top: -8px;
+        float: right;
+    }
+
+    table {
+        width: 620px;
+    }
+
+    .nameTable {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 11px;
+        font-weight: 600;
+        padding-right: 10px;
+        background-color: inherit;
+    }
+
+    .nameTable1 {
+        font-weight: 600;
+        text-align: right;
+        background-color: inherit;
+        padding-left: 100px;
+    }
+
+    .nameTable2 {
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 76px;
+    }
+
+    .nameTable3 {
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 45px;
+    }
+
+    .nameTable4 {
+        background-color: inherit;
+        font-weight: 600;
+        padding-left: 40px;
+
+    }
+}
+@media screen and (max-width: 1183px) {
+
+    /*.panelHead1{*/
+    /*width: 680px;*/
+    /*}*/
+    #document {
+        padding-left: 5px;
+    }
+
+    #block2 {
+        background-color: inherit;
+        margin-left: 10px;
+        width: 600px;
+        margin-top: -8px;
+        float: right;
+    }
+
+    table {
+        width: 600px;
+    }
+
+    .nameTable {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 11px;
+        font-weight: 600;
+        padding-right: 10px;
+        background-color: inherit;
+    }
+
+    .nameTable1 {
+        font-weight: 600;
+        text-align: right;
+        background-color: inherit;
+        padding-left: 80px;
+    }
+
+    .nameTable2 {
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 70px;
+    }
+
+    .nameTable3 {
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 40px;
+    }
+
+    .nameTable4 {
+        background-color: inherit;
+        font-weight: 600;
+        padding-left: 40px;
+
     }
 }
 @media screen and (max-width: 1216px){
@@ -594,6 +976,12 @@ li{
         padding-left: 95px;
     }
 }
+@media screen and (max-width: 1227px) {
+    .panelHead {
+
+        margin-left: 0px;
+    }
+}
 @media screen and (max-width: 1166px){
     .panelHead1{
         width: 580px;
@@ -602,6 +990,15 @@ li{
     .nameTable1{
         padding-left: 75px;
     }
+}
+@media screen and (max-width: 1162px) {
+    .panelHead {
+        width: 300px;
+    }
+    #block2{
+        margin-left: 0;
+    }
+
 }
 @media screen and (max-width: 1146px){
     .panelHead1{
@@ -632,7 +1029,92 @@ li{
         font-size: 18px;
     }
 }
-@media screen and (max-width: 1083px){
+@media screen and (max-width: 1148px) {
+    .panelHead {
+        width: 270px;
+    }
+    .search {
+        width: 220px;
+    }
+}
+@media screen and (max-width: 1116px) {
+    .panelHead {
+        width: 250px;
+    }
+    .search {
+        width: 200px;
+    }
+    #block2 {
+        background-color: inherit;
+        margin-left: 10px;
+        width: 570px;
+        margin-top: -8px;
+        float: right;
+    }
+
+    table {
+        width: 570px;
+    }
+
+    .nameTable {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 11px;
+        font-weight: 600;
+        padding-right: 10px;
+        background-color: inherit;
+    }
+
+    .nameTable1 {
+        font-weight: 600;
+        text-align: right;
+        background-color: inherit;
+        padding-left: 60px;
+    }
+
+    .nameTable2 {
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 60px;
+    }
+
+    .nameTable3 {
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 35px;
+    }
+
+    .nameTable4 {
+        background-color: inherit;
+        font-weight: 600;
+        padding-left: 35px;
+
+    }
+}
+@media screen and (max-width: 1111px){
+    .point{
+        font-size: 14px;
+    }
+    .menu2{
+        width: 180px;
+    }
+    #setting{
+        width: 160px;
+    }
+    #setting:hover{
+        width: 157px;
+    }
+    .profile{
+        width: 180px;
+    }
+    #user{
+        padding-left: 135px;
+    }
+    .online{
+        padding-left: 95px;
+    }
+}
+@media screen and (max-width: 1085px){
     #user{
         padding-left: 173px;
     }
@@ -640,49 +1122,171 @@ li{
         padding-left: 114px;
     }
 }
-@media screen and (max-width: 1056px){
-    .panelHead{
-        width: 275px;
 
+
+@media screen and (max-width: 1068px) {
+    .panelHead {
+        width: 230px;
     }
     .search {
-        width: 210px;
+        width: 180px;
     }
-}
-@media screen and (max-width: 1016px){
-    .panelHead{
-        width: 265px;
+    #block2 {
+        background-color: inherit;
+        margin-left: 10px;
+        width: 520px;
+        margin-top: -8px;
+        float: right;
+    }
+
+    table {
+        width: 520px;
+    }
+
+    .nameTable {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 11px;
+        font-weight: 600;
+        padding-right: 10px;
+        background-color: inherit;
+    }
+
+    .nameTable1 {
+        font-weight: 600;
+        text-align: right;
+        background-color: inherit;
+        padding-left: 50px;
+    }
+
+    .nameTable2 {
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 50px;
+    }
+
+    .nameTable3 {
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 30px;
+    }
+
+    .nameTable4 {
+        background-color: inherit;
+        font-weight: 600;
+        padding-left: 30px;
 
     }
-    .search {
-        width: 200px;
-    }
 }
-@media screen and (max-width: 1006px){
-    .panelHead{
-        width: 255px;
-
+@media screen and (max-width: 1055px){
+    #user{
+        padding-left: 90px;
     }
-    .search {
-        width: 190px;
+    .userData{
+        margin-left: 15px;
     }
-}
-@media screen and (max-width: 996px){
-    .profile, .menu2{
-        width: 190px;
+    .online{
+        padding-left: 50px;
+    }
+    .profile{
+        display: block;
+        width: 140px;
+        height: 135px;
+    }
+    .menu2{
+        width: 140px;
     }
     #setting{
-        width: 177px;
+        width: 120px;
     }
     #setting:hover{
-        width: 167px;
+        width: 117px;
+    }
+    #block1{
+        margin-left: 15px;
+    }
+    #document{
+        left: 150px;
+    }
+
+
+}
+@media screen and (max-width: 1025px) {
+    .panelHead {
+        width: 220px;
+    }
+    .search {
+        width: 170px;
+    }
+    #block2 {
+        background-color: inherit;
+        margin-left: 10px;
+        width: 530px;
+        margin-top: -8px;
+        float: right;
+    }
+
+    table {
+        width: 530px;
+    }
+
+    .nameTable {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 11px;
+        font-weight: 600;
+        padding-right: 10px;
+        background-color: inherit;
+    }
+
+    .nameTable1 {
+        font-weight: 600;
+        text-align: right;
+        background-color: inherit;
+        padding-left: 40px;
+    }
+
+    .nameTable2 {
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 40px;
+    }
+
+    .nameTable3 {
+        font-weight: 600;
+        background-color: inherit;
+        padding-left: 30px;
+    }
+
+    .nameTable4 {
+        background-color: inherit;
+        font-weight: 600;
+        padding-left: 30px;
+
+    }
+}
+
+@media screen and (max-width: 996px){
+    /*.profile, .menu2{*/
+        /*width: 190px;*/
+    /*}*/
+    /*#setting{*/
+        /*width: 177px;*/
+    /*}*/
+    /*#setting:hover{*/
+        /*width: 167px;*/
+    /*}*/
+    .panelHead{
+
+        margin-left: 10px;
+
     }
 
 }
 @media screen and (max-width: 976px){
-    .profile, .menu2{
-        width: 177px;
-    }
+    /*.profile, .menu2{*/
+        /*width: 177px;*/
+    /*}*/
     .panelHead1{
         width: 465px;
     }
@@ -698,6 +1302,38 @@ li{
     }
     .nameTable4{
         padding-left: 40px;
+    }
+}
+@media screen and (max-width: 966px){
+    /*.profile, .menu2{*/
+        /*width: 177px;*/
+    /*}*/
+    .panelHead1{
+        width: 465px;
+    }
+    .nameTable1{
+        padding-left: 25px;
+    }
+    .nameTable2{
+        padding-left: 25px;
+    }
+
+    .nameTable3{
+        padding-left: 25px;
+    }
+    .nameTable4{
+        padding-left: 35px;
+    }
+    #block2 {
+        background-color: inherit;
+        margin-left: 10px;
+        width: 500px;
+        margin-top: -8px;
+        float: right;
+    }
+
+    table {
+        width: 500px;
     }
 }
 @media screen and (max-width: 949px){
@@ -736,39 +1372,77 @@ li{
         padding-left: 35px;
     }
 }
-@media screen and (max-width: 908px){
+@media screen and (max-width: 935px){
+    /*.profile, .menu2{*/
+        /*width: 177px;*/
+    /*}*/
+    .panelHead1{
+        width: 465px;
+    }
+    .nameTable1{
+        padding-left: 25px;
+    }
+    .nameTable2{
+        padding-left: 25px;
+    }
+
+    .nameTable3{
+        padding-left: 25px;
+    }
+    .nameTable4{
+        padding-left: 35px;
+    }
+    #block2 {
+        background-color: inherit;
+        margin-left: 10px;
+        width: 480px;
+        margin-top: -8px;
+        float: right;
+    }
+
+    table {
+        width: 480px;
+    }
+}
+@media screen and (max-width: 986px){
     .panelHead{
-        width: 95%;
-        height: 100px;
+        width: 92%;
+        height: 340px;
         border-radius: 0;
     }
     .search{
-        width: 92%;
+        width: 85%;
 
     }
     #block1, #block2{
         display: block;
     }
-
     .buttonScan{
-        margin-left: 230px;
+        margin-top: 450px;
+        margin-bottom: 20px;
+        margin-left: 50%;
         position: relative;
-        top:150px;
+        /*top:150px;*/
         padding: 2px 15px;
     }
     #document{
+        width: 75%;
         display: block;
     }
     .panelHead1{
         width: 95%;
     }
     #block2{
-        margin-top: 350px;
+        width: 95%;
+        margin-top: 360px;
         margin-left: 0;
         float: none;
     }
     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
         padding-left: 15%;
+    }
+    table {
+        width: 100%;
     }
     #setting{
         margin-top: 900px;
@@ -776,14 +1450,30 @@ li{
     }
 
 }
-@media screen and (max-width: 908px){
-    .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
-        padding-left: 13%;
+
+@media screen and (max-width: 926px){
+
+    .lang{
+        padding-top: 5px;
     }
 }
+@media screen and (max-width: 908px){
+    .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
+        padding-left: 10%;
+    }
+    .buttonScan {
+        margin-left: 40%;
+    }
+}
+
 @media screen and (max-width: 775px){
     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
         padding-left: 12%;
+    }
+}
+@media screen and (max-width: 768px){
+    .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
+        padding-left: 8%;
     }
 }
 @media screen and (max-width: 744px){
@@ -797,34 +1487,22 @@ li{
 }
 @media screen and (max-width: 733px){
     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
-        padding-left: 11%;
+        padding-left: 6%;
     }
-    .buttonScan{
-        margin-left: 190px;
-    }
+
 }
-@media screen and (max-width: 698px){
-    .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
-        padding-left: 10%;
-    }
-    .buttonScan{
-        margin-left: 180px;
-    }
-}
-@media screen and (max-width: 670px){
-    .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
-        padding-left: 9%;
-    }
-    .buttonScan{
-        margin-left: 170px;
-    }
-}
+
+/*@media screen and (max-width: 645px){*/
+    /*.nameTable1, .nameTable2, .nameTable3,  .nameTable4{*/
+        /*padding-left: 3%;*/
+    /*}*/
+/*}*/
 @media screen and (max-width: 645px){
     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
-        padding-left: 7%;
+        padding-left: 2%;
     }
-    .buttonScan{
-        margin-left: 150px;
+    #block1, #block2{
+        margin-left: 0px;
     }
 }
 @media screen and (max-width: 679px){
@@ -836,18 +1514,18 @@ li{
     .point{
         font-size: 14px;
     }
-    .menu2{
-        width: 180px;
-    }
-    #setting{
-        width: 160px;
-    }
-    #setting:hover{
-        width: 157px;
-    }
-    .profile{
-        width: 180px;
-    }
+    /*.menu2{*/
+        /*width: 180px;*/
+    /*}*/
+    /*#setting{*/
+        /*width: 160px;*/
+    /*}*/
+    /*#setting:hover{*/
+        /*width: 157px;*/
+    /*}*/
+    /*.profile{*/
+        /*width: 180px;*/
+    /*}*/
     #user{
         padding-left: 135px;
     }
@@ -855,53 +1533,64 @@ li{
         padding-left: 95px;
     }
 }
-@media screen and (max-width: 599px){
-     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
-        font-size: 12px;
-        padding-left: 8%;
-    }
+
+@media screen and (max-width: 595px){
+    /*.nameTable1, .nameTable2, .nameTable3,  .nameTable4{*/
+    /*font-size: 12px;*/
+    /*padding-left: 7%;*/
+    /*}*/
     .nameTable{
         font-size: 12px;
     }
-    .buttonScan{
-        margin-left: 130px;
+    /*.buttonScan{*/
+    /*margin-left: 120px;*/
+    /*}*/
+}
+@media screen and (max-width: 587px){
+    #document{
+        width: 70%;
+    }
+    .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
+        font-size: 12px;
+        padding-left: 0;
+    }
+    .panelHead{
+        width: 95%;
+        height: 340px;
+        border-radius: 0;
+    }
+    .search{
+        width: 90%;
+
+    }
+    .panelHead1{
+        width: 95%;
+    }
+    #block2{
+        width: 95%;
+
+    }
+
+    table {
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 526px){
+    #document{
+        width: 66%;
     }
 }
-@media screen and (max-width: 597px){
-     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
+
+@media screen and (max-width: 620px){
+    .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
         font-size: 12px;
         padding-left: 7%;
     }
     .nameTable{
         font-size: 12px;
     }
-    .buttonScan{
-        margin-left: 120px;
-    }
-}
-@media screen and (max-width: 577px){
-     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
-        font-size: 12px;
-        padding-left: 6%;
-    }
-    .nameTable{
-        font-size: 12px;
-    }
-    .buttonScan{
-        margin-left: 110px;
-    }
-}
-@media screen and (max-width: 559px){
-     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
-        font-size: 12px;
-        padding-left: 7%;
-    }
-    .nameTable{
-        font-size: 12px;
-    }
-    .userData{
-        padding-left: 15px;
-    }
+
     #user{
         padding-left: 90px;
     }
@@ -909,6 +1598,7 @@ li{
         padding-left: 50px;
     }
     .profile{
+        height: 135px;
         display: block;
         width: 140px;
     }
@@ -924,35 +1614,90 @@ li{
 
 
 }
-@media screen and (max-width: 537px){
-     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
+
+@media screen and (max-width: 602px){
+    .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
         font-size: 12px;
-        padding-left: 6%;
+        padding-left: 3%;
     }
     .nameTable{
         font-size: 12px;
     }
-}
-@media screen and (max-width: 519px){
-     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
-        font-size: 12px;
-        padding-left: 7%;
+    .nameTable1{
+        padding-right: 5px;
     }
+    .nameTable2{
+        padding-right: 0;
+        margin: 0;
+    }
+    .panelHead{
+        width: 97%;
+        height: 340px;
+        border-radius: 0;
+    }
+    .search{
+        width: 88%;
+
+    }
+    .panelHead1{
+        width: 97%;
+    }
+    #block2{
+        width: 97%;
+
+    }
+
+    table{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 537px){
+    /*.nameTable1, .nameTable2, .nameTable3,  .nameTable4{*/
+    /*font-size: 12px;*/
+    /*padding-left: 6%;*/
+    /*}*/
     .nameTable{
         font-size: 12px;
     }
     .buttonScan{
-        margin-left: 90px;
-    }
-    .search{
-        width: 87%;
-    }
-    .panelHead1, .panelHead{
-        width: 98%;
+        margin-left: 35%;
+        position: relative;
+
     }
 }
+@media screen and (max-width: 565px) {
+
+    .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
+        font-size: 12px;
+        padding-left: 1%;
+    }
+    .nameTable {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 522px){
+    #user{
+        padding-left: 90px;
+    }
+    .online{
+        padding-left: 45px;
+        font-size: 10px;
+    }
+    .logotype, .campus, .name, .userName, .fa-bars{
+        font-size: 16px;
+    }
+    .user, .lang{
+        font-size: 14px;
+    }
+    .fa-lock, .lang{
+        padding-right: 5px;
+    }
+
+}
 @media screen and (max-width: 503px){
-     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
+    .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
         /*font-size: 11px;*/
         padding-left: 6%;
     }
@@ -961,10 +1706,10 @@ li{
     }
     .buttonScan{
         font-size: 13px;
-        margin-left: 90px;
+        margin-left: 30%;
     }
     .search{
-        width: 87%;
+        width: 85%;
     }
     .category{
 
@@ -977,6 +1722,16 @@ li{
 
 }
 @media screen and (max-width: 516px){
+    #document{
+        left: 140px;
+    }
+    table{
+        margin-left: 5px;
+        width: 100%;
+    }
+    #block2{
+        width: 100%;
+    }
     #user{
         padding-left: 90px;
     }
@@ -999,6 +1754,42 @@ li{
     }
 
 }
+@media screen and (max-width: 494px) {
+    .logo{
+
+
+    }
+
+    .head{
+        float: bottom;
+
+    }
+    .logotype, .fa-bars{
+
+        padding-left: 5px;
+    }
+
+    .profile{
+        display: block;
+        width: 125px;
+    }
+    .menu2{
+        width: 125px;
+    }
+    #setting{
+        width: 105px;
+    }
+    #setting:hover{
+        width: 102px;
+    }
+    .point{
+        font-size: 12px;
+    }
+    #document{
+        left: 130px;
+    }
+
+}
 @media screen and (max-width: 491px){
     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
         /*font-size: 11px;*/
@@ -1007,9 +1798,9 @@ li{
     .nameTable{
         /*font-size: 11px;*/
     }
-    .buttonScan{
-        margin-left: 90px;
-    }
+    /*.buttonScan{*/
+    /*margin-left: 90px;*/
+    /*}*/
 }
 @media screen and (max-width: 483px){
     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
@@ -1018,6 +1809,26 @@ li{
     }
     .nameTable{
         font-size: 11px;
+    }
+
+}
+@media screen and (max-width: 477px) {
+    #document{
+        width: 73%;
+        left: 110px;
+    }
+    .profile{
+        display: block;
+        width: 110px;
+    }
+    .menu2{
+        width: 110px;
+    }
+    #setting{
+        width: 90px;
+    }
+    #setting:hover{
+        width: 87px;
     }
 }
 @media screen and (max-width: 469px){
@@ -1063,25 +1874,25 @@ li{
         padding-left: 8px;
 
     }
-    .img-circle , .userData, .point, .logotype,.fa-bars{
+     .point, .logotype,.fa-bars{
         padding-left: 10px;
     }
     .point{
         font-size: 12px;
     }
-    .profile{
-        display: block;
-        width: 127px;
-    }
-    .menu2{
-        width: 127px;
-    }
-    #setting{
-        width: 107px;
-    }
-    #setting:hover{
-        width: 104px;
-    }
+    /*.profile{*/
+        /*display: block;*/
+        /*width: 127px;*/
+    /*}*/
+    /*.menu2{*/
+        /*width: 127px;*/
+    /*}*/
+    /*#setting{*/
+        /*width: 107px;*/
+    /*}*/
+    /*#setting:hover{*/
+        /*width: 104px;*/
+    /*}*/
 }
 @media screen and (max-width: 457px){
     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
@@ -1091,6 +1902,46 @@ li{
     .nameTable{
         font-size: 11px;
     }
+}
+@media screen and (max-width: 457px){
+    #user{
+        padding-left: 35px;
+    }
+    .online{
+        padding-left: 10px;
+
+    }
+    .logotype, .campus, .name, .userName, .fa-bars{
+        font-size: 15px;
+    }
+
+    .user {
+        padding-right: 8px;
+        padding-left: 8px;
+
+    }
+}
+@media screen and (max-width: 448px){
+    .fa-lock{
+        background-color: inherit;
+        padding-right: 35px;
+    }
+    #user{
+        padding-left: 35px;
+    }
+    .online{
+        padding-left: 10px;
+
+    }
+    .logotype, .campus, .name, .userName, .fa-bars{
+        font-size: 15px;
+    }
+    .user {
+        padding-right: 8px;
+        padding-left: 8px;
+
+    }
+
 }
 @media screen and (max-width: 443px){
     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
@@ -1102,42 +1953,70 @@ li{
     }
 }
 @media screen and (max-width: 431px){
-   #document{
-       margin-left: 0;
-       padding-left: 5px;
-   }
+    #document{
+        margin-left: 0;
+        padding-left: 0px;
+    }
     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
         font-size: 11px;
         padding-left: 3%;
     }
     .buttonScan{
-        margin-left: 80px;
+        margin-left: 28%;
     }
 }
 @media screen and (max-width: 450px){
-    .img-circle , .userData, .point, .logotype,.fa-bars{
+    .point, .logotype,.fa-bars{
         padding-left: 5px;
     }
-    .profile{
-
-        width: 122px;
+     .imgProfile{
+        padding-left: 10px;
     }
-    .menu2{
-        width: 122px;
-    }
-    #setting{
-        width: 102px;
-    }
-    #setting:hover{
-        width: 99px;
-    }
-
-   /*div #block1, div #block2{*/
-        /*margin-right: 0;*/
-        /*padding-right: 0;*/
-    /*}*/
+     .img-circle{
+         padding-left: 15px;
+     }
 }
-@media screen and (max-width: 409px){
+@media screen and (max-width: 423px){
+    #document{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 427px) {
+    #document{
+        top: 113px;
+    }
+    .logo{
+        text-align: center;
+        padding-bottom: 39px;
+    }
+    /*#head{*/
+    /*text-align: center;*/
+    /*}*/
+    .head{
+
+        float: right;
+        padding-right: 5px;
+        margin-top: 5px;
+
+    }
+    .fa-lock{
+        padding-right: 35px;
+    }
+    .campus{
+        padding-left: 10px;
+    }
+    .user{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    #user{
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 410px){
+    #document{
+        top: 123px;
+    }
     .profile{
 
         width: 110px;
@@ -1166,11 +2045,14 @@ li{
     #setting:hover{
         width: 84px;
     }
-    .buttonScan{
-        margin-left: 70px;
-    }
+    /*.buttonScan{*/
+    /*margin-left: 70px;*/
+    /*}*/
 }
 @media screen and (max-width: 394px){
+    #document{
+        left: 100px;
+    }
     .profile{
 
         width: 100px;
@@ -1186,6 +2068,10 @@ li{
     }
 }
 @media screen and (max-width: 347px) {
+    #document{
+        width: 68%;
+        left: 97px;
+    }
     .logo{
 
 
@@ -1224,6 +2110,12 @@ li{
 
 }
 @media screen and (max-width: 343px) {
+    #document{
+        left: 91px;
+    }
+    .search{
+        width: 85%;
+    }
     .profile{
         /*font-size: 10px;*/
         width: 91px;
@@ -1243,11 +2135,14 @@ li{
         width: 68px;
     }
 }
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 410px) {
     .logo{
         /*padding-bottom: 50px;*/
-        height: 80px;
+        height: 80px !important;
         text-align: center;
+    }
+    .fa-lock{
+        padding-right: 35px;
     }
     .head{
 
@@ -1267,7 +2162,7 @@ li{
 }
 @media screen and (max-width: 387px) {
     .nameTable, .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
-       font-weight: 100;
+        font-weight: 100;
     }
     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
         /*font-size: 11px;*/
@@ -1278,10 +2173,10 @@ li{
     .nameTable, .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
         padding-left: 3px;
     }
-   #name{
-       padding-left: 5px;
-       /*padding-right: 5px;*/
-   }
+    #name{
+        padding-left: 5px;
+        /*padding-right: 5px;*/
+    }
     #search{
         padding-right: 0;
         padding-left: 10px;
@@ -1290,7 +2185,7 @@ li{
 }
 @media screen and (max-width: 351px) {
     /*.nameTable, .nameTable1, .nameTable2, .nameTable3,  .nameTable4{*/
-        /*padding-left: 3px;*/
+    /*padding-left: 3px;*/
     /*}*/
     #name{
         padding-left: 0;
@@ -1308,37 +2203,41 @@ li{
         padding-left: 1%;
     }
 }
-@media screen and (max-width: 334px) {
-    .buttonScan{
-        margin-left: 50px;
-    }
-    .category{
+@media screen and (max-width: 394px) {
+    /*.buttonScan {*/
+    /*margin-left: 50px;*/
+    /*}*/
+
+    .category {
 
         font-size: 14px;
 
     }
-    .tag, .folders{
+
+    .tag, .folders {
         font-size: 12px;
     }
-    .category{
 
-        margin-left: 0;
+    .category {
+
+        margin-left: 15px;
     }
-    .fa-folder{
+
+    .folder {
         padding-left: 0;
     }
-    /*.body{*/
-        /*padding-left: 0;*/
-    /*}*/
-    .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
+
+    .nameTable1, .nameTable2, .nameTable3, .nameTable4 {
         /*font-size: 11px;*/
         padding-left: 0;
     }
-    .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
+
+    .nameTable1, .nameTable2, .nameTable3, .nameTable4 {
         /*font-size: 11px;*/
         padding-left: 0;
     }
-    #name{
+
+    #name {
         margin-right: 0;
         padding-right: 0;
     }

@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Logotype</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Documents</title>
+    <link rel="stylesheet" href="style.css"   media= "all">
     <base href="/">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,25 +15,30 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!-- Последняя компиляция и сжатый JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
     <div>
         <div class="logo">
             <span class="logotype">Logotype</span>
-            <span class="online">Translation online</span>
+
+            <span class="online">
+               <i class="far fa-circle circle1"></i>
+                Translation online
+            </span>
 
             <span class="head">
             <span class="campus">Campus</span>
-            <span class="circle"><img src="../../img/Dashboard.png" alt="..." class="img-circle"></span>
+            <img src="../../img/Dashboard.png" alt="..." class="img-circle circle">
             <span class="name">Liz Flores</span>
             <span class="lock"><i class="fas fa-lock"></i></span>
 
-        </span>
+             </span>
 
         </div>
 
@@ -46,109 +51,111 @@
 
 
         </span>
-            <span class="lang">Eng <i class="fas fa-caret-down" style="padding-left: 5px"></i></span>
+            <p class="lang">
+                  <select><option>Eng </option></select>
+                <i class="fas fa-caret-down"></i>
+            </p>
 
         </div>
         <div id="main">
 
-            <div >
+            <div  >
 
                 <div class="profile">
-                    <p class="imgProfile">
-                        <img src="../../img/Dashboard.png" alt="..." class="img-circle">
-                    </p>
-                    <p class="userData">
-                        <span class="userName">Liz Flores</span><br>
-                        <span style="font-size: 9px; background-color: inherit">online</span>
-                    </p>
+
+                        <img src="../../img/Dashboard.png" alt="..." class="img-circle imgProfile">
+
+                    <div class="userData">
+                        <div class="userName">Liz Flores</div>
+                        <div style="font-size: 9px; background-color: inherit"> <i class="far fa-circle circle2"></i> online</div>
+                    </div>
                 </div>
-                <ul class="menu2">
+                <div class="menu2">
 
                     <!--<li class="point"><i class="fas fa-home"></i> Home</li>-->
-                    <li class="point"> <a href="pages/dashboard/index.html"><i class="fas fa-th"></i> Dashboard</a></li>
-                    <li class="point"><a href="pages/demografics/index.html"><i class="fas fa-user-alt"></i> Demographics</a></li>
-                    <li class="point"><a href="pages/insurance/index.html"><i class="fas fa-shield-alt"></i> Insurance information</a></li>
-                    <li class="point"><a href="pages/documents/index.html"><i class="fas fa-file-alt"></i> Document upload</a></li>
+                    <a href="../../pages/dashboard/index.html"> <p class="point"><i class="fas fa-th"></i> Dashboard</p></a>
+                    <a href="../../pages/demografics/index.html"><p class="point"><i class="fas fa-user-alt"></i> Demographics</p></a>
+                    <a href="../../pages/insurance/index.html"><p class="point"><i class="fas fa-shield-alt"></i> Insurance information</p></a>
+                    <a href="../../pages/documents/index.html"><p class="point"  id="documentMenu"><i class="fas fa-file-alt"></i> Document upload</p></a>
                     <!--<li class="point"><i class="far fa-file-alt"></i> Reports</li>-->
                     <!--<li class="point"><i class="fas fa-comment-alt"></i> Charts</li>-->
                     <!--<li class="point" id="setting"> <span class="setting"><i class="fas fa-cog"></i> Settings</span></li>-->
 
-                </ul>
+                </div>
 
             </div>
 
 
             <div id="document">
-                <div >
+                <!--<div  id="dashboadPosition">-->
 
                     <div id="block1">
-                        <div class=" panelHead ">
+                        <div class=" panelHead panel-shadow">
                             <div class=" panel-color" id="search">
                                 <input type="search" placeholder="Search" class="search">
                                 <button class="iconSearch"><i class="fas fa-search"></i></button>
                             </div>
                             <div class=" body">
-                                <span class="category">Category</span><span class="tag">view tag cloud</span>
+
+                                <span class="category">Category</span>
+                                <span class="tag">view tag cloud</span>
                                 <div class="folders">
-                                    <span class="folder"><i class="fas fa-folder"></i><span class="fold">.CT Scan(0)</span></span>
-                                    <span class="folder"><i class="fas fa-folder"></i><span class="fold">.MRI(0)</span></span>
-                                    <span class="folder"><i class="fas fa-folder"></i><span class="fold">Appointments(0)</span></span>
+                                    <span class="folder"><i class="fas fa-folder"></i><span class="fold">.CT Scan (0)</span></span>
+                                    <span class="folder"><i class="fas fa-folder"></i><span class="fold">.MRI (0)</span></span>
+                                    <span class="folder"><i class="fas fa-folder"></i><span class="fold">Appointments (0)</span></span>
+
+                                    <button class="buttonScan ">Scan File</button>
                                 </div>
 
-                                <button class="buttonScan">Scan File</button>
+
                             </div>
 
                         </div>
                     </div>
 
-                    <div id="block2" class="panelHead1">
 
-                                <table>
-                                    <tr class="panel-color" id="name">
-                                        <td  class="nameTable">Name</td>
-                                        <td  class="nameTable1">Folder</td>
+                    <div id="block2">
+
+
+                                <table class=" panel-color">
+                                    <tr id="name">
+                                        <td class="nameTable">Name</td>
+                                        <td class="nameTable1">Folder</td>
                                         <td class="nameTable2">Type</td>
                                         <td class="nameTable3">Modified</td>
                                         <td class="nameTable4">Modified by</td>
                                     </tr>
-                                    <tr class="panel-body">
-                                        <td class="data"></td>
-                                        <td class="data"></td>
-                                        <td class="data"></td>
-                                        <td class="data"></td>
-                                        <td class="data"></td>
+                                    <tr class="panel-body table1 panelHead1">
+                                        <td class="nameRow"></td>
+                                        <td class="nameRow"></td>
+                                        <td class="nameRow"></td>
+                                        <td class="nameRow"></td>
+                                        <td class="nameRow"></td>
+                                        <!--<td class="nameRow"></td>-->
+                                        <!--<td class="folderRow"></td>-->
+                                        <!--<td class="typeRow"></td>-->
+                                        <!--<td class="modifiedRow"></td>-->
+                                        <!--<td class="modifiedByRow"></td>-->
                                     </tr>
                                 </table>
-                                <!--<span class="nameTable">Name</span>-->
-                                <!--<span class="nameTable1">Folder</span>-->
-                                <!--<span class="nameTable2">Type</span>-->
-                                <!--<span class="nameTable3">Modified</span>-->
-                                <!--<span class="nameTable4">Modified by</span>-->
-                            <!--</div>-->
-                            <!--<div class="panel-body ">-->
 
-                                <!--<div class="table1">-->
-                                    <!--<p class="nameRow"></p>-->
-                                    <!--<p class="folderRow"></p>-->
-                                    <!--<p class="typeRow"></p>-->
-                                    <!--<p class="modifiedRow"></p>-->
-                                    <!--<p class="modifiedByRow"></p>-->
-                                <!--</div>-->
 
-                            <!--</div>-->
 
-                        <!--</div>-->
+
+
+
                     </div>
                 </div>
-
             </div>
 
-        </div>
+            <!--</div>-->
+
+        <!--</div>-->
 
 
     </div>
 
 
-<script src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="../../bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

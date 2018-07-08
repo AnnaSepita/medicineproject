@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Logotype</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Insurance</title>
+    <link rel="stylesheet" href="style.css"   media= "all">
     <base href="/">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,21 +15,25 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!-- Последняя компиляция и сжатый JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
     <div>
         <div class="logo">
             <span class="logotype">Logotype</span>
-            <span class="online">Translation online</span>
+            <span class="online">
+                   <i class="far fa-circle circle1"></i>
+                Translation online
+            </span>
 
             <span class="head">
             <span class="campus">Campus</span>
-            <span class="circle"><img src="../../img/Dashboard.png" alt="..." class="img-circle"></span>
+            <img src="../../img/Dashboard.png" alt="..." class="img-circle circle">
             <span class="name">Liz Flores</span>
             <span style="background-color: inherit"><i class="fas fa-lock"></i></span>
 
@@ -46,55 +50,65 @@
 
 
         </span>
-            <span class="lang">Eng <i class="fas fa-caret-down" style="padding-left: 5px"></i></span>
+            <span class="lang">
+                  <select>
+                <option>Eng</option>
+
+            </select>
+                <i class="fas fa-caret-down"></i>
+            </span>
 
         </div>
         <div id="main">
 
-            <div >
+            <div  id="leftMenu">
 
                 <div class="profile">
-                    <p class="imgProfile">
-                        <img src="../../img/Dashboard.png" alt="..." class="img-circle">
-                    </p>
-                    <p class="userData">
-                        <span class="userName">Liz Flores</span><br>
-                        <span style="font-size: 9px; background-color: inherit">online</span>
-                    </p>
+
+                        <img src="../../img/Dashboard.png" alt="..." class="img-circle imgProfile">
+
+                    <div class="userData">
+                        <p class="userName">Liz Flores</p>
+                        <p style="font-size: 9px; background-color: inherit">
+                            <i class="far fa-circle circle2"></i>
+                            online
+                        </p>
+                    </div>
                 </div>
-                <ul class="menu2">
+                <div class="menu2">
 
                     <!--<li class="point"><i class="fas fa-home"></i> Home</li>-->
-                    <li class="point"> <a href="pages/dashboard/index.html"><i class="fas fa-th"></i> Dashboard</a></li>
-                    <li class="point"><a href="pages/demografics/index.html"><i class="fas fa-user-alt"></i> Demographics</a></li>
-                    <li class="point"><a href="pages/insurance/index.html"><i class="fas fa-shield-alt"></i> Insurance information</a></li>
-                    <li class="point"><a href="pages/documents/index.html"><i class="fas fa-file-alt"></i> Document upload</a></li>
+                    <a href="pages/dashboard/index.html"><p class="point"> <i class="fas fa-th"></i> Dashboard</p></a>
+                    <a href="pages/demografics/index.html"><p class="point"><i class="fas fa-user-alt"></i> Demographics</p></a>
+                    <a href="pages/insurance/index.html"><p class="point" id="insuranceMenu"><i class="fas fa-shield-alt"></i> Insurance information</p></a>
+                    <a href="pages/documents/index.html"><p class="point"><i class="fas fa-file-alt"></i> Document upload</p></a>
                     <!--<li class="point"><i class="far fa-file-alt"></i> Reports</li>-->
                     <!--<li class="point"><i class="fas fa-comment-alt"></i> Charts</li>-->
                     <!--<li class="point" id="setting"> <span class="setting"><i class="fas fa-cog"></i> Settings</span></li>-->
 
-                </ul>
+                </div>
 
             </div>
 
 
             <div id="insurance">
-
-                <div id="panel">
-                    <div class="  doc">
-                        <div class="header" id="insuranceProfile">Insurance Profiles</div>
-                        <div class=" body2">
-                            <div class="inactiveInsurances">
-                                Show Inactive Insurances
-                            </div>
-                            <ul class="main-menu">
-                                <li class="a"><i class="fas fa-angle-down fa-lg"></i>&nbsp; Self</li>
-                                <ul class="sub-menu">
-                                    <li  class="a"><i class="fas fa-caret-right" id="car-right"></i>
-                                        <span class="responsibleParty">Responsible Party</span>
-                                    </li>
-                                </ul>
-                                <li id="blueCross"  class="a"><i class="fas fa-angle-down fa-lg"></i>&nbsp;&nbsp; PPO/PPO/Blue Cross Blue Shield
+                <!--<div  id="dashboadPosition">-->
+                    <div id="panel">
+                        <div class=" doc">
+                            <div class="header" id="insuranceProfile">Insurance Profiles</div>
+                            <div class=" body2">
+                                <div class="inactiveInsurances">
+                                    Show Inactive Insurances
+                                </div>
+                                <ul class="main-menu">
+                                    <li class="a "><i class="fas fa-angle-down fa-lg"></i>&nbsp;Self</li>
+                                    <ul class="sub-menu">
+                                        <li  class="a"><i class="fas fa-caret-right" id="car-right"></i>
+                                            <span class="responsibleParty">Responsible Party</span>
+                                        </li>
+                                    </ul>
+                                    <li id="blueCross"  class="a"
+                                    ><i class="fas fa-angle-down fa-lg"></i>&nbsp; PPO/PPO/Blue Cross Blue Shield </li>
                                     <ul class="sub-menu">
                                         <li  class="a"><i class="fas fa-caret-right"></i>
                                             <span class="responsibleParty">Responsible Party</span>
@@ -111,141 +125,112 @@
                                             <span class="responsibleParty1">add new policy</span>
                                         </li>
                                     </ul>
-                                </li>
-                                <li class="new a"><i class="fas fa-plus fa-padding"></i> New Insurance Profile</li>
-                                <li class="new a" id="new"><i class="fas fa-plus fa-padding"></i> New Self Pay Profile</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
 
-                <div id="blockPanel">
-                    <div id="ppo">PPO/PPO/Blue Cross Blue Shield <i class="far fa-edit"></i></div>
-                    <div >
-                        <div class="panel  doc2">
-                            <div class="header1">
-                                Responsible Party (Self)
-                            </div>
-                            <div class=" body1" id="block1">
-                                <div id="name1">
-                                    <ul>
-                                        <span class="inline"><li class="blockLine">Name</li>
-                                            <span class="userName1">
-                                            <li  class="userP ">Karina Tailor</li>
-                                        </span>
-                                        </span>
-                                        <span  class="inline"><li class="blockLine">Adress Line 1</li>
-                                            <span class="userAdr1">
-                                              <li class="userP">5600 My Sweet Home Street</li>
-                                            </span>
-                                            </span>
-                                        <span  class="inline"><li class="blockLine">Adress Line 2</li>
-                                            <span class="userAdr2">
-                                               <li class="userP">5600 My Sweet Home Street</li>
-                                            </span>
-                                           </span>
-                                        <span  class="inline"> <li class="blockLine">Zip. City and State</li>
-                                            <span class="userZip"> <li class="userP ">33167</li></span>
-                                           </span>
-                                        <span  class="inline"><li class="blockLine">Country</li>
-                                            <span class="userCountry"> <li  class="userP1">1</li></span>
-                                           </span>
-                                    </ul>
-
-                                </div>
-                               <div id="name2">
-                                   <ul class="user2">
-                                       <span class="inline"><li class="blockLine">Name</li>
-                                            <span class="userName1">
-                                            <li  class="userP ">Karina Tailor</li>
-                                        </span>
-                                        </span>
-                                       <span  class="inline"><li class="blockLine">Adress Line 1</li>
-                                            <span class="userAdr1">
-                                              <li class="userP">5600 My Sweet Home Street</li>
-                                            </span>
-                                            </span>
-                                       <span  class="inline"><li class="blockLine">Adress Line 2</li>
-                                            <span class="userAdr2">
-                                               <li class="userP">5600 My Sweet Home Street</li>
-                                            </span>
-                                           </span>
-                                       <span  class="inline"> <li class="blockLine">Zip. City and State</li>
-                                            <span class="userZip"> <li class="userP ">33167</li></span>
-                                           </span>
-                                       <span  class="inline"><li class="blockLine">Country</li>
-                                            <span class="userCountry"> <li  class="userP1">1</li></span>
-                                           </span>
-                                   </ul>
-
-                               </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="panel2">
-                        <div class="panel  doc3">
-                            <div class="header2">
-                                Responsible Party (Self)
-                            </div>
-                            <div class=" body1"  id="block2">
-                                <div id="name3">
-                                <ul>
-                                   <span class="inline"><li class="blockLine">Name</li>
-                                            <span class="userName1">
-                                            <li  class="userP ">Karina Tailor</li>
-                                        </span>
-                                        </span>
-                                    <span  class="inline"><li class="blockLine">Adress Line 1</li>
-                                            <span class="userAdr1">
-                                              <li class="userP">5600 My Sweet Home Street</li>
-                                            </span>
-                                            </span>
-                                    <span  class="inline"><li class="blockLine">Adress Line 2</li>
-                                            <span class="userAdr2">
-                                               <li class="userP">5600 My Sweet Home Street</li>
-                                            </span>
-                                           </span>
-                                    <span  class="inline"> <li class="blockLine">Zip. City and State</li>
-                                            <span class="userZip"> <li class="userP ">33167</li></span>
-                                           </span>
-                                    <span  class="inline"><li class="blockLine">Country</li>
-                                            <span class="userCountry"> <li  class="userP1">1</li></span>
-                                           </span>
+                                    <li class="new a"><i class="fas fa-plus fa-padding"></i> New Insurance Profile</li>
+                                    <li class="new a" id="new"><i class="fas fa-plus fa-padding"></i> New Self Pay Profile</li>
                                 </ul>
-                                </div>
-
-                                <div id="name4">
-                                <ul  class="user2">
-                                    <span class="inline"><li class="blockLine">Name</li>
-                                            <span class="userName1">
-                                            <li  class="userP ">Karina Tailor</li>
-                                        </span>
-                                        </span>
-                                    <span  class="inline"><li class="blockLine">Adress Line 1</li>
-                                            <span class="userAdr1">
-                                              <li class="userP">5600 My Sweet Home Street</li>
-                                            </span>
-                                            </span>
-                                    <span  class="inline"><li class="blockLine">Adress Line 2</li>
-                                            <span class="userAdr2">
-                                               <li class="userP">5600 My Sweet Home Street</li>
-                                            </span>
-                                           </span>
-                                    <span  class="inline"> <li class="blockLine">Zip. City and State</li>
-                                            <span class="userZip"> <li class="userP ">33167</li></span>
-                                           </span>
-                                    <span  class="inline"><li class="blockLine">Country</li>
-                                            <span class="userCountry"> <li  class="userP1">1</li></span>
-                                           </span>
-                                </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
 
-                </div>
+                    <div id="blockPanel">
+                        <div id="ppo">PPO/PPO/Blue Cross Blue Shield <i class="far fa-edit"></i></div>
+                        <div >
+                            <div class="doc2">
+                                <div class="header1">
+                                    Responsible Party (Self)
+                                </div>
+                                <div class="body1" id="block1">
+                                    <div id="name1">
+                                        <table>
+                                            <tr>
+                                                <td class="blockLine">Name</td>
+                                                <td  class="userP user1">Karina Tailor</td>
+                                                <td class="blockLine user2">Name</td>
+                                                <td  class="userP user1">Karina Tailor</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="blockLine">Adress Line 1</td>
+                                                <td  class="userP user1">5600 My Sweet Home Street</td>
+                                                <td class="blockLine user2">Adress Line 1</td>
+                                                <td  class="userP user1">5600 My Sweet Home Street</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="blockLine">Adress Line 2</td>
+                                                <td  class="userP user1">5600 My Sweet Home Street</td>
+                                                <td class="blockLine user2">Adress Line 2</td>
+                                                <td  class="userP user1">5600 My Sweet Home Street</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="blockLine">Zip. City and State</td>
+                                                <td  class="userP user1">33167</td>
+                                                <td class="blockLine user2">Zip. City and State</td>
+                                                <td  class="userP user1">33167</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="blockLine">Country</td>
+                                                <td class="userP1 user1">1</td>
+                                                <td class="blockLine user2">Country</td>
+                                                <td class="userP1 user1">1</td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="panel2">
+                            <div class="panel  doc3">
+                                <div class="header2">
+                                    Responsible Party (Self)
+                                </div>
+                                <div class=" body1"  id="block2">
+                                    <div id="name3">
+                                        <table>
+                                            <tr>
+                                                <td class="blockLine">Name</td>
+                                                <td  class="userP user1">Karina Tailor</td>
+                                                <td class="blockLine user2">Name</td>
+                                                <td  class="userP user1">Karina Tailor</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="blockLine">Adress Line 1</td>
+                                                <td  class="userP user1">5600 My Sweet Home Street</td>
+                                                <td class="blockLine user2">Adress Line 1</td>
+                                                <td  class="userP user1">5600 My Sweet Home Street</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="blockLine">Adress Line 2</td>
+                                                <td  class="userP user1">5600 My Sweet Home Street</td>
+                                                <td class="blockLine user2">Adress Line 2</td>
+                                                <td  class="userP user1">5600 My Sweet Home Street</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="blockLine">Zip. City and State</td>
+                                                <td  class="userP user1">33167</td>
+                                                <td class="blockLine user2">Zip. City and State</td>
+                                                <td  class="userP user1">33167</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="blockLine">Country</td>
+                                                <td class="userP1 user1">1</td>
+                                                <td class="blockLine user2">Country</td>
+                                                <td class="userP1 user1">1</td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                <!--</div>-->
+
+
 
             </div>
 
@@ -254,6 +239,6 @@
 
     </div>
 
-<script src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="../../bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

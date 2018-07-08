@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Logotype</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <base href="/">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -15,250 +15,247 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!-- Последняя компиляция и сжатый JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-    <div>
-        <div class="logo">
-            <span class="logotype">Logotype</span>
-            <span class="online">Translation online</span>
+<div>
+    <div class="logo">
+        <span class="logotype">Logotype</span>
+        <span class="online">
+                   <i class="far fa-circle circle1"></i>
+                Translation online
+            </span>
 
-            <span class="head">
+        <span class="head">
             <span class="campus">Campus</span>
-            <span class="circle"><img src="../../img/Dashboard.png" alt="..." class="img-circle"></span>
+            <img src="../../img/Dashboard.png" alt="..." class="img-circle circle">
             <span class="name">Liz Flores</span>
             <span class="lock"><i class="fas fa-lock"></i></span>
 
         </span>
 
-        </div>
+    </div>
 
-        <div class="menu">
-            <i class="fas fa-bars"></i>
-            <span id="user">
+    <div class="menu">
+        <i class="fas fa-bars"></i>
+        <span id="user">
               <span class="user">J.Feldman</span>
               <span class="user">K.Tailor</span>
               <span class="user">M.Brown</span>
 
 
         </span>
-            <span class="lang">Eng <i class="fas fa-caret-down" style="padding-left: 5px"></i></span>
 
-        </div>
-        <div id="main">
+        <span class="lang">
+            <select  id="eng"><option>Eng</option></select>
+            <i class="fas fa-caret-down"></i>
+        </span>
+    </div>
+    <div id="main">
 
-            <div >
+        <div id="leftMenu">
 
-                <div class="profile">
-                    <p class="imgProfile">
-                        <img src="../../img/Dashboard.png" alt="..." class="img-circle">
-                    </p>
-                    <p class="userData">
-                        <span class="userName">Liz Flores</span><br>
-                        <span style="font-size: 9px"  class="lock">online</span>
-                    </p>
+            <div class="profile">
+
+                    <img src="../../img/Dashboard.png" alt="..." class="img-circle imgProfile">
+
+                <div class="userData">
+                    <p class="userName">Liz Flores</p>
+                    <p style="font-size: 9px"  class="lock"><i class="far fa-circle circle2"></i> online</p>
                 </div>
-                <ul class="menu2">
+            </div>
+            <div class="menu2">
 
-                    <!--<li class="point"><i class="fas fa-home"></i> Home</li>-->
-                    <li class="point"> <a href="../../pages/dashboard/index.html"><i class="fas fa-th"></i> Dashboard</a></li>
-                    <li class="point"><a href="../../pages/demografics/index.html"><i class="fas fa-user-alt"></i> Demographics</a></li>
-                    <li class="point"><a href="../../pages/insurance/index.html"><i class="fas fa-shield-alt"></i> Insurance information</a></li>
-                    <li class="point"><a href="../../pages/documents/index.html"><i class="fas fa-file-alt"></i> Document upload</a></li>
-                    <!--<li class="point"><i class="far fa-file-alt"></i> Reports</li>-->
-                    <!--<li class="point"><i class="fas fa-comment-alt"></i> Charts</li>-->
-                    <!--<li class="point" id="setting"> <span class="setting"><i class="fas fa-cog"></i> Settings</span></li>-->
-
-                </ul>
+                <!--<li class="point"><i class="fas fa-home"></i> Home</li>-->
+                <a href="../../pages/dashboard/index.html"> <p class="point" id="dashboardMenu"><i class="fas fa-th"></i> Dashboard</p></a>
+                <a href="../../pages/demografics/index.html"><p class="point"><i class="fas fa-user-alt"></i> Demographics</p></a>
+                <a href="../../pages/insurance/index.html"><p class="point"><i class="fas fa-shield-alt"></i> Insurance information</p></a>
+                <a href="../../pages/documents/index.html"><p class="point"><i class="fas fa-file-alt"></i> Document upload</p></a>
+                <!--<li class="point"><i class="far fa-file-alt"></i> Reports</li>-->
+                <!--<li class="point"><i class="fas fa-comment-alt"></i> Charts</li>-->
+                <!--<li class="point" id="setting"> <span class="setting"><i class="fas fa-cog"></i> Settings</span></li>-->
 
             </div>
 
+        </div>
 
 
 
-            <div id="dashboard">
-                <div>
-                    <select id="form-control">
-                        <option>Previously accessed by John Green on 10/06/2017 at 03:07 p.m.</option>
-                    </select>
 
-                    <div id="blockTop">
+        <div id="dashboard">
+            <div id="dashboadPosition">
+                <select id="form-control">
+                    <option>Previously accessed by John Green on 10/06/2017 at 03:07 p.m.</option>
+
+                </select>
+
+                <div id="blockTop">
 
 
-                        <div id="block">
-                            <div id="blockInfo">
-                                <div class="panel panel-inline">
-                                    <div class=" heading">Karin Tailor</div>
-                                    <div class=" panel1 pnl">
-                                        <span class="img"></span>
-                                        <!--<img src="../../img/avatar.jpg"  class="img-rounded">-->
-                                        <ul id="info">
-                                            <li class="panel11"> <span style="color: #0f0f0f; background-color: white; font-size: 18px">29 y/o</span></li>
-                                            <li  class="panel11"> <span style="color: #0f0f0f; background-color: white; font-size: 18px">female</span></li>
-                                            <li  class="panel11"> <span style="color: #0f0f0f; background-color: white; font-size: 18px">26/03/1989</span></li>
-                                        </ul>
-                                        <span class="edit"> <i class="far fa-edit"></i></span>
-                                    </div>
+                    <div id="block">
+                        <div id="blockInfo">
+                            <div class="panel-inline">
+                                <div class="heading" id="name">Karin Tailor</div>
+                                <div class=" panel1 pnl">
+                                    <span class="img"></span>
+                                    <!--<img src="../../img/avatar.jpg"  class="img-rounded">-->
+                                    <ul id="info">
+                                        <li><span style="color: #0f0f0f; background-color: white" class="infoData">29 y/o</span></li>
+                                        <li><span style="color: #0f0f0f; background-color: white" class="infoData">female</span></li>
+                                        <li><span style="color: #0f0f0f; background-color: white" class="infoData">26/03/1989</span></li>
+                                    </ul>
+                                    <span class="edit"> <i class="far fa-edit"></i></span>
                                 </div>
-
                             </div>
-
-                            <div id="blockBalance">
-                                <div class="panel panel-inline">
-                                    <table>
-                                        <tr  class="heading2">
-                                            <td  id="balance">Balance</td>
-                                            <td  id="total">total</td>
-                                            <td  id="total1">unbilled</td>
-                                            <td  id="total2">past due</td>
-                                            <td id="ellips"><i class="fas fa-ellipsis-v"></i></td>
-                                        </tr>
-
-                                            <tr   id="line">
-                                                <td  id="account">account</td>
-                                                <td  class="account">15.83</td>
-                                                <td class="account3">0.00</td>
-                                                <td class="account1">15.83</td>
-                                            </tr>
-                                            <tr id="line2">
-                                                <td id="account1">patient</td>
-                                                <td  class="account2">0.00</td>
-                                                <td  class="account2">0.00</td>
-                                                <td  class="account2">0.00</td>
-                                            </tr>
-                                            <tr id="line5">
-                                                <td id="account2">insurance</td>
-                                                <td class="account4">15.83</td>
-                                                <td class="account3">0.00</td>
-                                                <td class="account1">15.83</td>
-                                            </tr>
-
-
-                                    </table>
-
-                                </div>
-
-                                <div class="panel panel-inline">
-                                    <table>
-                                        <tr class="heading1">
-                                            <td id="balance1">Red Flags</td>
-                                            <td>total</td>
-                                        </tr>
-                                    </table>
-
-                                    <div>
-
-                                        <span>Red Flags</span>
-                                        <span id="total4"> </span>
-
-                                        <span  id="total3"> past due</span>
-                                        <i class="fas fa-ellipsis-v"></i>
-
-                                    </div>
-
-                                    <div class="panel-body panel2">
-                                        <p id="line3"><span id="account5">account</span>
-                                            <span class="account5">15.83</span>
-                                            <span class="account6">15.83</span>
-                                        </p>
-
-                                        <p id="line4"><span id="account6">patient</span>
-                                            <span class="account7">0.00</span>
-                                            <span class="account8">0.00</span>
-                                        </p>
-                                        <p id="line6"> <span id="account7">insurance</span>
-                                            <span class="account9">15.83</span>
-                                            <span class="account10">15.83</span></p>
-                                    </div>
-
-
-                                </div>
-
-                            </div>
-
-
-
-
 
                         </div>
-                        <div id="blockMiddle">
-                            <div class="panel panel-middle">
-                                <div class="heading1">
-                                    <span class="middle">Account balance 2018</span>
-                                    <span id="ell"><i class="fas fa-ellipsis-v"></i></span>
-                                </div>
-                                <div class="panel-body">
 
-                                </div>
+                        <div id="blockBalance">
+                            <div class="panel-inline">
+                                <table>
+                                    <tr  class="heading2">
+                                        <td  id="balance">Balance</td>
+                                        <td  id="total">total</td>
+                                        <td  id="total1">unbilled</td>
+                                        <td  id="total2">past due</td>
+                                        <td id="ellips"><i class="fas fa-ellipsis-v"></i></td>
+                                    </tr>
+
+                                    <tr   id="line">
+                                        <td  id="account">account</td>
+                                        <td  class="account">15.83</td>
+                                        <td class="account3">0.00</td>
+                                        <td class="account1">15.83</td>
+                                    </tr>
+                                    <tr id="line2">
+                                        <td id="account1">patient</td>
+                                        <td  class="account2">0.00</td>
+                                        <td  class="account2">0.00</td>
+                                        <td  class="account2">0.00</td>
+                                    </tr>
+                                    <tr id="line5">
+                                        <td id="account2">insurance</td>
+                                        <td class="account4">15.83</td>
+                                        <td class="account3">0.00</td>
+                                        <td class="account1">15.83</td>
+                                    </tr>
+
+
+                                </table>
+
                             </div>
+
+                            <div class="panel-inline">
+                                <table>
+                                    <tr class="heading1">
+                                        <td id="balance1">Red Flags</td>
+                                        <td id="total4">total</td>
+                                        <td id="total3">past due</td>
+                                        <td id="el">  <i class="fas fa-ellipsis-v"></i></td>
+                                    </tr>
+                                    <tr id="line3">
+                                        <td id="account5">account</td>
+                                        <td class="account5">15.83</td>
+                                        <td class="account6">15.83</td>
+                                    </tr>
+                                    <tr id="line4">
+                                        <td id="account6">patient</td>
+                                        <td class="account7">0.00</td>
+                                        <td class="account8">0.00</td>
+                                    </tr>
+                                    <tr id="line6">
+                                        <td id="account7">insurance</td>
+                                        <td class="account9">15.83</td>
+                                        <td class="account10">15.83</td>
+                                    </tr>
+                                </table>
+                            </div>
+
                         </div>
 
-                        <div id="blockBottom">
-                            <p class="summ"> Clinical Summary</p>
-                            <div id="blockReferredBy">
-                                <div id="label">
-                                    <div class="panel panel-default" id="card">
-                                        <p class="refered">Referred by:</p>
-                                        <p class="title">Dr. Smith</p>
+
+                    </div>
+
+
+                    </div>
+                    <div id="blockMiddle">
+                        <div class=" panel-middle">
+                            <div class="heading1">
+                                <span class="middle">Account balance 2018</span>
+                                <span id="ell"><i class="fas fa-ellipsis-v ellips"></i></span>
+                            </div>
+                            <!--<div class="panel-body">-->
+
+                            <!--</div>-->
+                        </div>
+                    </div>
+
+                    <div id="blockBottom">
+                        <p class="summ">Clinical&#160;Summary</p>
+                        <div id="blockReferredBy">
+
+
+                            <div id="label">
+                                <div class=" panel-default" id="card">
+                                    <p class="refered">Referred by:</p>
+                                    <p class="title">Dr. Smith</p>
+                                    <p ><i class="far fa-edit fa-size" ></i></p>
+                                </div>
+                                <div class=" panel-default">
+                                    <p class="refered">Last seen:</p>
+                                    <p class="title">Dr. Smith</p>
+
+                                    <p><i class="far fa-edit fa-size"></i></p>
+                                </div>
+                            </div>
+
+                            <div id="blockDiagnoses">
+
+                                <div id="label2">
+                                    <div class=" panel-default">
+                                        <p class="refered">Diagnoses:</p>
+                                        <p class="title">5779400</p>
                                         <p ><i class="far fa-edit fa-size" ></i></p>
                                     </div>
-
-
-
-                                    <div class="panel panel-default">
-                                        <p class="refered">Last seen:</p>
-                                        <p class="title">Dr. Smith</p>
-
-                                        <p ><i class="far fa-edit fa-size" ></i></p>
+                                    <div class=" panel-default">
+                                        <p class="refered">Referred pharmacy:</p>
+                                        <p class="title"><span class="adress">5040 Newport Lakes Drive Rock Hill, SC, 29732</span> </p>
+                                        <p ><i class="far fa-edit fa-size" id="size"></i></p>
                                     </div>
-                            </div>
-
-                                <div id="blockDiagnoses">
-
-                                    <div id="label2">
-                                        <div class="panel panel-default">
-                                            <p class="refered">Diagnoses:</p>
-                                            <p class="title">5779400</p>
-                                            <p ><i class="far fa-edit fa-size" ></i></p>
-                                        </div>
-                                        <div class="panel panel-default">
-                                            <p class="refered">Referred pharmacy:</p>
-                                            <p class="title"><span class="adress">5040 Newport Lakes Drive Rock Hill, SC, 29732</span> </p>
-                                            <p ><i class="far fa-edit fa-size" id="size"></i></p>
-                                        </div>
-                                    </div>
-
-
                                 </div>
 
+
                             </div>
 
-
-
-
-
                         </div>
+
+
+
+
 
                     </div>
 
 
 
-                </div>
+
 
             </div>
 
-
-
         </div>
+
 
 
     </div>
 
 
-<script src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</div>
+
+
+<script src="../../bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -2,15 +2,20 @@
     margin: 0;
     padding: 0;
     background-color: #eaf2f4;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-animation: bugfix infinite 1s;
 }
 ul {
     background-color: white;
     text-decoration: none;
 }
 ul li{
+    background-color: white;
     text-decoration: none;
 }
 ul{
+    background-color: white;
     display: inline-block;
 }
 ul li{
@@ -56,6 +61,7 @@ li{
 }
 #ppo{
     padding-top: 28px;
+    padding-bottom: 7px;
     font-size: 11px;
     padding-left: 10px;
     /*padding-bottom: 3px;*/
@@ -74,16 +80,7 @@ li{
     color:white;
     background-color: #495c6e;
 }
-#insurance{
-    overflow: scroll;
-    padding-left: 27px;
-    font-family: 'Roboto', sans-serif;
-    background-color: #eaf2f4;
-    display: flex;
-    width: 100%;
-    height: 100%;
 
-}
 .header{
     background-color: #3fcbff;
     color: white;
@@ -91,7 +88,7 @@ li{
     font-weight: 700;
     /*height: 30px;*/
     padding-top: 5px;
-    height: 33px;
+    height: 32px;
     /*margin-left: -5px;*/
     /*padding-top: -15px;*/
     text-align: center;
@@ -110,16 +107,17 @@ li{
     /*padding-top: 7px;*/
 }
 #name1, #name2{
+    padding-top: 3px;
     background-color: white;
 }
 .header1{
     background-color: #3fcbff;
     color: white;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     /*height: 39px;*/
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 4px;
+    padding-bottom: 3px;
     padding-left: 18px;
 
 }
@@ -127,10 +125,10 @@ li{
 .header2{
     background-color: white;
     color: #3fcbff;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 700;
-    height: 39px;
     padding-top: 0;
+    padding-bottom: 7px;
     padding-left: 18px;
     /*margin-top: -8px;*/
 
@@ -138,15 +136,17 @@ li{
 
 #panel{
     width: 342px;
-    height: 300px;
+    /*height: 300px;*/
     min-width: 190px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     /*margin-top: 50px;*/
-    padding-top: 42px;
+    padding-top: 48px;
     margin-left: 30px;
 }
 .body2{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     background-color: white;
     height: 370px;
 
@@ -157,28 +157,32 @@ li{
     margin-top: 5px;
     display: inline-block;
 }
+table, tr, td{
+    background-color: white;
+}
 #blockPanel{
-    width: 95%;
+    width:725px;
     /*min-width: 190px;*/
     padding-left: 25px;
-    display: table-row;
+    /*display: table-row;*/
 }
- #panel{
-    margin-top: 5px;
-    display: inline-block;
+table{
+    margin-left: 18px;
 }
+
 #panel2{
-    /*margin-top: 7px;*/
+    margin-top: 25px;
 }
 .doc{
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
     box-shadow: 0px 7px 1px #dee6e8;
     /*height: 520px;*/
 
 }
-.doc2{
 
+.doc2{
+    background-color: inherit;
     box-shadow: 0px 7px 1px #dee6e8;
     border-radius: 0;
 }
@@ -198,10 +202,12 @@ li{
     /*padding-top: 2px;*/
 }
 .body1{
-    background-color: white;
+    /*background-color: inherit;*/
     display: flex;
 }
 .blockLine{
+    padding-bottom: 3px;
+    padding-top: 5px;
     background-color: white;
     /*padding-bottom: 8px;*/
     /*margin-right: 10px;*/
@@ -219,42 +225,61 @@ li{
 
     font-size: 11px;
     padding-left: 12px;
-    padding-top: 4px;
-    padding-bottom: 8px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    /*margin-right: 15px;*/
 
 }
 .userP1{
     font-size: 11px;
     padding-left: 12px;
     padding-top: 5px;
+    padding-bottom: 1px;
 
 }
 .userName1{
     background-color: white;
-    padding-left: 107px;
+    padding-top: 4px;
+    padding-left: 95px;
 }
-.userP:hover, .userP1:hover{
-    border: 2px solid #3fcbff;
-    margin-left: 0;
-    border-radius: 8px;
-    padding-right: 10px;
+/*.userP:hover{*/
+    /*border: 1px solid #3fcbff;*/
 
+    /*padding-top: 5px;*/
+    /*padding-left: 26px;*/
+    /*border-radius: 8px;*/
+    /*padding-right: 0px;*/
+/*}*/
+.user1:hover{
+    border-radius: 10px;
+    border: 1px solid #3fcbff;
+    padding-top: 5px;
+    padding-left: 26px;
+
+    padding-right: 0px;
+    margin-left: 0;
 }
 .userAdr1, .userAdr2{
     background-color: white;
-    padding-left: 61px;
+    padding-left: 47px;
 }
 .userZip{
     background-color: white;
-    padding-left: 30px;
+    padding-left: 17px;
 }
 .userCountry{
     background-color: white;
-    padding-left: 97px;
+    padding-left: 84px;
 }
 .user2{
     background-color: white;
-    padding-left: 40px;
+    padding-left: 50px;
+    margin-left: 10px;
+}
+.user1{
+    /*padding-top: 3px;*/
+    padding-left: 27px;
 }
 #name3, #name4{
     height: auto;
@@ -265,8 +290,9 @@ li{
     background-color: white;
     padding-left: 1px;
     font-weight: 500;
-    padding-top: 9px;
-    height: auto;
+    padding-bottom: 15px;
+    /*padding-top: 9px;*/
+    height: auto ;
 }
 /*#block2{*/
     /**/
@@ -274,9 +300,9 @@ li{
 /*}*/
 .main-menu {
     background-color: white;
-    margin: 0;
-    padding-left: 0;
-    padding-top: 15px;
+
+    /*padding-left: 21px;*/
+    padding-top: 12px;
     list-style: none;
 
     /*padding-left: 18px;*/
@@ -286,8 +312,8 @@ li{
     display: block;
     /*margin-bottom: -1px;*/
 
-    padding: 4px 15px 4px 35px;
-    margin-right: -5px;
+    padding: 4px 75px 4px 37px;
+    /*margin-right: -5px;*/
     /*margin-left: -21px;*/
     text-decoration: none;
     color: black;
@@ -296,22 +322,27 @@ li{
 .main-menu a:hover{
     text-decoration: none;
 }
-a:hover {
+.main-menu .a:hover, .main-menu .a:focus {
+    width: 100%;
+    margin-left: 0;
     background: #d9f5ff;
     text-decoration: none;
+    cursor: pointer;
 }
-
+.hover:hover{
+    background: #d9f5ff;
+}
 .main-menu > li {
 }
 
 /* Подменю */
 
 #car-right{
-    margin-left: 15px;
+    /*margin-left: 15px;*/
 }
 .main-menu .sub-menu {
-    margin: 0;
-    padding-left: 20px;
+
+    margin-left: 30px;
     list-style: none;
     background: white;
 }
@@ -319,36 +350,41 @@ a:hover {
     margin-bottom: 2px;
 }
 #block1{
-    margin-top: 3px;
+    padding-top: 3px;
 }
 .new{
-    padding-top: 8px;
-    margin-left: 5px;
+    /*padding-top: 20px;*/
+    /*margin-left: 5px;*/
     /*padding-bottom: -3px;*/
-    margin-bottom: -4px;
+    margin-bottom: 4px;
 }
 .fa-padding{
     padding-right: 10px;
 }
 .responsibleParty{
+
     margin-left: 12px;
     /*margin-bottom: 2px;*/
 }
 .inline{
+    background-color: inherit;
     display: flex;
 }
 .responsibleParty1{
+
     margin-left: 13px;
     color: #b7bdbd;
+
     font-style: italic;
 
 }
 .fa-xs{
     color: #b7bdbd;
     margin-left: -5px;
+    padding-bottom: 12px;
 }
 #blueCross{
-    margin-top: 10px;
+    margin-top: 8px;
 }
 @font-face {
 
@@ -371,28 +407,38 @@ a:hover {
 .img-circle{
     background-color: inherit;
     padding-left: 15px;
+    padding-right: 8px;
+}
+.imgProfile{
+    height: 50px;
 }
 .circle{
+    height: 25px;
     background-color: inherit;
-    padding-right: 10px;
+    padding-right: 5px;
 }
-#insurance, #document{
-    width: 100%;
-    height: 100%;
+
+#insurance{
+    /*overflow: scroll;*/
+    /*padding-left: 27px;*/
+    font-family: 'Roboto', sans-serif;
     background-color: #eaf2f4;
-    /*padding-top: 47px;*/
-    padding-left: 0;
-    margin-left: 0;
+    display: flex;
+    top: 95px;
+    left: 210px;
+    position: absolute;
+    /*width: 100%;*/
+    height: 100%;
+
+
 }
 .userName{
     font-size: 22px;
+    margin: 0;
     background-color: inherit;
     /*display: block;*/
 }
-.img-circle{
-    height: 40px;
 
-}
 div,p,span, ul,li{
     font-family: 'Roboto', sans-serif;
 }
@@ -426,24 +472,51 @@ div,p,span, ul,li{
     background-color: #3d4a5d;
     width: 210px;
     color: #c2c3c6;
-    height: 1100px;
+    height: 100%;
+    min-height: 1900px;
     margin-bottom: 0;
 
 }
+select{
+    border: none;
+    background-color: inherit;
+}
+select:hover{
+    cursor: pointer;
+}
 .name{
     padding-right: 8px;
-    font-size: 21px;
+    font-size: 20px;
     background-color: inherit;
 
 }
 ul li, .fa-angle-down, .fa-plus, .fa-caret-right, .responsibleParty,.responsibleParty1, .body1, .blockLine, .userP, .userRow,.user2{
-    background-color: white;
+    background-color: inherit;
 }
 .campus{
-    padding-right: 12px;
-    font-size: 21px;
+    padding-right: 0;
+    font-size: 20px;
     background-color: inherit;
 
+}
+.circle1{
+
+    background-color: #00ff00;
+    border-radius: 8px;
+    font-size: 7px;
+    color: white;
+
+    /*text-align: center;*/
+}
+.circle2{
+
+    background-color: #00ff00;
+    border-radius: 8px;
+    font-size: 7px;
+    color:  #00ff00;
+    margin-left: 3px;
+
+    /*text-align: center;*/
 }
 .fa-lock{
     background-color: inherit;
@@ -452,14 +525,20 @@ ul li, .fa-angle-down, .fa-plus, .fa-caret-right, .responsibleParty,.responsible
 
 .lang{
     float: right;
-    margin-top: 5px;
+    /*margin-top: 5px;*/
     background-color: inherit;
-    padding-right: 15px;
+    padding-right: 20px;
 }
 #main{
+    /*position: absolute;*/
     display: flex;
-    height: auto;
+    /*display: -webkit-flex;*/
+    /*-webkit-align-items: flex-start;*/
+    /*display: flex;*/
+    /*align-items: flex-start;*/
+    height: auto ;
 }
+
 .menu3{
     height: auto;
     margin-top: 30px;
@@ -472,14 +551,15 @@ ul li, .fa-angle-down, .fa-plus, .fa-caret-right, .responsibleParty,.responsible
     background-color:#3fcbff;
     color: white;
     width: 210px;
+    height: auto;
     text-align: left;
-    padding-top: 35px;
-    padding-bottom: 10px;
+    padding-top: 33px;
+    padding-bottom: 20px;
 
 }
 .userData{
     background-color: inherit;
-    display: block;
+    /*display: block;*/
 }
  .setting{
 
@@ -501,6 +581,7 @@ ul li, .fa-angle-down, .fa-plus, .fa-caret-right, .responsibleParty,.responsible
 }
 #setting:hover{
     width: 187px;
+    cursor: pointer;
 }
 .fa-caret-down{
     background-color: inherit;
@@ -514,7 +595,7 @@ ul li, .fa-angle-down, .fa-plus, .fa-caret-right, .responsibleParty,.responsible
 
 }
 .online{
-    padding-left: 127px;
+    padding-left: 113px;
     font-size: 14px;
     background-color: inherit;
     font-family: 'Roboto', sans-serif;
@@ -524,7 +605,7 @@ ul li, .fa-angle-down, .fa-plus, .fa-caret-right, .responsibleParty,.responsible
     font-size: 20px;
     padding-bottom: 6px;
     padding-top: 8px;
-    height: auto;
+    height: auto ;
     background-color: #364050;
     color: white;
 }
@@ -552,7 +633,8 @@ li{
 }
 
 .user:hover{
-    box-shadow: 0px -7px 10px -11px #000000;
+    box-shadow: inset 0px 5px 10px -7px #000000;
+    filter: progid:DXImageTransform.Microsoft.shadow(direction=120, color=#000000, strength=10);
     background-color:#3fcbff;
     -webkit-transition: .2s ease-out;
     -webkit-transition-delay: 0.3s;
@@ -562,7 +644,7 @@ li{
     -moz-transition-delay: 0.5s;
     transition: .2s ease-out;
     transition-delay: 0.1s;
-    padding-top: 14px;
+    padding-top: 11px;
     padding-bottom:     10px;
     cursor: pointer;
     animation-direction: alternate-reverse;
@@ -575,9 +657,22 @@ li{
     background-color: white;
 }
 .point{
-    padding-top: 5px;
+    padding-top:6px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 6px;
+    color: #b4b7bb;
+    font-size: 16px;
     background-color: inherit;
-    padding-bottom: 15px;
+}
+.fa-shield-alt{
+    color:#a4aeb7;
+}
+#insuranceMenu{
+    color:#f5f5f7;
+    background-color:#495c6e ;
+    cursor: pointer;
+    border-left: 2px solid #3fcbff;
 }
 .point:hover {
     color:#f5f5f7;
@@ -609,8 +704,15 @@ li{
     font-style: normal;
     font-weight: normal;
 }
-
+@media screen and (max-width: 1339px) {
+    #insurance {
+    }
+    #panel{
+        margin-left: 10px;
+    }
+}
 @media screen and (max-width: 1312px){
+
     .body2{
         background-color: white;
         height: 390px;
@@ -619,6 +721,19 @@ li{
     #new{
         padding-bottom: 15px;
     }
+    #blockPanel {
+        width: 700px;
+    }
+}
+@media screen and (max-width: 1288px){
+    #blockPanel {
+        width: 670px;
+        padding-left: 9px;
+    }
+    .user2{
+        padding-left: 0px;
+    }
+
 }
 @media screen and (max-width: 1251px){
     .body2{
@@ -626,16 +741,20 @@ li{
         height: 370px;
 
     }
+    #panel{
+        margin-left: 10px;
+        width: 300px;
+    }
     #new{
         padding-bottom: 15px;
     }
-    .main-menu a {
+    .main-menu .a {
         display: block;
         /*margin-bottom: -1px;*/
 
-        padding: 4px 10px 4px 35px;
-        margin-right: -5px;
-        margin-left: -21px;
+        padding: 4px 10px 4px 15px;
+        margin-right: 0;
+        margin-left: 0;
         text-decoration: none;
         color: black;
         border: none;
@@ -654,29 +773,32 @@ li{
         background-color: white;
         padding-left: 85px;
     }
+    #blockPanel {
+        width: 640px;
+        padding-left: 9px;
+    }
 }
+
 @media screen and (max-width: 1212px){
     #panel1{
         position: relative;
         width: 650px;
         height: auto;
     }
-    .main-menu a {
-        /*display: block;*/
-        /*margin-bottom: -1px;*/
+    .user2{
 
-        padding: 4px 10px 4px 15px;
-        /*margin-right: -5px;*/
-        /*margin-left: -21px;*/
-        /*text-decoration: none;*/
-        /*color: black;*/
-        /*border: none;*/
+        padding-left: 15px;
+        margin-left: 0;
     }
+
     .inactiveInsurances{
         font-size: 16px;
     }
-    #block1, #block2{
-        height: 170px;
+    /*#block1, #block2{*/
+        /*height: 170px;*/
+    /*}*/
+    #panel2{
+        margin-top: 25px;
     }
     .header{
         font-size: 18px;
@@ -686,6 +808,51 @@ li{
         /*width: 650px;*/
     /*}*/
 
+}
+@media screen and (max-width: 1173px){
+    .userName1{
+        background-color: white;
+        padding-left: 88px;
+    }
+    .userAdr2, .userAdr1{
+        padding-left: 40px;
+    }
+    .userZip{
+        padding-left: 10px;
+    }
+    .userCountry{
+        padding-left: 77px;
+    }
+    #panel{
+        margin-left: 10px;
+        width: 250px;
+    }
+    .main-menu .a {
+        display: block;
+        /*margin-bottom: -1px;*/
+
+        padding: 4px 5px 4px 13px;
+    }
+}
+@media screen and (max-width: 1153px){
+
+    .userName1{
+        background-color: white;
+        padding-left: 78px;
+    }
+
+    .userAdr1,  .userAdr2{
+        padding-left: 43px;
+    }
+    .userZip{
+        padding-left: 14px;
+    }
+    .userCountry{
+        padding-left: 77px;
+    }
+    #panel{
+        margin-left: 0px;
+    }
 }
 @media screen and (max-width: 1177px){
     .inactiveInsurances{
@@ -704,7 +871,7 @@ li{
         padding-left: 0;
     }
     #panel{
-        margin-left: 20px;
+        margin-left: 8px;
     }
     .user2{
         margin-left: 0;
@@ -714,7 +881,34 @@ li{
         font-size: 13px;
     }
 }
+@media screen and (max-width: 1155px) {
+    .userP:hover{
+        border: 1px solid #3fcbff;
+        padding-left: 11px;
+        margin-left: 0;
+        border-radius: 8px;
+        padding-right: 1px;
+        padding-bottom: 2px;
+        padding-top: 3px;
+        /*padding-bottom: 3px;*/
+        /*padding-right: 10px;*/
 
+    }
+    .userP1:hover{
+        border: 1px solid #3fcbff;
+        padding-left: 11px;
+        margin-left: 0;
+        border-radius: 8px;
+        padding-right: 5px;
+        padding-bottom: 0;
+        /*padding-bottom: 7px;*/
+        padding-top: 4px;
+        /*padding-bottom: -4px;*/
+        /*padding-bottom: 3px;*/
+        /*padding-right: 10px;*/
+
+    }
+}
 @media screen and (max-width: 1150px){
     .inactiveInsurances{
         font-size: 14px;
@@ -764,7 +958,40 @@ li{
         padding-left: 80px;
     }
 }
+
+
 @media screen and (max-width: 1085px){
+    .userP:hover{
+        border: 1px solid #3fcbff;
+        padding-left: 10px;
+        margin-left: 0;
+        border-radius: 8px;
+        padding-right: 1px;
+        padding-bottom: 5px;
+        padding-top: 2px;
+        /*padding-bottom: 3px;*/
+        /*padding-right: 10px;*/
+
+    }
+    #insurance{
+        left: 190px;
+    }
+    .userName1{
+        padding-left: 77px;
+    }
+    .userAdr1,  .userAdr2{
+        padding-left: 33px;
+    }
+    .userZip{
+        padding-left: 4px;
+    }
+    .userCountry{
+        padding-left: 67px;
+    }
+    #blockPanel {
+        width: 600px;
+        padding-left: 9px;
+    }
     #user{
         padding-left: 173px;
     }
@@ -783,9 +1010,9 @@ li{
     .user2{
         padding-left: 0px;
     }
-    .body1, #block2{
-        height: 170px;
-    }
+    /*.body1, #block2{*/
+        /*height: 170px;*/
+    /*}*/
     #panel1{
 
         width: 610px;
@@ -796,26 +1023,36 @@ li{
 
 }
 @media screen and (max-width: 1066px){
-    .userName1{
-        background-color: white;
-        padding-left: 87px;
+    /*.userName1{*/
+        /*background-color: white;*/
+        /*padding-left: 87px;*/
+    /*}*/
+    /*.userAdr2{*/
+        /*padding-left: 42px;*/
+    /*}*/
+    /*.userZip{*/
+        /*padding-left: 12px;*/
+    /*}*/
+    /*.userCountry{*/
+        /*background-color: white;*/
+        /*padding-left: 77px;*/
+    /*}*/
+}
+@media screen and (max-width: 1007px){
+    #panel1{
+
+        width: 610px;
     }
-    .userAdr2{
-        padding-left: 42px;
-    }
-    .userZip{
-        padding-left: 12px;
-    }
-    .userCountry{
-        background-color: white;
-        padding-left: 77px;
+    #panel{
+        margin-left: 10px;
+        width: 210px;
     }
 }
-@media screen and (max-width: 949px){
-    /*#insurance{*/
-        /*width: 100%;*/
-        /*padding-left: 0;*/
-    /*}*/
+@media screen and (max-width: 955px){
+    #panel1{
+
+        width: 500px;
+    }
     .logotype, .campus, .name, .userName{
         font-size: 18px;
     }
@@ -825,41 +1062,12 @@ li{
     .user, .lang{
         font-size: 16px;
     }
-    /*#blockPanel{*/
-        /*!*width: 100%;*!*/
-        /*!*padding-left: 10px;*!*/
-        /*display: block;*/
-        /*margin-right: 0;*/
-    /*}*/
-    /*#panel1, #panel2{*/
-        /*margin-right: 0;*/
-        /*padding-right: 0;*/
-    /*}*/
+
     .user:hover{
+        cursor: pointer;
         padding-top: 20px;
     }
-    /*#block1{*/
-        /*width: 400px;*/
-       /*display: block;*/
-        /*height: 280px;*/
-        /*margin-bottom: 20px;*/
-    /*}*/
-    /*#block2 {*/
-        /*width: 400px;*/
-        /*height: 280px;*/
-        /*display: block;*/
-    /*}*/
-    /*#name4{*/
-        /*width: 400px;*/
-    /*}*/
-    /*.body1{*/
-        /*height: 550px;*/
-    /*}*/
-    /*.doc2, .doc3{*/
-        /*width: 400px;*/
-        /*margin-right: 0;*/
-        /*padding-right: 0;*/
-    /*}*/
+
 
 
 }
@@ -867,56 +1075,46 @@ li{
     #panel{
         margin-left: 5px;
     }
-    /*#insurance{*/
-        /*width: 100%;*/
-        /*display: inline-block;*/
-        /*text-align: center;*/
-    /*}*/
-    /*.doc2, .doc3{*/
-        /*width: 1000px;*/
-        /*margin-right: 0;*/
-        /*padding-right: 0;*/
-    /*}*/
-
-    /*#panel1, #panel2{*/
-        /*!*width: 50%;*!*/
-        /*margin-right: 0;*/
-
-        /*padding-right: 0;*/
-    /*}*/
-    /*.user:hover{*/
-        /*padding-top: 20px;*/
-    /*}*/
-
-    /*#name4{*/
-        /*width: 400px;*/
-    /*}*/
-
 
 }
-@media screen and (max-width: 930px){
+@media screen and (max-width: 967px){
     /*.body1 {*/
         /*height: 650px;*/
     /*}*/
-    #panel1{
+    .userP:hover{
+        border: 1px solid #3fcbff;
+        padding-left: 10px;
+        margin-left: 0;
+        border-radius: 8px;
+        padding-right: 1px;
+        padding-bottom: 4.5px;
+        padding-top: 2.5px;
+        /*padding-bottom: 3px;*/
+        /*padding-right: 10px;*/
 
-        width: 310px;
+    }
+    #insurance{
+        left: 0;
     }
 
     #panel{
-        width: 230px;
+        width: 40%;
     }
-    .doc2{
 
-        width: 310px;
-
-    }
     #panel2{
-        margin-top: 150px;
+        margin-top: 70px;
     }
-    .doc3{
+    #panel1{
+
+           width: 510px;
+       }
+    .header2, .header1,  .body1{
+         width: 470px;
+     }
+    .doc3, table, .doc2{
+
         /*margin-top: 60px;*/
-        width: 310px;
+        width: 450px;
 
     }
     #name4{
@@ -943,7 +1141,136 @@ li{
         display: block;
 
     }
+     #blockPanel{
+        margin-left: 10px;
+    }
 
+}
+@media screen and (max-width: 875px){
+    #panel{
+        width: 40%;
+    }
+
+    #panel2{
+        margin-top: 70px;
+    }
+    #panel1{
+
+        width: 490px;
+    }
+    .header2, .header1,  .body1{
+        width: 450px;
+    }
+    .doc3, table, .doc2{
+
+        /*margin-top: 60px;*/
+        width: 430px;
+
+    }
+}
+@media screen and (max-width: 853px){
+    #panel{
+        width: 40%;
+    }
+
+    #panel2{
+        margin-top: 70px;
+    }
+    #panel1{
+
+        width: 460px;
+    }
+    .header2, .header1,  .body1{
+        width: 420px;
+    }
+    .doc3, table, .doc2{
+
+        /*margin-top: 60px;*/
+        width: 400px;
+
+    }
+}
+@media screen and (max-width: 825px){
+    #panel{
+        width: 35%;
+    }
+
+    #panel2{
+        margin-top: 70px;
+    }
+    #panel1{
+
+        width: 440px;
+    }
+    .header2, .header1,  .body1{
+        width: 400px;
+    }
+    .doc3, table, .doc2{
+
+        /*margin-top: 60px;*/
+        width: 380px;
+
+    }
+}
+@media screen and (max-width: 794px){
+    #panel{
+        width: 35%;
+    }
+    .user1{
+        /*padding-top: 3px;*/
+        padding-left: 7px;
+    }
+    #panel2{
+        margin-top: 80px;
+    }
+    #panel1{
+
+        width: 410px;
+    }
+    .header2, .header1,  .body1{
+        width: 370px;
+    }
+    .doc3, table, .doc2{
+
+        /*margin-top: 60px;*/
+        width: 350px;
+
+    }
+}
+@media screen and (max-width: 755px){
+    #panel{
+        width: 35%;
+    }
+    .user1{
+        /*padding-top: 3px;*/
+        padding-left: 7px;
+    }
+    #panel2{
+        margin-top: 80px;
+    }
+    #panel1{
+
+        width: 380px;
+    }
+    .header2, .header1,  .body1{
+        width: 340px;
+    }
+    .doc3, table, .doc2{
+
+        /*margin-top: 60px;*/
+        width: 320px;
+
+    }
+}
+@media screen and (max-width: 740px){
+   #blockPanel{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 720px){
+  #blockPanel{
+        margin-left: 5px;
+    }
 }
 @media screen and (max-width: 744px){
     .user{
@@ -991,6 +1318,7 @@ li{
     .profile{
         display: block;
         width: 140px;
+        height: 135px;
     }
     .menu2{
         width: 140px;
@@ -1001,7 +1329,9 @@ li{
     #setting:hover{
         width: 117px;
     }
-
+    #insurance{
+        left: 145px;
+    }
 
 }
 @media screen and (max-width: 1005px){
@@ -1015,29 +1345,22 @@ li{
 
         width: 550px;
     }
-    .userName1{
-        background-color: white;
-        padding-left: 82px;
-    }
-     .userAdr2, .userAdr1{
-        padding-left: 40px;
-    }
-    .userZip{
-        padding-left: 14px;
-    }
-    .userCountry{
-        padding-left: 77px;
-    }
 
 }
-@media screen and (max-width: 690px){
+@media screen and (max-width: 926px){
+
+    .lang{
+        padding-top: 5px;
+    }
+}
+@media screen and (max-width: 706px){
     /*#panel1{*/
         /*text-align: center;*/
         /*width: 510px;*/
     /*}*/
 
     #panel{
-        width: 85%;
+        width: 100%;
         text-align: left;
     }
     .main-menu{
@@ -1049,60 +1372,290 @@ li{
     #ppo{
         text-align: left;
     }
-    .doc2{
+    #panel1{
 
-        width: 98%;
+        width: 480px;
+    }
+    .header2, .header1,  .body1{
+        width: 460px;
+    }
+    .doc3, table, .doc2{
 
+        /*margin-top: 60px;*/
+        width: 420px;
+
+    }
+    .user1{
+        padding-left: 17px;
     }
     #panel2{
-        margin-top: 150px;
+        margin-top: 100px;
     }
-    .doc3{
-        /*margin-top: 60px;*/
-        width: 98%;
 
-    }
     #setting{
         margin-top: 1200px;
     }
     #name2, #name1{
-        padding-left: 15px;
+        padding-left: 5px;
         text-align: left;
     }
     #name4{
         width: 100%;
         text-align: left;
-        padding-left: 15px;
+        padding-left: 5px;
         padding-top: 0;
     }
     #name3{
+        padding-left: 5px;
         text-align: left;
         width: 100%;
         padding-top: 0;
     }
     #insurance{
-        text-align: center;
+        left: 150px;
+        padding-left: 0;
         display: block;
     }
 
-    .userName1{
-        background-color: white;
-        padding-left: 82px;
+}
+@media screen and (max-width: 625px){
+    /*#panel1{*/
+    /*text-align: center;*/
+    /*width: 510px;*/
+    /*}*/
+
+    #panel{
+        width: 100%;
+        text-align: left;
     }
-    .userAdr2, .userAdr1{
-        padding-left: 40px;
+    .main-menu{
+        padding-left: 30px;
     }
-    .userZip{
-        padding-left: 14px;
+    #blockPanel{
+        margin-top: 50px;
     }
-    .userCountry{
-        padding-left: 77px;
+    #ppo{
+        text-align: left;
+    }
+    #panel1{
+
+        width: 460px;
+    }
+    .header2, .header1,  .body1{
+        width: 440px;
+    }
+    .doc3, table, .doc2{
+
+        /*margin-top: 60px;*/
+        width: 400px;
+
+    }
+    .user1{
+        padding-left: 7px;
+    }
+    #panel2{
+        margin-top: 100px;
+    }
+
+    /*#setting{*/
+        /*margin-top: 1200px;*/
+    /*}*/
+    /*#name2, #name1{*/
+        /*padding-left: 5px;*/
+        /*text-align: left;*/
+    /*}*/
+    /*#name4{*/
+        /*width: 100%;*/
+        /*text-align: left;*/
+        /*padding-left: 5px;*/
+        /*padding-top: 0;*/
+    /*}*/
+    /*#name3{*/
+        /*padding-left: 5px;*/
+        /*text-align: left;*/
+        /*width: 100%;*/
+        /*padding-top: 0;*/
+    /*}*/
+    #insurance{
+        left: 150px;
+        padding-left: 0;
+        display: block;
+    }
+
+}
+@media screen and (max-width: 604px) {
+    #insurance{
+        left: 145px;
+        padding-left: 0;
+        display: block;
+    }
+
+    #blockPanel {
+        margin-top: 50px;
+    }
+
+    #panel1 {
+
+        width: 400px;
+    }
+
+    .header2, .header1, .body1 {
+        width: 390px;
+    }
+
+    .doc3, table, .doc2 {
+
+        /*margin-top: 60px;*/
+        width: 350px;
+
+    }
+}
+@media screen and (max-width: 558px) {
+    #insurance{
+        left: 145px;
+        padding-left: 0;
+        display: block;
+    }
+
+    #blockPanel {
+        margin-top: 50px;
+    }
+
+    #panel1 {
+
+        width: 350px;
+    }
+
+    .header2, .header1, .body1 {
+        width: 340px;
+    }
+
+    .doc3, table, .doc2 {
+
+        /*margin-top: 60px;*/
+        width: 300px;
+
+    }
+}
+@media screen and (max-width: 506px) {
+    #insurance{
+        left: 145px;
+        padding-left: 0;
+        display: block;
+    }
+    .userP{
+        font-size: 9.5px;
+    }
+    #blockPanel {
+        margin-top: 50px;
+    }
+
+    #panel1 {
+
+        width: 320px;
+    }
+
+    .header2, .header1, .body1 {
+        width: 310px;
+    }
+
+    .doc3, table, .doc2 {
+
+        /*margin-top: 60px;*/
+        width: 270px;
+
+    }
+}
+@media screen and (max-width: 449px) {
+    #panel1 {
+
+        width: 290px;
+    }
+
+    .header2, .header1, .body1 {
+        width: 280px;
+    }
+
+    .doc3, table, .doc2 {
+
+        /*margin-top: 60px;*/
+        width: 230px;
+
+    }
+}
+@media screen and (max-width: 406px) {
+    #panel1 {
+
+        width: 270px;
+    }
+
+    .header2, .header1, .body1 {
+        width: 260px;
+    }
+    .panel{
+        margin-top: 160px;
+    }
+    /*#blockPanel{*/
+        /*margin-top: 300px;*/
+    /*}*/
+    .doc3, table, .doc2 {
+
+        /*margin-top: 60px;*/
+        width: 210px;
+
+    }
+}
+@media screen and (max-width: 364px) {
+    #panel1 {
+
+        width: 240px;
+    }
+
+    .header2, .header1, .body1 {
+        width: 230px;
+    }
+
+    .doc3, table, .doc2 {
+
+        /*margin-top: 60px;*/
+        width: 180px;
+
+    }
+}
+@media screen and (max-width: 494px) {
+    .head{
+        float: bottom;
+
+    }
+    .logotype, .fa-bars{
+
+        padding-left: 5px;
+    }
+
+    .profile{
+        display: block;
+        width: 125px;
+    }
+    .menu2{
+        width: 125px;
+    }
+    #setting{
+        width: 105px;
+    }
+    #setting:hover{
+        width: 102px;
+    }
+    .point{
+        font-size: 12px;
+    }
+    #insurance{
+        left: 130px;
     }
 
 }
 @media screen and (max-width: 488px){
     #panel2{
-        margin-top: 190px;
+        margin-top: 100px;
     }
     .main-menu a {
         display: block;
@@ -1124,14 +1677,14 @@ li{
 
     }
 }
-@media screen and (max-width: 493px){
+@media screen and (max-width: 496px){
     /*#user{*/
         /*padding-left: 90px;*/
     /*}*/
-    /*.online{*/
-        /*padding-left: 45px;*/
-        /*font-size: 10px;*/
-    /*}*/
+    .online{
+
+        font-size: 10px;
+    }
     /*.logotype, .campus, .name, .userName, .fa-bars{*/
         /*font-size: 16px;*/
     /*}*/
@@ -1143,14 +1696,77 @@ li{
     }
 
 }
+@media screen and (max-width: 477px) {
+    .profile{
+        display: block;
+        width: 110px;
+    }
+    .menu2{
+        width: 110px;
+    }
+    #setting{
+        width: 90px;
+    }
+    #setting:hover{
+        width: 87px;
+    }
+    #insurance{
+        left: 120px;
+    }
+}
 @media screen and (max-width: 679px){
     .logo{
         /*padding-bottom: 50px;*/
-        height: 80px;
+        /*height: 80px;*/
+
         text-align: center;
+
     }
+    /*.doc2{*/
+
+        /*width: 90%;*/
+
+    /*}*/
+    #insurance {
+        /*overflow: scroll;*/
+        padding-left: 0;
+    }
+    #panel{
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+        text-align: left;
+    }
+
+}
+@media screen and (max-width: 522px){
+    #user{
+        padding-left: 90px;
+    }
+    .online{
+        padding-left: 45px;
+        font-size: 10px;
+    }
+    .logotype, .campus, .name, .userName, .fa-bars{
+        font-size: 16px;
+    }
+    .user, .lang{
+        font-size: 14px;
+    }
+    .fa-lock, .lang{
+        padding-right: 5px;
+    }
+
 }
 @media screen and (max-width: 469px){
+    .doc2, .doc3{
+
+        width: 96%;
+
+    }
+    #panel {
+        width: 90%;
+    }
     #user{
         padding-left: 65px;
     }
@@ -1158,23 +1774,39 @@ li{
         padding-left: 30px;
 
     }
+    .main-menu .a {
+        display: block;
+        /*margin-bottom: -1px;*/
+
+        padding: 4px 0 4px 0px;
+    }
+    .main-menu {
+        background-color: white;
+
+        padding-left: 10px;
+    }
 
 
 }
+@media screen and (max-width: 457px){
+    #user{
+        padding-left: 35px;
+    }
+    .online{
+        padding-left: 10px;
+
+    }
+    .logotype, .campus, .name, .userName, .fa-bars{
+        font-size: 15px;
+    }
+
+    .user {
+        padding-right: 8px;
+        padding-left: 8px;
+
+    }
+}
 @media screen and (max-width: 438px){
-    .userName1{
-        background-color: white;
-        padding-left: 79px;
-    }
-    .userAdr2, .userAdr1{
-        padding-left: 40px;
-    }
-    .userZip{
-        padding-left: 9px;
-    }
-    .userCountry{
-        padding-left: 72px;
-    }
     .header1, .header2{
         font-size: 14px;
         padding-left: 5px;
@@ -1182,21 +1814,26 @@ li{
     }
 }
 @media screen and (max-width: 416px){
-    .userName1{
-        background-color: white;
-        padding-left: 75px;
+    .fa-lock{
+        padding-right: 35px;
     }
-    .userAdr2, .userAdr1{
-        padding-left: 40px;
+    #blockPanel{
+        margin-top: 45px;
     }
-    .userZip{
-        padding-left: 5px;
+    #insurance {
+        /*overflow: scroll;*/
+        padding-left: 0;
     }
-    .userCountry{
-        padding-left: 70px;
+    #panel{
+        width: 98%;
+        margin-left: 0;
     }
 }
-@media screen and (max-width: 429px){
+@media screen and (max-width: 448px){
+    .fa-lock{
+        background-color: inherit;
+        padding-right: 35px;
+    }
     #user{
         padding-left: 35px;
     }
@@ -1218,31 +1855,67 @@ li{
 
     }
 }
-@media screen and (max-width: 407px){
-    .userName1{
-        background-color: white;
-        padding-left: 70px;
-        float: right;
+@media screen and (max-width: 427px) {
+    .logo{
+        text-align: center;
+        padding-bottom: 38px;
     }
-    .userAdr2, .userAdr1{
-        padding-left: 40px;
+    /*#head{*/
+    /*text-align: center;*/
+    /*}*/
+    .head{
+
         float: right;
-    }
-    .userZip{
-        padding-left: 2px;
-        float: right;
+        padding-right: 5px;
+        margin-top: 5px;
 
     }
+    .userName1{
+        background-color: white;
+        padding-left: 50px;
+    }
+    .userAdr2, .userAdr1{
+        padding-left: 5px;
+    }
+    .userZip{
+        padding-left: 0px;
+    }
     .userCountry{
-        float: right;
-        padding-left: 62px;
+        padding-left: 45px;
+    }
+    .fa-lock{
+        padding-right: 35px;
+    }
+    .campus{
+        padding-left: 10px;
+    }
+    .user{
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    #user{
+        padding-left: 10px;
+    }
+    #insurance{
+        top: 115px;
+    }
+    #blockPanel{
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 374px){
+    #panel2{
+        margin-top: 230px;
+    }
+}
+@media screen and (max-width: 472px){
+    #name3, #name2, #name1, #name4{
+        padding-left: 0;
+        margin-left: 0;
     }
 }
 @media screen and (max-width: 400px) {
-    .logo{
-
-
-    }
 
     .head{
         float: bottom;
@@ -1256,23 +1929,28 @@ li{
 
         padding-left: 10px;
     }
-    .profile{
-        display: block;
-        width: 125px;
-    }
-    .menu2{
-        width: 125px;
-    }
-    #setting{
-        width: 105px;
-    }
-    #setting:hover{
-        width: 102px;
-    }
     .point{
         font-size: 12px;
     }
 
+}
+@media screen and (max-width: 394px){
+    .profile{
+
+        width: 100px;
+    }
+    .menu2{
+        width: 100px;
+    }
+    #setting{
+        width: 80px;
+    }
+    #setting:hover{
+        width: 77px;
+    }
+    #insurance{
+        left: 110px;
+    }
 }
 @media screen and (max-width: 358px) {
     #panel2{
@@ -1281,7 +1959,7 @@ li{
     #blockPanel{
         height: 1100px;
         /*margin-top: 50px;*/
-        width: 90%;
+        width: 95%;
         /*margin-top: 50px;*/
         /*padding-left: 10px;*/
         display: block;
@@ -1304,24 +1982,15 @@ li{
         padding-left: 0;
 
     }
-    .profile{
-        display: block;
-        width: 110px;
-    }
-    .menu2{
-        width: 110px;
-    }
-    #setting{
-        width: 90px;
-    }
-    #setting:hover{
-        width: 87px;
-    }
+
+}
+@media screen and (max-width: 446px) {
+    /*.logo{*/
+        /*padding-bottom: 30px;*/
+    /*}*/
 }
 @media screen and (max-width: 390px) {
-    .logo{
-        padding-bottom: 30px;
-    }
+
     .head{
 
         float: right;
@@ -1337,23 +2006,88 @@ li{
         padding-left: 10px;
     }
 }
-@media screen and (max-width: 340px) {
-    .userName1{
-        background-color: white;
-        padding-left: 15px;
-        float: right;
-    }
-    .userAdr2, .userAdr1{
-        padding-left: 0;
-        float: right;
-    }
-    .userZip{
-        padding-left: 5px;
-        float: right;
+@media screen and (max-width: 347px) {
+    .logo{
+
 
     }
-    .userCountry{
-        float: right;
-        padding-left: 0;
+
+    .head{
+        float: bottom;
+
+    }
+    .logotype, .fa-bars{
+
+        padding-left: 5px;
+    }
+    ul li{
+
+        padding-left: 10px;
+    }
+    .profile{
+        /*font-size: 10px;*/
+        width: 97px;
+    }
+    .menu2{
+        /*font-size: 10px;*/
+        width: 97px;
+    }
+    .point{
+        font-size: 11px;
+    }
+    #setting{
+        font-size: 11px;
+        width: 77px;
+    }
+    #setting:hover{
+        width: 74px;
+    }
+
+}
+@media screen and (max-width: 343px) {
+    #insurance{
+        left: 95px;
+    }
+    .logotype, .fa-bars, .point{
+
+        padding-left: 5px;
+    }
+    .profile{
+        /*font-size: 10px;*/
+        width: 91px;
+    }
+    .menu2{
+        /*font-size: 10px;*/
+        width: 91px;
+    }
+    .point{
+        font-size: 11px;
+    }
+    #setting{
+        font-size: 11px;
+        width: 71px;
+    }
+    #setting:hover{
+        width: 68px;
+    }
+}
+@media screen and (max-width: 328px) {
+    #insurance{
+        left: 95px;
+    }
+    #panel1 {
+
+        width: 230px;
+    }
+
+    .header2, .header1, .body1 {
+        width: 220px;
+    }
+
+    .doc3, table, .doc2 {
+
+        /*margin-top: 60px;*/
+        width: 170px;
+
     }
 }
