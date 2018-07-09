@@ -251,9 +251,10 @@ table{
     /*border-radius: 8px;*/
     /*padding-right: 0px;*/
 /*}*/
-.user1:hover{
-    border-radius: 10px;
+.user1:hover, .user1:active, .user1:before, .user1:focus{
+
     border: 1px solid #3fcbff;
+    border-radius: 10px;
     padding-top: 5px;
     padding-left: 26px;
 
@@ -882,32 +883,38 @@ li{
     }
 }
 @media screen and (max-width: 1155px) {
-    .userP:hover{
-        border: 1px solid #3fcbff;
-        padding-left: 11px;
-        margin-left: 0;
-        border-radius: 8px;
-        padding-right: 1px;
-        padding-bottom: 2px;
-        padding-top: 3px;
+    .user1:hover, .user1:active, .user1:before, .user1:focus{
+        border-radius: 10px;
+        /*border: 1px solid #3fcbff;*/
+        /*padding-top: 5px;*/
+        /*padding-left: 26px;*/
+
+        /*padding-right: 0px;*/
+        /*margin-left: 0;*/
+        /*padding-left: 11px;*/
+        /*margin-left: 0;*/
+        /*border-radius: 8px;*/
+        /*padding-right: 1px;*/
+        /*padding-bottom: 2px;*/
+        /*padding-top: 3px;*/
         /*padding-bottom: 3px;*/
         /*padding-right: 10px;*/
 
     }
-    .userP1:hover{
-        border: 1px solid #3fcbff;
-        padding-left: 11px;
-        margin-left: 0;
-        border-radius: 8px;
-        padding-right: 5px;
-        padding-bottom: 0;
-        /*padding-bottom: 7px;*/
-        padding-top: 4px;
-        /*padding-bottom: -4px;*/
-        /*padding-bottom: 3px;*/
-        /*padding-right: 10px;*/
+    /*.userP1:hover{*/
+        /*border: 1px solid #3fcbff;*/
+        /*padding-left: 11px;*/
+        /*margin-left: 0;*/
+        /*border-radius: 8px;*/
+        /*padding-right: 5px;*/
+        /*padding-bottom: 0;*/
+        /*!*padding-bottom: 7px;*!*/
+        /*padding-top: 4px;*/
+        /*!*padding-bottom: -4px;*!*/
+        /*!*padding-bottom: 3px;*!*/
+        /*!*padding-right: 10px;*!*/
 
-    }
+    /*}*/
 }
 @media screen and (max-width: 1150px){
     .inactiveInsurances{
@@ -1081,17 +1088,11 @@ li{
     /*.body1 {*/
         /*height: 650px;*/
     /*}*/
-    .userP:hover{
+    .user1:hover, .user1:active, .user1:before, .user1:focus{
         border: 1px solid #3fcbff;
-        padding-left: 10px;
-        margin-left: 0;
-        border-radius: 8px;
-        padding-right: 1px;
-        padding-bottom: 4.5px;
-        padding-top: 2.5px;
-        /*padding-bottom: 3px;*/
-        /*padding-right: 10px;*/
-
+        padding-left: 26px;
+        padding-right: 0;
+        margin-right: 0;
     }
     #insurance{
         left: 0;
@@ -1235,6 +1236,12 @@ li{
         /*margin-top: 60px;*/
         width: 350px;
 
+    }
+    .user1:hover,  .user1:active, .user1:before, .user1:focus{
+        border: 1px solid #3fcbff;
+        padding-left: 6px;
+        padding-right: 0;
+        margin-right: 0;
     }
 }
 @media screen and (max-width: 755px){
@@ -1416,6 +1423,12 @@ li{
         padding-left: 0;
         display: block;
     }
+    .user1:hover, .user1:active, .user1:before, .user1:focus{
+        border: 1px solid #3fcbff;
+        padding-left: 16px;
+        padding-right: 5px;
+        margin-right: 0;
+    }
 
 }
 @media screen and (max-width: 625px){
@@ -1423,7 +1436,12 @@ li{
     /*text-align: center;*/
     /*width: 510px;*/
     /*}*/
-
+    .user1:hover, .user1:active, .user1:before, .user1:focus{
+        border: 1px solid #3fcbff;
+        padding-left: 6px;
+        padding-right: 5px;
+        margin-right: 0;
+    }
     #panel{
         width: 100%;
         text-align: left;
@@ -1516,7 +1534,12 @@ li{
         padding-left: 0;
         display: block;
     }
-
+    .user1:hover, .user1:active, .user1:before, .user1:focus{
+        border: 1px solid #3fcbff;
+        padding-left: 7px;
+        padding-right: 15px;
+        margin-right: 0;
+    }
     #blockPanel {
         margin-top: 50px;
     }
@@ -1542,6 +1565,12 @@ li{
         left: 145px;
         padding-left: 0;
         display: block;
+    }
+    .user1:hover, .user1:active, .user1:before, .user1:focus{
+        border: 1px solid #3fcbff;
+        padding-left: 6px;
+        padding-right: 15px;
+        margin-right: 0;
     }
     .userP{
         font-size: 9.5px;
@@ -1571,7 +1600,23 @@ li{
 
         width: 290px;
     }
-
+    #block1{
+        height: 280px;
+    }
+    #name1{
+        background-color: white;
+    }
+    .user1:hover, .user1:active, .user1:before, .user1:focus{
+        border: 1px solid #3fcbff;
+        padding-left: 6px;
+        padding-right: 5px;
+        margin-right: 0;
+    }
+    #panel2{
+        padding-top: 0px;
+        margin-top: 0;
+        /*margin-top: 900px;*/
+    }
     .header2, .header1, .body1 {
         width: 280px;
     }
@@ -1605,7 +1650,7 @@ li{
 
     }
 }
-@media screen and (max-width: 364px) {
+@media screen and (max-width: 372px) {
     #panel1 {
 
         width: 240px;
