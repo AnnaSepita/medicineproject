@@ -489,7 +489,7 @@ ul li{
 }
 .img-circle{
     padding-right: 8px;
-    padding-left: 15px;
+    padding-left: 5px;
 }
 .imgProfile{
     height: 50px;
@@ -2204,6 +2204,8 @@ li{
     }
     .online{
         padding-left: 10px;
+        padding-right: 0;
+        margin-right: 0;
 
     }
     .logotype, .campus, .name, .userName, .fa-bars{
