@@ -2318,6 +2318,7 @@ li{
         /*padding-bottom: 50px;*/
         /*height: 80px;*/
         text-align: center;
+        padding-bottom: 20px;
     }
 }
 @media screen and (max-width: 427px) {

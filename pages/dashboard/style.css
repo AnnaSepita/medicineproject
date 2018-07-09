@@ -90,13 +90,14 @@ option{
     display: block;
 }
 #blockTop{
-    margin-top: -2px;
+    /*padding-bottom: 2px;*/
+    /*margin-top: -2px;*/
 }
 
 #blockMiddle{
     margin-top: 19px;
-
 }
+
 #card{
     position: relative;
     /*padding-right: 100px;*/
@@ -124,9 +125,9 @@ option{
     box-shadow: 0px 3px 1px #dee6e8;
     width: 247px;
     /*display: table-cell;*/
-    padding-top: 7px;
+    padding-top: 3px;
     margin-top: 5px;
-    padding-left: 15px;
+    padding-left: 16px;
     position: relative;
     margin-right: 20px;
     background-color: white;
@@ -135,9 +136,10 @@ option{
 
 .middle{
     background-color: inherit;
-    height: 31px;
+    /*height: 31px;*/
     /*padding-top: 10px;*/
-    margin-left: 27px;
+    margin-left: 20px;
+
 }
 #ell{
     /*margin-top: 3px;*/
@@ -165,8 +167,9 @@ tr, td {
     border: 1px solid #3fcbff;
     background-color: #3fcbff;
     height: 30px;
+    padding-top: 3px;
     /*padding-top: 3px;*/
-    padding-left: 19px;
+    /*padding-left: 23px;*/
     /*padding-bottom: 5px;*/
     /*margin-top: -18px;*/
     /*padding-bottom: -15px;*/
@@ -218,7 +221,7 @@ tr, td{
 }
 #balance{
     background-color: inherit;
-    padding-left: 20px;
+    padding-left: 23px;
 }
 .fa-ellipsis-v{
     background-color: inherit;
@@ -521,8 +524,8 @@ td{
 .summ{
     /*display: inline-block;*/
     font-size: 11px;
-    padding-top: 19px;
-    padding-left: 10px;
+    padding-top: 20px;
+    padding-left: 8px;
 
 }
 .btn-group{
@@ -715,7 +718,7 @@ div,p,span, ul,li{
 
 }
 .online{
-    padding-left: 105px;
+    padding-left: 113px;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }

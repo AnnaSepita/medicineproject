@@ -436,8 +436,10 @@ table{
     /*flex-grow: 0;*/
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
+    /*-webkit-flex-direction: row;*/
+    /*flex-wrap: wrap;*/
+    /*flex-direction: row;*/
+    align-items: flex-start;
 
 }
 .userName{

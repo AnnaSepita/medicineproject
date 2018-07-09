@@ -232,7 +232,7 @@ table{
 .category{
     background-color: white;
     color: #3fcbff;
-    margin-left: 25px;
+    margin-left: 27px;
     font-size: 18px;
     /*padding-top: -10px;*/
 
@@ -268,7 +268,8 @@ select:hover{
 }
 .body{
     padding-top: 10px;
-    padding-left: 2px;
+    /*margin-left: 2px;*/
+    /*padding-left: 2px;*/
 
     background-color: white;
     /*padding-top: -10px;*/
@@ -290,10 +291,9 @@ select:hover{
 .folder{
     background-color: inherit;
     padding-top: 5px;
-    padding-left: 15px;
+    padding-left: 17px;
     padding-bottom: 0;
     margin: 0;
-
     display: block;
 }
 .fold{
@@ -307,7 +307,8 @@ select:hover{
     /*margin-left: 15px;*/
     background-color: #d9f5ff;
     cursor: pointer;
-    padding-left: -15px;
+    /*padding-left: -15px;*/
+    /*margin-left: -1px;*/
 }
 .fa-folder{
     background-color: inherit;
