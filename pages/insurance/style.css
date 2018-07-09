@@ -424,13 +424,20 @@ table{
     /*padding-left: 27px;*/
     font-family: 'Roboto', sans-serif;
     background-color: #eaf2f4;
-    display: flex;
+    /*display: flex;*/
+    /*display: inline-block;*/
+
     top: 95px;
     left: 210px;
     position: absolute;
     /*width: 100%;*/
     height: 100%;
-
+    /*-webkit-flex: auto;*/
+    /*flex-grow: 0;*/
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
 
 }
 .userName{
@@ -750,10 +757,11 @@ li{
         padding-bottom: 15px;
     }
     .main-menu .a {
+        /*padding: 4px 75px 4px 37px;*/
         display: block;
         /*margin-bottom: -1px;*/
 
-        padding: 4px 10px 4px 15px;
+        padding: 4px 75px 4px 20px;
         margin-right: 0;
         margin-left: 0;
         text-decoration: none;
@@ -832,7 +840,7 @@ li{
         display: block;
         /*margin-bottom: -1px;*/
 
-        padding: 4px 5px 4px 13px;
+        padding: 4px 65px 4px 13px;
     }
 }
 @media screen and (max-width: 1153px){
@@ -967,7 +975,7 @@ li{
 }
 
 
-@media screen and (max-width: 1085px){
+@media screen and (max-width: 1107px){
     .userP:hover{
         border: 1px solid #3fcbff;
         padding-left: 10px;
@@ -1191,6 +1199,39 @@ li{
 
     }
 }
+@media screen and (max-width: 933px){
+    #panel1{
+
+        width: 450px;
+    }
+    .header2, .header1,  .body1{
+        width: 410px;
+    }
+    .doc3, table, .doc2{
+
+        /*margin-top: 60px;*/
+        width: 390px;
+
+    }
+}
+@media screen and (max-width: 866px){
+    #panel1{
+
+        width: 445px;
+    }
+    .header2, .header1,  .body1{
+        width: 405px;
+    }
+    .doc3, table, .doc2{
+
+        /*margin-top: 60px;*/
+        width: 385px;
+
+    }
+    #panel{
+        width: 34%;
+    }
+}
 @media screen and (max-width: 825px){
     #panel{
         width: 35%;
@@ -1203,6 +1244,13 @@ li{
 
         width: 440px;
     }
+    .main-menu .a {
+        /*padding: 4px 75px 4px 37px;*/
+        display: block;
+        /*margin-bottom: -1px;*/
+
+        padding: 4px 10px 4px 20px;
+    }
     .header2, .header1,  .body1{
         width: 400px;
     }
@@ -1213,7 +1261,7 @@ li{
 
     }
 }
-@media screen and (max-width: 794px){
+@media screen and (max-width: 802px){
     #panel{
         width: 35%;
     }
@@ -1365,14 +1413,20 @@ li{
         /*text-align: center;*/
         /*width: 510px;*/
     /*}*/
+    .main-menu .a {
+        /*padding: 4px 75px 4px 37px;*/
+        display: block;
+        /*margin-bottom: -1px;*/
 
+        padding: 4px 180px 4px 50px;
+    }
     #panel{
         width: 100%;
         text-align: left;
     }
-    .main-menu{
-        padding-left: 30px;
-    }
+    /*.main-menu{*/
+        /*margin-left: 30px;*/
+    /*}*/
     #blockPanel{
         margin-top: 50px;
     }
@@ -1446,9 +1500,7 @@ li{
         width: 100%;
         text-align: left;
     }
-    .main-menu{
-        padding-left: 30px;
-    }
+
     #blockPanel{
         margin-top: 50px;
     }
@@ -1527,7 +1579,19 @@ li{
         width: 350px;
 
     }
+
+
 }
+@media screen and (max-width: 589px) {
+    .main-menu .a {
+        /*padding: 4px 75px 4px 37px;*/
+        display: block;
+        /*margin-bottom: -1px;*/
+
+        padding: 4px 130px 4px 50px;
+    }
+}
+
 @media screen and (max-width: 558px) {
     #insurance{
         left: 145px;
@@ -1558,6 +1622,24 @@ li{
         /*margin-top: 60px;*/
         width: 300px;
 
+    }
+}
+@media screen and (max-width: 553px) {
+    .main-menu .a {
+        /*padding: 4px 75px 4px 37px;*/
+        display: block;
+        /*margin-bottom: -1px;*/
+
+        padding: 4px 120px 4px 50px;
+    }
+}
+@media screen and (max-width: 531px) {
+    .main-menu .a {
+        /*padding: 4px 75px 4px 37px;*/
+        display: block;
+        /*margin-bottom: -1px;*/
+
+        padding: 4px 100px 4px 40px;
     }
 }
 @media screen and (max-width: 506px) {
@@ -1820,18 +1902,8 @@ li{
 
     }
     .main-menu .a {
-        display: block;
-        /*margin-bottom: -1px;*/
-
-        padding: 4px 0 4px 0px;
+        padding: 4px 50px 4px 20px;
     }
-    .main-menu {
-        background-color: white;
-
-        padding-left: 10px;
-    }
-
-
 }
 @media screen and (max-width: 457px){
     #user{
@@ -1872,6 +1944,9 @@ li{
     #panel{
         width: 98%;
         margin-left: 0;
+    }
+    .main-menu .a {
+        padding: 4px 20px 4px 10px;
     }
 }
 @media screen and (max-width: 448px){
