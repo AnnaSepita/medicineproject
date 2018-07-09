@@ -1849,7 +1849,7 @@ li{
 @media screen and (max-width: 463px){
     .logo{
         /*padding-bottom: 50px;*/
-        height: 70px;
+        height: 80px;
         text-align: center;
     }
     .nameTable1, .nameTable2, .nameTable3,  .nameTable4{
@@ -1988,7 +1988,7 @@ li{
     }
     .logo{
         text-align: center;
-        padding-bottom: 39px;
+        padding-bottom: 0px;
     }
     /*#head{*/
     /*text-align: center;*/

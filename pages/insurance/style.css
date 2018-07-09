@@ -2029,6 +2029,16 @@ li{
     }
 
 }
+@media screen and (max-width: 427px) {
+    .logo {
+        /*padding-bottom: 50px;*/
+        height: 80px;
+        text-align: center;
+    }
+    #insurance{
+        top:125px;
+    }
+}
 @media screen and (max-width: 446px) {
     /*.logo{*/
         /*padding-bottom: 30px;*/

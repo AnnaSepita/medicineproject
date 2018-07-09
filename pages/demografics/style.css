@@ -2170,7 +2170,13 @@ li{
         display: block;
     }
 }
-
+@media screen and (max-width: 463px) {
+    .logo {
+        /*padding-bottom: 50px;*/
+        height: 80px;
+        text-align: center;
+    }
+}
 @media screen and (max-width: 457px){
     #user{
         padding-left: 35px;

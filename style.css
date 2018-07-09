@@ -484,7 +484,7 @@ td{
 .img{
 
     background-color: white;
-    background-image: url(../../img/avatar.jpg) ;
+    background-image: url(img/avatar.jpg) ;
 
     background-repeat: no-repeat;
     width: 120px;
@@ -1552,7 +1552,13 @@ li{
 
 
 }
-
+@media screen and (max-width: 427px) {
+    .logo {
+        /*padding-bottom: 50px;*/
+        height: 80px;
+        text-align: center;
+    }
+}
 @media screen and (max-width: 462px){
     #dashboard{
         margin-left: 110px;
